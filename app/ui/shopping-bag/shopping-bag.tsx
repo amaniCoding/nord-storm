@@ -144,7 +144,7 @@ export default function ShoppingBag() {
 
                 <div className="p-1">
                   <Image
-                    src={`/pics/4.jpg`}
+                    src={`/samples/sale-pics-for-you/4.jpg`}
                     alt="something is happening"
                     width={0}
                     height={0}
@@ -217,7 +217,7 @@ export default function ShoppingBag() {
                 <Slider {...settings2} ref={sliderRef}>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-1.jpg`}
+                      src={`/samples/sale-pics-for-you/1.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -234,7 +234,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-2.jpg`}
+                      src={`/samples/sale-pics-for-you/2.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -251,7 +251,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-3.jpg`}
+                      src={`/samples/sale-pics-for-you/3.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -268,7 +268,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-4.jpg`}
+                      src={`/samples/sale-pics-for-you/4.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -285,7 +285,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-5.jpg`}
+                      src={`/samples/sale-pics-for-you/5.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -302,7 +302,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-6.jpg`}
+                      src={`/samples/sale-pics-for-you/6.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -319,7 +319,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-7.jpg`}
+                      src={`/samples/sale-pics-for-you/7.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -336,7 +336,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-8.jpg`}
+                      src={`/samples/sale-pics-for-you/8.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -353,7 +353,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-9.jpg`}
+                      src={`/samples/sale-pics-for-you/9.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -370,7 +370,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-10.jpg`}
+                      src={`/samples/sale-pics-for-you/10.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -387,7 +387,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-11.jpg`}
+                      src={`/samples/sale-pics-for-you/11.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -404,7 +404,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-12.jpg`}
+                      src={`/samples/sale-pics-for-you/12.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -421,7 +421,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-13.jpg`}
+                      src={`/samples/sale-pics-for-you/13.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -438,7 +438,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-14.jpg`}
+                      src={`/samples/sale-pics-for-you/14.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -455,7 +455,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-15.jpg`}
+                      src={`/samples/sale-pics-for-you/15.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -472,7 +472,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-16.jpg`}
+                      src={`/samples/sale-pics-for-you/16.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -489,7 +489,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-17.jpg`}
+                      src={`/samples/sale-pics-for-you/17.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -506,7 +506,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-18.jpg`}
+                      src={`/samples/sale-pics-for-you/18.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -523,7 +523,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-19.jpg`}
+                      src={`/samples/sale-pics-for-you/19.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -540,7 +540,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-20.jpg`}
+                      src={`/samples/sale-pics-for-you/20.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -557,7 +557,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-21.jpg`}
+                      src={`/samples/sale-pics-for-you/21.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -574,7 +574,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-22.jpg`}
+                      src={`/samples/sale-pics-for-you/22.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -591,7 +591,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-23.jpg`}
+                      src={`/samples/sale-pics-for-you/23.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -608,7 +608,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-24.jpg`}
+                      src={`/samples/sale-pics-for-you/24.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -636,7 +636,7 @@ export default function ShoppingBag() {
                 <Slider {...settings2} ref={sliderRef2}>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-1.jpg`}
+                      src={`/samples/sale-pics-for-you/1.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -653,7 +653,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-2.jpg`}
+                      src={`/samples/sale-pics-for-you/2.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -670,7 +670,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-3.jpg`}
+                      src={`/samples/sale-pics-for-you/3.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -687,7 +687,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-4.jpg`}
+                      src={`/samples/sale-pics-for-you/4.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -704,7 +704,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-5.jpg`}
+                      src={`/samples/sale-pics-for-you/5.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -721,7 +721,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-6.jpg`}
+                      src={`/samples/sale-pics-for-you/6.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -738,7 +738,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-7.jpg`}
+                      src={`/samples/sale-pics-for-you/7.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -755,7 +755,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-8.jpg`}
+                      src={`/samples/sale-pics-for-you/8.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -772,7 +772,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-9.jpg`}
+                      src={`/samples/sale-pics-for-you/9.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -789,7 +789,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-10.jpg`}
+                      src={`/samples/sale-pics-for-you/10.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -806,7 +806,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-11.jpg`}
+                      src={`/samples/sale-pics-for-you/11.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -823,7 +823,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-12.jpg`}
+                      src={`/samples/sale-pics-for-you/12.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -840,7 +840,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-13.jpg`}
+                      src={`/samples/sale-pics-for-you/13.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -857,7 +857,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-14.jpg`}
+                      src={`/samples/sale-pics-for-you/14.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -874,7 +874,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-15.jpg`}
+                      src={`/samples/sale-pics-for-you/15.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -891,7 +891,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-16.jpg`}
+                      src={`/samples/sale-pics-for-you/16.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -908,7 +908,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-17.jpg`}
+                      src={`/samples/sale-pics-for-you/17.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -925,7 +925,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-18.jpg`}
+                      src={`/samples/sale-pics-for-you/18.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -942,7 +942,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-19.jpg`}
+                      src={`/samples/sale-pics-for-you/19.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -959,7 +959,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-20.jpg`}
+                      src={`/samples/sale-pics-for-you/20.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -976,7 +976,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-21.jpg`}
+                      src={`/samples/sale-pics-for-you/21.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -993,7 +993,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-22.jpg`}
+                      src={`/samples/sale-pics-for-you/22.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -1010,7 +1010,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-23.jpg`}
+                      src={`/samples/sale-pics-for-you/23.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -1027,7 +1027,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="p-3">
                     <Image
-                      src={`/gifts/her-24.jpg`}
+                      src={`/samples/sale-pics-for-you/24.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -1075,7 +1075,7 @@ export default function ShoppingBag() {
                 <Slider {...settings3} ref={sliderRef3}>
                 <div className="flex flex-col space-y-2 p-6">
                     <Image
-                      src={`/pics/6.jpg`}
+                      src={`/samples/sale-pics-for-you/6.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -1092,7 +1092,7 @@ export default function ShoppingBag() {
                   </div>
                   <div className="flex flex-col space-y-2 p-6">
                     <Image
-                      src={`/pics/6.jpg`}
+                      src={`/samples/sale-pics-for-you/6.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}

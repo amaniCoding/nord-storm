@@ -5,14 +5,14 @@ import Image from "next/image";
 
 export default function Product() {
   return (
-    <section className="blur-lg">
+    <section>
       <div className="max-w-screen-xl mx-auto p-4">
         <div className="grid grid-cols-12 gap-4 pb-4">
           <div className="md:col-span-7 col-span-12">
             <div className="grid md:grid-cols-2 grid-cols-2">
               <div className="p-1">
                 <Image
-                  src={"/samples/pics/4.jpg"}
+                  src={"/samples/sale-pics-for-you/1.jpg"}
                   alt="something is happening"
                   width={0}
                   height={0}
@@ -22,7 +22,7 @@ export default function Product() {
               </div>
               <div className="p-1">
                 <Image
-                  src={"/samples/pics/4.jpg"}
+                  src={"/samples/sale-pics-for-you/2.jpg"}
                   alt="something is happening"
                   width={0}
                   height={0}
@@ -32,7 +32,7 @@ export default function Product() {
               </div>
               <div className="p-1">
                 <Image
-                  src={"/samples/pics/4.jpg"}
+                  src={"/samples/sale-pics-for-you/3.jpg"}
                   alt="something is happening"
                   width={0}
                   height={0}
@@ -42,7 +42,7 @@ export default function Product() {
               </div>
               <div className="p-1">
                 <Image
-                  src={"/samples/pics/4.jpg"}
+                  src={"/samples/sale-pics-for-you/4.jpg"}
                   alt="something is happening"
                   width={0}
                   height={0}
@@ -52,7 +52,7 @@ export default function Product() {
               </div>
               <div className="p-1">
                 <Image
-                  src={"/samples/pics/4.jpg"}
+                  src={"/samples/sale-pics-for-you/5.jpg"}
                   alt="something is happening"
                   width={0}
                   height={0}
@@ -62,7 +62,7 @@ export default function Product() {
               </div>
               <div className="p-1">
                 <Image
-                  src={"/samples/pics/4.jpg"}
+                  src={"/samples/sale-pics-for-you/6.jpg"}
                   alt="something is happening"
                   width={0}
                   height={0}
@@ -72,7 +72,7 @@ export default function Product() {
               </div>
               <div className="p-1">
                 <Image
-                  src={"/samples/pics/5.jpg"}
+                  src={"/samples/sale-pics-for-you/7.jpg"}
                   alt="something is happening"
                   width={0}
                   height={0}
@@ -82,7 +82,7 @@ export default function Product() {
               </div>
               <div className="p-1">
                 <Image
-                  src={"/samples/pics/6.jpg"}
+                  src={"/samples/sale-pics-for-you/8.jpg"}
                   alt="something is happening"
                   width={0}
                   height={0}
@@ -92,7 +92,7 @@ export default function Product() {
               </div>
               <div className="p-1">
                 <Image
-                  src={"/samples/pics/22.jpg"}
+                  src={"/samples/sale-pics-for-you/9.jpg"}
                   alt="something is happening"
                   width={0}
                   height={0}
@@ -102,7 +102,7 @@ export default function Product() {
               </div>
               <div className="p-1">
                 <Image
-                  src={"/samples/pics/24.jpg"}
+                  src={"/samples/sale-pics-for-you/10.jpg"}
                   alt="something is happening"
                   width={0}
                   height={0}
@@ -128,7 +128,7 @@ export default function Product() {
               <div className="flex items-center space-x-3">
                 <div className="w-14 h-14 rounded-lg p-1 border-2 border-black">
                   <Image
-                    src={"/samples/pics/2.jpg"}
+                    src={"/samples/sale-pics-for-you/2.jpg"}
                     alt="something is happening"
                     width={0}
                     height={0}
@@ -138,7 +138,7 @@ export default function Product() {
                 </div>
                 <div className="w-14 h-14 rounded-lg p-1 border-2 border-black">
                   <Image
-                    src={"/samples/pics/4.jpg"}
+                    src={"/samples/sale-pics-for-you/4.jpg"}
                     alt="something is happening"
                     width={0}
                     height={0}
@@ -148,7 +148,7 @@ export default function Product() {
                 </div>
                 <div className="w-14 h-14 rounded-lg p-1 border-2 border-black">
                   <Image
-                    src={"/samples/pics/6.jpg"}
+                    src={"/samples/sale-pics-for-you/6.jpg"}
                     alt="something is happening"
                     width={0}
                     height={0}
@@ -278,7 +278,7 @@ export default function Product() {
                   <div className="flex items-center space-x-3">
                     <div className="w-14 h-14 rounded-lg p-1 border-2 border-black">
                       <Image
-                        src={"/samples/pics/2.jpg"}
+                        src={"/samples/sale-pics-for-you/2.jpg"}
                         alt="something is happening"
                         width={0}
                         height={0}
@@ -288,7 +288,7 @@ export default function Product() {
                     </div>
                     <div className="w-14 h-14 rounded-lg p-1 border-2 border-black">
                       <Image
-                        src={"/samples/pics/4.jpg"}
+                        src={"/samples/sale-pics-for-you/4.jpg"}
                         alt="something is happening"
                         width={0}
                         height={0}
@@ -298,7 +298,7 @@ export default function Product() {
                     </div>
                     <div className="w-14 h-14 rounded-lg p-1 border-2 border-black">
                       <Image
-                        src={"/samples/pics/6.jpg"}
+                        src={"/samples/sale-pics-for-you/6.jpg"}
                         alt="something is happening"
                         width={0}
                         height={0}
@@ -416,7 +416,7 @@ export default function Product() {
                 <div>
                   <p className="my-2">You may also like</p>
                   <div className="flex flex-col space-y-1 mb-2">
-                    <Image src={"/samples/pics/4.jpg"} alt="something is happening" width={0} height={0} sizes="100vh"
+                    <Image src={"/samples/sale-pics-for-you/4.jpg"} alt="something is happening" width={0} height={0} sizes="100vh"
                       className="w-full h-auto object-contain" />
                     <p>You might also like</p>
                     <p className="capitalize">house of cb</p>
@@ -425,7 +425,7 @@ export default function Product() {
                     <p className="line-through">$255.00Previous Price $255.00</p>
                   </div>
                   <div className="flex flex-col space-y-1 mb-2">
-                    <Image src={"/samples/pics/2.jpg"} alt="something is happening" width={0} height={0} sizes="100vh"
+                    <Image src={"/samples/sale-pics-for-you/2.jpg"} alt="something is happening" width={0} height={0} sizes="100vh"
                       className="w-full h-auto object-contain" />
                     <p>You might also like</p>
                     <p className="capitalize">house of cb</p>
@@ -434,7 +434,7 @@ export default function Product() {
                     <p className="line-through">$255.00Previous Price $255.00</p>
                   </div>
                   <div className="flex flex-col space-y-1 mb-2">
-                    <Image src={"/samples/pics/4.jpg"} alt="something is happening" width={0} height={0} sizes="100vh"
+                    <Image src={"/samples/sale-pics-for-you/4.jpg"} alt="something is happening" width={0} height={0} sizes="100vh"
                       className="w-full h-auto object-contain" />
                     <p>You might also like</p>
                     <p className="capitalize">house of cb</p>
@@ -443,7 +443,7 @@ export default function Product() {
                     <p className="line-through">$255.00Previous Price $255.00</p>
                   </div>
                   <div className="flex flex-col space-y-1 mb-2">
-                    <Image src={"/samples/pics/5.jpg"} alt="something is happening" width={0} height={0} sizes="100vh"
+                    <Image src={"/samples/sale-pics-for-you/5.jpg"} alt="something is happening" width={0} height={0} sizes="100vh"
                       className="w-full h-auto object-contain" />
                     <p>You might also like</p>
                     <p className="capitalize">house of cb</p>
@@ -459,7 +459,7 @@ export default function Product() {
             <p className="my-2">You may also like</p>
             <div className="flex flex-col space-y-1 mb-2">
               <Image
-                src={"/samples/pics/4.jpg"}
+                src={"/samples/sale-pics-for-you/4.jpg"}
                 alt="something is happening"
                 width={0}
                 height={0}
@@ -474,7 +474,7 @@ export default function Product() {
             </div>
             <div className="flex flex-col space-y-1 mb-2">
               <Image
-                src={"/samples/pics/2.jpg"}
+                src={"/samples/sale-pics-for-you/2.jpg"}
                 alt="something is happening"
                 width={0}
                 height={0}
@@ -489,7 +489,7 @@ export default function Product() {
             </div>
             <div className="flex flex-col space-y-1 mb-2">
               <Image
-                src={"/samples/pics/4.jpg"}
+                src={"/samples/sale-pics-for-you/4.jpg"}
                 alt="something is happening"
                 width={0}
                 height={0}
@@ -504,7 +504,7 @@ export default function Product() {
             </div>
             <div className="flex flex-col space-y-1 mb-2">
               <Image
-                src={"/samples/pics/5.jpg"}
+                src={"/samples/sale-pics-for-you/5.jpg"}
                 alt="something is happening"
                 width={0}
                 height={0}

@@ -50,7 +50,7 @@ export default async function Page(props: { params: Promise<{ cat: string }> }) 
                   return (
                     <div className="p-3 bg-orange-200" key={el}>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       <Image
-                        src={`/samples/loving/1.jpg`}
+                        src={`/samples/recently-viewed/1.jpg`}
                         alt="something is happening"
                         width={0}
                         height={0}
