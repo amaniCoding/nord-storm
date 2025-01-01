@@ -58,7 +58,7 @@ export function DetailRecentlyViewed() {
           <Slider {...settings}>
             <div className="p-3">
               <Image
-                src={`/samples/1.jpg`}
+                src={`/samples/sale-pics-for-you/1.jpg`}
                 alt="something is happening"
                 width={0}
                 height={0}
@@ -68,7 +68,7 @@ export function DetailRecentlyViewed() {
             </div>
             <div className="p-3">
               <Image
-                src={`/samples/2.jpg`}
+                src={`/samples/sale-pics-for-you/2.jpg`}
                 alt="something is happening"
                 width={0}
                 height={0}
@@ -78,7 +78,7 @@ export function DetailRecentlyViewed() {
             </div>
             <div className="p-3">
               <Image
-                src={`/samples/3.jpg`}
+                src={`/samples/sale-pics-for-you/3.jpg`}
                 alt="something is happening"
                 width={0}
                 height={0}
@@ -88,7 +88,7 @@ export function DetailRecentlyViewed() {
             </div>
             <div className="p-3">
               <Image
-                src={`/samples/4.jpg`}
+                src={`/samples/sale-pics-for-you/4.jpg`}
                 alt="something is happening"
                 width={0}
                 height={0}

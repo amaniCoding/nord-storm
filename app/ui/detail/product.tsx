@@ -257,7 +257,7 @@ export default function Product() {
                   </div>
                   <p>Need help finding the perfect gift? We've got you covered.
                   </p>
-                  <button className="block p-3 border-2 border-black rounded-md hover:scale-105 transition duration-200 ease-in-out w-60">Shop Gifts</button>
+                  <button className="block p-2 border-2 border-black rounded-md hover:scale-105 transition duration-200 ease-in-out w-60">Shop Gifts</button>
                 </div>
               </div>
             </div>
@@ -456,66 +456,68 @@ export default function Product() {
             </div>
           </div>
           <div className="md:col-span-1 md:block hidden col-span-12 sticky top-0">
-            <p className="my-2">You may also like</p>
-            <div className="flex flex-col space-y-1 mb-2">
-              <Image
-                src={"/samples/sale-pics-for-you/4.jpg"}
-                alt="something is happening"
-                width={0}
-                height={0}
-                sizes="100vh"
-                className="w-full h-auto object-contain"
-              />
-              <p>You might also like</p>
-              <p className="capitalize">house of cb</p>
-              <p>$76.50Current Price $76.50
-                (70% off)</p>
-              <p className="line-through">$255.00Previous Price $255.00</p>
-            </div>
-            <div className="flex flex-col space-y-1 mb-2">
-              <Image
-                src={"/samples/sale-pics-for-you/2.jpg"}
-                alt="something is happening"
-                width={0}
-                height={0}
-                sizes="100vh"
-                className="w-full h-auto object-contain"
-              />
-              <p>You might also like</p>
-              <p className="capitalize">house of cb</p>
-              <p>$76.50Current Price $76.50
-                (70% off)</p>
-              <p className="line-through">$255.00Previous Price $255.00</p>
-            </div>
-            <div className="flex flex-col space-y-1 mb-2">
-              <Image
-                src={"/samples/sale-pics-for-you/4.jpg"}
-                alt="something is happening"
-                width={0}
-                height={0}
-                sizes="100vh"
-                className="w-full h-auto object-contain"
-              />
-              <p>You might also like</p>
-              <p className="capitalize">house of cb</p>
-              <p>$76.50Current Price $76.50
-                (70% off)</p>
-              <p className="line-through">$255.00Previous Price $255.00</p>
-            </div>
-            <div className="flex flex-col space-y-1 mb-2">
-              <Image
-                src={"/samples/sale-pics-for-you/5.jpg"}
-                alt="something is happening"
-                width={0}
-                height={0}
-                sizes="100vh"
-                className="w-full h-auto object-contain"
-              />
-              <p>You might also like</p>
-              <p className="capitalize">house of cb</p>
-              <p>$76.50Current Price $76.50
-                (70% off)</p>
-              <p className="line-through">$255.00Previous Price $255.00</p>
+            <div className="sticky top-2">
+              <p className="my-2">You may also like</p>
+              <div className="flex flex-col space-y-1 mb-2">
+                <Image
+                  src={"/samples/sale-pics-for-you/4.jpg"}
+                  alt="something is happening"
+                  width={0}
+                  height={0}
+                  sizes="100vh"
+                  className="w-full h-auto object-contain"
+                />
+                <p>You might also like</p>
+                <p className="capitalize">house of cb</p>
+                <p>$76.50Current Price $76.50
+                  (70% off)</p>
+                <p className="line-through">$255.00Previous Price $255.00</p>
+              </div>
+              <div className="flex flex-col space-y-1 mb-2">
+                <Image
+                  src={"/samples/sale-pics-for-you/2.jpg"}
+                  alt="something is happening"
+                  width={0}
+                  height={0}
+                  sizes="100vh"
+                  className="w-full h-auto object-contain"
+                />
+                <p>You might also like</p>
+                <p className="capitalize">house of cb</p>
+                <p>$76.50Current Price $76.50
+                  (70% off)</p>
+                <p className="line-through">$255.00Previous Price $255.00</p>
+              </div>
+              <div className="flex flex-col space-y-1 mb-2">
+                <Image
+                  src={"/samples/sale-pics-for-you/4.jpg"}
+                  alt="something is happening"
+                  width={0}
+                  height={0}
+                  sizes="100vh"
+                  className="w-full h-auto object-contain"
+                />
+                <p>You might also like</p>
+                <p className="capitalize">house of cb</p>
+                <p>$76.50Current Price $76.50
+                  (70% off)</p>
+                <p className="line-through">$255.00Previous Price $255.00</p>
+              </div>
+              <div className="flex flex-col space-y-1 mb-2">
+                <Image
+                  src={"/samples/sale-pics-for-you/5.jpg"}
+                  alt="something is happening"
+                  width={0}
+                  height={0}
+                  sizes="100vh"
+                  className="w-full h-auto object-contain"
+                />
+                <p>You might also like</p>
+                <p className="capitalize">house of cb</p>
+                <p>$76.50Current Price $76.50
+                  (70% off)</p>
+                <p className="line-through">$255.00Previous Price $255.00</p>
+              </div>
             </div>
           </div>
           <div className="col-span-2"></div>
