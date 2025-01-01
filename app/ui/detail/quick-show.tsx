@@ -4,12 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 export default function QuickShow() {
   return (
-    <section className="fixed top-0 left-0 right-0 bottom-0 bg-black/20 flex items-center justify-center">
-      <div className="max-w-screen-md bg-white">
+    <section className="fixed top-0 left-0 right-0 bottom-0 bg-black/55 overflow-auto z-50">
+      <div className="max-w-screen-md bg-white my-12 p-4 mx-auto">
         <div className="grid grid-cols-2">
           <div className="p-3">
             <Image
-              src={`/samples/pics/5.jpg`}
+              src={`/samples/sale-pics-for-you/5.jpg`}
               alt="something is happening"
               width={0}
               height={0}
@@ -25,7 +25,7 @@ export default function QuickShow() {
             <p>Color: Dark Green</p>
             <div className="w-20 h-20 border-2 border-gray-600">
               <Image
-                src={`/samples/pics/5.jpg`}
+                src={`/samples/sale-pics-for-you/5.jpg`}
                 alt="something is happening"
                 width={0}
                 height={0}

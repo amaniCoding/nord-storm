@@ -27,6 +27,6 @@ export default function Home() {
       <DealsForYou/>
       <ShopByCat/>
       <RecentlyViewed/>
-      </main>
+    </main>
   );
 }

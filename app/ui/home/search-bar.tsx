@@ -1,5 +1,6 @@
 import { MagnifyingGlassIcon, ShoppingBagIcon } from "@heroicons/react/16/solid";
 import { UserIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 export default function SearchBar() {
   return (
@@ -15,16 +16,16 @@ export default function SearchBar() {
             <UserIcon className="w-8 h-8" />
             <span className="font-semibold">Sign in</span>
           </div>
-          <ShoppingBagIcon className="w-8 h-8" />
+          <Link href={`/shopping-bag`}><ShoppingBagIcon className="w-8 h-8" /></Link>
         </div>
         <div className="relative md:hidden flex items-center justify-between">
           <span className="text-2xl font-bold">NordStorm</span>
           <div className="flex items-center">
             <UserIcon className="w-8 h-8" />
             <span className="font-semibold">Sign in</span>
-            <ShoppingBagIcon className="w-8 h-8" />
+            <Link href={`/shopping-bag`}><ShoppingBagIcon className="w-8 h-8" /></Link>
           </div>
-          
+
         </div>
       </div>
     </nav>

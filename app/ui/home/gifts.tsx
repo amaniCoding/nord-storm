@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
 import { useRef } from "react";
+import Link from "next/link";
 
 export default function Gifts() {
   const sliderRef = useRef<Slider>(null);
@@ -100,210 +101,309 @@ export default function Gifts() {
           <ArrowLeftIcon onClick={handelPrev} className="md:w-10 md:h-10 w-8 h-8 flex items-center justify-center absolute top-1/2 -left-5 z-20  cursor-pointer p-2 stroke-black hover:bg-black/75 transition duration-300 ease-out hover:stroke-white dark:bg-slate-800 dark:stroke-white " />
           <ArrowRightIcon onClick={handelNext} className="md:w-10 md:h-10 w-8 h-8 flex items-center justify-center absolute top-1/2 -right-5 z-20  cursor-pointer p-2 stroke-black hover:text-white hover:bg-black/75 transition duration-300 ease-out hover:stroke-white dark:bg-slate-800 dark:stroke-white " />
           <Slider {...settings2} ref={sliderRef}>
-            <div className="p-3">
-              <Image
+          <div className="p-3 relative">
+              <div className="group">
+                <Image
                 src={`/samples/last-min-gifts/1.jpg`}
                 alt="something is happening"
                 width={0}
                 height={0}
                 sizes="100vh"
-                className="w-full h-auto object-contain"
+                className="w-full h-full object-contain"
               />
+              <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-52 left-0 right-0 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black ml-10 mr-10 md:group-hover:block">
+                Quick Show
+              </Link>
+              </div>
               <div className="mt-2 flex flex-col">
-                <p className="text-sm">Amanuel</p>
-                <p className="text-sm">555 $</p>
-                <div className="flex space-x-3">
-                  <span>star rating</span><span>(56)</span>
-                </div>
+                <span className="text-sm">color slider</span>
+                <span className="text-sm">New Markdown</span>
+                <span className="text-sm">UGG®</span>
+                <span className="text-sm">$112.00 – $160.00Current</span>
+                (Up to 30% off select items)
+                <span className="text-sm">Up to 30% off select items.</span>
+                <span className="line-through">$160.00</span>
+
+                <span className="text-sm">star rating(1934)</span>
               </div>
             </div>
-            <div className="p-3">
-              <Image
+            <div className="p-3 relative">
+              <div className="group">
+                <Image
                 src={`/samples/last-min-gifts/2.jpg`}
                 alt="something is happening"
                 width={0}
                 height={0}
                 sizes="100vh"
-                className="w-full h-auto object-contain"
+                className="w-full h-full object-contain"
               />
-              <div className="mt-2 flex flex-col">
-                <p className="text-sm">Amanuel</p>
-                <p className="text-sm">555 $</p>
-                <div className="flex space-x-3">
-                  <span>star rating</span><span>(56)</span>
-                </div>
+              <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-52 left-0 right-0 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black ml-10 mr-10 md:group-hover:block">
+                Quick Show
+              </Link>
               </div>
-            </div>
-            <div className="p-3">
-              <Image
+              <div className="mt-2 flex flex-col">
+                <span className="text-sm">color slider</span>
+                <span className="text-sm">New Markdown</span>
+                <span className="text-sm">UGG®</span>
+                <span className="text-sm">$112.00 – $160.00Current</span>
+                (Up to 30% off select items)
+                <span className="text-sm">Up to 30% off select items.</span>
+                <span className="line-through">$160.00</span>
+
+                <span className="text-sm">star rating(1934)</span>
+              </div>
+            </div><div className="p-3 relative">
+              <div className="group">
+                <Image
                 src={`/samples/last-min-gifts/3.jpg`}
                 alt="something is happening"
                 width={0}
                 height={0}
                 sizes="100vh"
-                className="w-full h-auto object-contain"
+                className="w-full h-full object-contain"
               />
-              <div className="mt-2 flex flex-col">
-                <p className="text-sm">Amanuel</p>
-                <p className="text-sm">555 $</p>
-                <div className="flex space-x-3">
-                  <span>star rating</span><span>(56)</span>
-                </div>
+              <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-52 left-0 right-0 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black ml-10 mr-10 md:group-hover:block">
+                Quick Show
+              </Link>
               </div>
-            </div>
-            <div className="p-3">
-              <Image
+              <div className="mt-2 flex flex-col">
+                <span className="text-sm">color slider</span>
+                <span className="text-sm">New Markdown</span>
+                <span className="text-sm">UGG®</span>
+                <span className="text-sm">$112.00 – $160.00Current</span>
+                (Up to 30% off select items)
+                <span className="text-sm">Up to 30% off select items.</span>
+                <span className="line-through">$160.00</span>
+
+                <span className="text-sm">star rating(1934)</span>
+              </div>
+            </div><div className="p-3 relative">
+              <div className="group">
+                <Image
                 src={`/samples/last-min-gifts/4.jpg`}
                 alt="something is happening"
                 width={0}
                 height={0}
                 sizes="100vh"
-                className="w-full h-auto object-contain"
+                className="w-full h-full object-contain"
               />
-              <div className="mt-2 flex flex-col">
-                <p className="text-sm">Amanuel</p>
-                <p className="text-sm">555 $</p>
-                <div className="flex space-x-3">
-                  <span>star rating</span><span>(56)</span>
-                </div>
+              <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-52 left-0 right-0 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black ml-10 mr-10 md:group-hover:block">
+                Quick Show
+              </Link>
               </div>
-            </div>
-            <div className="p-3">
-              <Image
+              <div className="mt-2 flex flex-col">
+                <span className="text-sm">color slider</span>
+                <span className="text-sm">New Markdown</span>
+                <span className="text-sm">UGG®</span>
+                <span className="text-sm">$112.00 – $160.00Current</span>
+                (Up to 30% off select items)
+                <span className="text-sm">Up to 30% off select items.</span>
+                <span className="line-through">$160.00</span>
+
+                <span className="text-sm">star rating(1934)</span>
+              </div>
+            </div><div className="p-3 relative">
+              <div className="group">
+                <Image
                 src={`/samples/last-min-gifts/5.jpg`}
                 alt="something is happening"
                 width={0}
                 height={0}
                 sizes="100vh"
-                className="w-full h-auto object-contain"
+                className="w-full h-full object-contain"
               />
-              <div className="mt-2 flex flex-col">
-                <p className="text-sm">Amanuel</p>
-                <p className="text-sm">555 $</p>
-                <div className="flex space-x-3">
-                  <span>star rating</span><span>(56)</span>
-                </div>
+              <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-52 left-0 right-0 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black ml-10 mr-10 md:group-hover:block">
+                Quick Show
+              </Link>
               </div>
-            </div>
-            <div className="p-3">
-              <Image
+              <div className="mt-2 flex flex-col">
+                <span className="text-sm">color slider</span>
+                <span className="text-sm">New Markdown</span>
+                <span className="text-sm">UGG®</span>
+                <span className="text-sm">$112.00 – $160.00Current</span>
+                (Up to 30% off select items)
+                <span className="text-sm">Up to 30% off select items.</span>
+                <span className="line-through">$160.00</span>
+
+                <span className="text-sm">star rating(1934)</span>
+              </div>
+            </div><div className="p-3 relative">
+              <div className="group">
+                <Image
                 src={`/samples/last-min-gifts/6.jpg`}
                 alt="something is happening"
                 width={0}
                 height={0}
                 sizes="100vh"
-                className="w-full h-auto object-contain"
+                className="w-full h-full object-contain"
               />
-              <div className="mt-2 flex flex-col">
-                <p className="text-sm">Amanuel</p>
-                <p className="text-sm">555 $</p>
-                <div className="flex space-x-3">
-                  <span>star rating</span><span>(56)</span>
-                </div>
+              <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-52 left-0 right-0 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black ml-10 mr-10 md:group-hover:block">
+                Quick Show
+              </Link>
               </div>
-            </div>
-            <div className="p-3">
-              <Image
+              <div className="mt-2 flex flex-col">
+                <span className="text-sm">color slider</span>
+                <span className="text-sm">New Markdown</span>
+                <span className="text-sm">UGG®</span>
+                <span className="text-sm">$112.00 – $160.00Current</span>
+                (Up to 30% off select items)
+                <span className="text-sm">Up to 30% off select items.</span>
+                <span className="line-through">$160.00</span>
+
+                <span className="text-sm">star rating(1934)</span>
+              </div>
+            </div><div className="p-3 relative">
+              <div className="group">
+                <Image
                 src={`/samples/last-min-gifts/7.jpg`}
                 alt="something is happening"
                 width={0}
                 height={0}
                 sizes="100vh"
-                className="w-full h-auto object-contain"
+                className="w-full h-full object-contain"
               />
-              <div className="mt-2 flex flex-col">
-                <p className="text-sm">Amanuel</p>
-                <p className="text-sm">555 $</p>
-                <div className="flex space-x-3">
-                  <span>star rating</span><span>(56)</span>
-                </div>
+              <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-52 left-0 right-0 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black ml-10 mr-10 md:group-hover:block">
+                Quick Show
+              </Link>
               </div>
-            </div>
-            <div className="p-3">
-              <Image
+              <div className="mt-2 flex flex-col">
+                <span className="text-sm">color slider</span>
+                <span className="text-sm">New Markdown</span>
+                <span className="text-sm">UGG®</span>
+                <span className="text-sm">$112.00 – $160.00Current</span>
+                (Up to 30% off select items)
+                <span className="text-sm">Up to 30% off select items.</span>
+                <span className="line-through">$160.00</span>
+
+                <span className="text-sm">star rating(1934)</span>
+              </div>
+            </div><div className="p-3 relative">
+              <div className="group">
+                <Image
                 src={`/samples/last-min-gifts/8.jpg`}
                 alt="something is happening"
                 width={0}
                 height={0}
                 sizes="100vh"
-                className="w-full h-auto object-contain"
+                className="w-full h-full object-contain"
               />
-              <div className="mt-2 flex flex-col">
-                <p className="text-sm">Amanuel</p>
-                <p className="text-sm">555 $</p>
-                <div className="flex space-x-3">
-                  <span>star rating</span><span>(56)</span>
-                </div>
+              <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-52 left-0 right-0 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black ml-10 mr-10 md:group-hover:block">
+                Quick Show
+              </Link>
               </div>
-            </div>
-            <div className="p-3">
-              <Image
+              <div className="mt-2 flex flex-col">
+                <span className="text-sm">color slider</span>
+                <span className="text-sm">New Markdown</span>
+                <span className="text-sm">UGG®</span>
+                <span className="text-sm">$112.00 – $160.00Current</span>
+                (Up to 30% off select items)
+                <span className="text-sm">Up to 30% off select items.</span>
+                <span className="line-through">$160.00</span>
+
+                <span className="text-sm">star rating(1934)</span>
+              </div>
+            </div><div className="p-3 relative">
+              <div className="group">
+                <Image
                 src={`/samples/last-min-gifts/9.jpg`}
                 alt="something is happening"
                 width={0}
                 height={0}
                 sizes="100vh"
-                className="w-full h-auto object-contain"
+                className="w-full h-full object-contain"
               />
-              <div className="mt-2 flex flex-col">
-                <p className="text-sm">Amanuel</p>
-                <p className="text-sm">555 $</p>
-                <div className="flex space-x-3">
-                  <span>star rating</span><span>(56)</span>
-                </div>
+              <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-52 left-0 right-0 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black ml-10 mr-10 md:group-hover:block">
+                Quick Show
+              </Link>
               </div>
-            </div>
-            <div className="p-3">
-              <Image
+              <div className="mt-2 flex flex-col">
+                <span className="text-sm">color slider</span>
+                <span className="text-sm">New Markdown</span>
+                <span className="text-sm">UGG®</span>
+                <span className="text-sm">$112.00 – $160.00Current</span>
+                (Up to 30% off select items)
+                <span className="text-sm">Up to 30% off select items.</span>
+                <span className="line-through">$160.00</span>
+
+                <span className="text-sm">star rating(1934)</span>
+              </div>
+            </div><div className="p-3 relative">
+              <div className="group">
+                <Image
                 src={`/samples/last-min-gifts/10.jpg`}
                 alt="something is happening"
                 width={0}
                 height={0}
                 sizes="100vh"
-                className="w-full h-auto object-contain"
+                className="w-full h-full object-contain"
               />
-              <div className="mt-2 flex flex-col">
-                <p className="text-sm">Amanuel</p>
-                <p className="text-sm">555 $</p>
-                <div className="flex space-x-3">
-                  <span>star rating</span><span>(56)</span>
-                </div>
+              <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-52 left-0 right-0 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black ml-10 mr-10 md:group-hover:block">
+                Quick Show
+              </Link>
               </div>
-            </div>
-            <div className="p-3">
-              <Image
+              <div className="mt-2 flex flex-col">
+                <span className="text-sm">color slider</span>
+                <span className="text-sm">New Markdown</span>
+                <span className="text-sm">UGG®</span>
+                <span className="text-sm">$112.00 – $160.00Current</span>
+                (Up to 30% off select items)
+                <span className="text-sm">Up to 30% off select items.</span>
+                <span className="line-through">$160.00</span>
+
+                <span className="text-sm">star rating(1934)</span>
+              </div>
+            </div><div className="p-3 relative">
+              <div className="group">
+                <Image
                 src={`/samples/last-min-gifts/11.jpg`}
                 alt="something is happening"
                 width={0}
                 height={0}
                 sizes="100vh"
-                className="w-full h-auto object-contain"
+                className="w-full h-full object-contain"
               />
-              <div className="mt-2 flex flex-col">
-                <p className="text-sm">Amanuel</p>
-                <p className="text-sm">555 $</p>
-                <div className="flex space-x-3">
-                  <span>star rating</span><span>(56)</span>
-                </div>
+              <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-52 left-0 right-0 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black ml-10 mr-10 md:group-hover:block">
+                Quick Show
+              </Link>
               </div>
-            </div>
-            <div className="p-3">
-              <Image
+              <div className="mt-2 flex flex-col">
+                <span className="text-sm">color slider</span>
+                <span className="text-sm">New Markdown</span>
+                <span className="text-sm">UGG®</span>
+                <span className="text-sm">$112.00 – $160.00Current</span>
+                (Up to 30% off select items)
+                <span className="text-sm">Up to 30% off select items.</span>
+                <span className="line-through">$160.00</span>
+
+                <span className="text-sm">star rating(1934)</span>
+              </div>
+            </div><div className="p-3 relative">
+              <div className="group">
+                <Image
                 src={`/samples/last-min-gifts/12.jpg`}
                 alt="something is happening"
                 width={0}
                 height={0}
                 sizes="100vh"
-                className="w-full h-auto object-contain"
+                className="w-full h-full object-contain"
               />
+              <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-52 left-0 right-0 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black ml-10 mr-10 md:group-hover:block">
+                Quick Show
+              </Link>
+              </div>
               <div className="mt-2 flex flex-col">
-                <p className="text-sm">Amanuel</p>
-                <p className="text-sm">555 $</p>
-                <div className="flex space-x-3">
-                  <span>star rating</span><span>(56)</span>
-                </div>
+                <span className="text-sm">color slider</span>
+                <span className="text-sm">New Markdown</span>
+                <span className="text-sm">UGG®</span>
+                <span className="text-sm">$112.00 – $160.00Current</span>
+                (Up to 30% off select items)
+                <span className="text-sm">Up to 30% off select items.</span>
+                <span className="line-through">$160.00</span>
+
+                <span className="text-sm">star rating(1934)</span>
               </div>
             </div>
+            
           </Slider>
         </div>
       </div>

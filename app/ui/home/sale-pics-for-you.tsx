@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { useRef } from "react";
 import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 export default function SalePics() {
   const sliderRef = useRef<Slider>(null);
@@ -103,15 +104,20 @@ export default function SalePics() {
           <ArrowLeftIcon onClick={handelPrev} className="md:w-10 md:h-10 w-8 h-8 flex items-center justify-center absolute top-1/2 -left-5 z-20  cursor-pointer p-2 stroke-black hover:bg-black/75 transition duration-300 ease-out hover:stroke-white dark:bg-slate-800 dark:stroke-white " />
           <ArrowRightIcon onClick={handelNext} className="md:w-10 md:h-10 w-8 h-8 flex items-center justify-center absolute top-1/2 -right-5 z-20  cursor-pointer p-2 stroke-black hover:text-white hover:bg-black/75 transition duration-300 ease-out hover:stroke-white dark:bg-slate-800 dark:stroke-white " />
           <Slider {...settings2} ref={sliderRef}>
-            <div className="p-3">
-              <Image
+            <div className="p-3 relative">
+              <div className="group">
+                <Image
                 src={`/samples/sale-pics-for-you/1.jpg`}
                 alt="something is happening"
                 width={0}
                 height={0}
                 sizes="100vh"
-                className="w-full h-auto object-contain"
+                className="w-full h-full object-contain"
               />
+              <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-52 left-0 right-0 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black ml-10 mr-10 md:group-hover:block">
+                Quick Show
+              </Link>
+              </div>
               <div className="mt-2 flex flex-col">
                 <span className="text-sm">color slider</span>
                 <span className="text-sm">New Markdown</span>
@@ -124,15 +130,46 @@ export default function SalePics() {
                 <span className="text-sm">star rating(1934)</span>
               </div>
             </div>
-            <div className="p-3">
-              <Image
+            <div className="p-3 relative">
+              <div className="group">
+                <Image
+                src={`/samples/sale-pics-for-you/1.jpg`}
+                alt="something is happening"
+                width={0}
+                height={0}
+                sizes="100vh"
+                className="w-full h-full object-contain"
+              />
+              <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-52 left-0 right-0 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black ml-10 mr-10 md:group-hover:block">
+                Quick Show
+              </Link>
+              </div>
+              <div className="mt-2 flex flex-col">
+                <span className="text-sm">color slider</span>
+                <span className="text-sm">New Markdown</span>
+                <span className="text-sm">UGG®</span>
+                <span className="text-sm">$112.00 – $160.00Current</span>
+                (Up to 30% off select items)
+                <span className="text-sm">Up to 30% off select items.</span>
+                <span className="line-through">$160.00</span>
+
+                <span className="text-sm">star rating(1934)</span>
+              </div>
+            </div>
+            <div className="p-3 relative">
+              <div className="group">
+                <Image
                 src={`/samples/sale-pics-for-you/2.jpg`}
                 alt="something is happening"
                 width={0}
                 height={0}
                 sizes="100vh"
-                className="w-full h-auto object-contain"
+                className="w-full h-full object-contain"
               />
+              <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-52 left-0 right-0 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black ml-10 mr-10 md:group-hover:block">
+                Quick Show
+              </Link>
+              </div>
               <div className="mt-2 flex flex-col">
                 <span className="text-sm">color slider</span>
                 <span className="text-sm">New Markdown</span>
@@ -145,15 +182,20 @@ export default function SalePics() {
                 <span className="text-sm">star rating(1934)</span>
               </div>
             </div>
-            <div className="p-3">
-              <Image
+            <div className="p-3 relative">
+              <div className="group">
+                <Image
                 src={`/samples/sale-pics-for-you/3.jpg`}
                 alt="something is happening"
                 width={0}
                 height={0}
                 sizes="100vh"
-                className="w-full h-auto object-contain"
+                className="w-full h-full object-contain"
               />
+              <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-52 left-0 right-0 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black ml-10 mr-10 md:group-hover:block">
+                Quick Show
+              </Link>
+              </div>
               <div className="mt-2 flex flex-col">
                 <span className="text-sm">color slider</span>
                 <span className="text-sm">New Markdown</span>
@@ -166,15 +208,20 @@ export default function SalePics() {
                 <span className="text-sm">star rating(1934)</span>
               </div>
             </div>
-            <div className="p-3">
-              <Image
+            <div className="p-3 relative">
+              <div className="group">
+                <Image
                 src={`/samples/sale-pics-for-you/4.jpg`}
                 alt="something is happening"
                 width={0}
                 height={0}
                 sizes="100vh"
-                className="w-full h-auto object-contain"
+                className="w-full h-full object-contain"
               />
+              <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-52 left-0 right-0 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black ml-10 mr-10 md:group-hover:block">
+                Quick Show
+              </Link>
+              </div>
               <div className="mt-2 flex flex-col">
                 <span className="text-sm">color slider</span>
                 <span className="text-sm">New Markdown</span>
@@ -187,15 +234,20 @@ export default function SalePics() {
                 <span className="text-sm">star rating(1934)</span>
               </div>
             </div>
-            <div className="p-3">
-              <Image
+            <div className="p-3 relative">
+              <div className="group">
+                <Image
                 src={`/samples/sale-pics-for-you/5.jpg`}
                 alt="something is happening"
                 width={0}
                 height={0}
                 sizes="100vh"
-                className="w-full h-auto object-contain"
+                className="w-full h-full object-contain"
               />
+              <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-52 left-0 right-0 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black ml-10 mr-10 md:group-hover:block">
+                Quick Show
+              </Link>
+              </div>
               <div className="mt-2 flex flex-col">
                 <span className="text-sm">color slider</span>
                 <span className="text-sm">New Markdown</span>
@@ -208,15 +260,20 @@ export default function SalePics() {
                 <span className="text-sm">star rating(1934)</span>
               </div>
             </div>
-            <div className="p-3">
-              <Image
+            <div className="p-3 relative">
+              <div className="group">
+                <Image
                 src={`/samples/sale-pics-for-you/6.jpg`}
                 alt="something is happening"
                 width={0}
                 height={0}
                 sizes="100vh"
-                className="w-full h-auto object-contain"
+                className="w-full h-full object-contain"
               />
+              <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-52 left-0 right-0 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black ml-10 mr-10 md:group-hover:block">
+                Quick Show
+              </Link>
+              </div>
               <div className="mt-2 flex flex-col">
                 <span className="text-sm">color slider</span>
                 <span className="text-sm">New Markdown</span>
@@ -229,15 +286,20 @@ export default function SalePics() {
                 <span className="text-sm">star rating(1934)</span>
               </div>
             </div>
-            <div className="p-3">
-              <Image
+            <div className="p-3 relative">
+              <div className="group">
+                <Image
                 src={`/samples/sale-pics-for-you/7.jpg`}
                 alt="something is happening"
                 width={0}
                 height={0}
                 sizes="100vh"
-                className="w-full h-auto object-contain"
+                className="w-full h-full object-contain"
               />
+              <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-52 left-0 right-0 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black ml-10 mr-10 md:group-hover:block">
+                Quick Show
+              </Link>
+              </div>
               <div className="mt-2 flex flex-col">
                 <span className="text-sm">color slider</span>
                 <span className="text-sm">New Markdown</span>
@@ -250,15 +312,20 @@ export default function SalePics() {
                 <span className="text-sm">star rating(1934)</span>
               </div>
             </div>
-            <div className="p-3">
-              <Image
+            <div className="p-3 relative">
+              <div className="group">
+                <Image
                 src={`/samples/sale-pics-for-you/8.jpg`}
                 alt="something is happening"
                 width={0}
                 height={0}
                 sizes="100vh"
-                className="w-full h-auto object-contain"
+                className="w-full h-full object-contain"
               />
+              <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-52 left-0 right-0 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black ml-10 mr-10 md:group-hover:block">
+                Quick Show
+              </Link>
+              </div>
               <div className="mt-2 flex flex-col">
                 <span className="text-sm">color slider</span>
                 <span className="text-sm">New Markdown</span>
@@ -271,15 +338,20 @@ export default function SalePics() {
                 <span className="text-sm">star rating(1934)</span>
               </div>
             </div>
-            <div className="p-3">
-              <Image
+            <div className="p-3 relative">
+              <div className="group">
+                <Image
                 src={`/samples/sale-pics-for-you/9.jpg`}
                 alt="something is happening"
                 width={0}
                 height={0}
                 sizes="100vh"
-                className="w-full h-auto object-contain"
+                className="w-full h-full object-contain"
               />
+              <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-52 left-0 right-0 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black ml-10 mr-10 md:group-hover:block">
+                Quick Show
+              </Link>
+              </div>
               <div className="mt-2 flex flex-col">
                 <span className="text-sm">color slider</span>
                 <span className="text-sm">New Markdown</span>
@@ -292,15 +364,20 @@ export default function SalePics() {
                 <span className="text-sm">star rating(1934)</span>
               </div>
             </div>
-            <div className="p-3">
-              <Image
+            <div className="p-3 relative">
+              <div className="group">
+                <Image
                 src={`/samples/sale-pics-for-you/10.jpg`}
                 alt="something is happening"
                 width={0}
                 height={0}
                 sizes="100vh"
-                className="w-full h-auto object-contain"
+                className="w-full h-full object-contain"
               />
+              <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-52 left-0 right-0 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black ml-10 mr-10 md:group-hover:block">
+                Quick Show
+              </Link>
+              </div>
               <div className="mt-2 flex flex-col">
                 <span className="text-sm">color slider</span>
                 <span className="text-sm">New Markdown</span>
