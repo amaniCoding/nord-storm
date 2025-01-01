@@ -49,7 +49,7 @@ export default function RecentlyViewed() {
           <Slider {...settings}>
             <div className="p-3">
               <Image
-                src={`/similiar-deal/1.jpg`}
+                src={`/samples/recently-viewed/1.jpg`}
                 alt="something is happening"
                 width={0}
                 height={0}
@@ -59,7 +59,7 @@ export default function RecentlyViewed() {
             </div>
             <div className="p-3">
               <Image
-                src={`/similiar-deal/2.jpg`}
+                src={`/samples/recently-viewed/2.jpg`}
                 alt="something is happening"
                 width={0}
                 height={0}
@@ -69,7 +69,7 @@ export default function RecentlyViewed() {
             </div>
             <div className="p-3">
               <Image
-                src={`/similiar-deal/3.jpg`}
+                src={`/samples/recently-viewed/3.jpg`}
                 alt="something is happening"
                 width={0}
                 height={0}
@@ -79,7 +79,7 @@ export default function RecentlyViewed() {
             </div>
             <div className="p-3">
               <Image
-                src={`/similiar-deal/4.jpg`}
+                src={`/samples/recently-viewed/4.jpg`}
                 alt="something is happening"
                 width={0}
                 height={0}
