@@ -3,6 +3,7 @@ import { EnvelopeIcon, GifIcon, HeartIcon, ShoppingBagIcon } from "@heroicons/re
 import { GiftIcon, HomeIcon, PrinterIcon, SignalIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
+import { PiSignature } from "react-icons/pi";
 import StarRatings from "react-star-ratings";
 
 export default function Product() {
@@ -174,17 +175,17 @@ export default function Product() {
                   <p>Sold by Nordstrom</p>
                 </div>
               </div>
-              <button className="w-full py-4 bg-cyan-800 rounded-md text-white flex items-center justify-center space-x-3">
+              <button className="w-full py-3 bg-cyan-800 rounded-md text-white flex items-center justify-center space-x-3">
                 <ShoppingBagIcon className="w-6 h-7 stroke-white" />
                 <span>Add to Bag</span>
               </button>
-              <button className="w-full py-4 bg-cyan-800 rounded-md text-white flex items-center justify-center space-x-3">
+              <button className="w-full py-3 bg-cyan-800 rounded-md text-white flex items-center justify-center space-x-3">
                 <HeartIcon className="w-6 h-6 stroke-white" />
                 <span>Add To Wish List</span>
               </button>
               <p className="p-1">Details & care</p>
               <p className="p-1">A bold cutout is softened by an elegant cowl neck on a satin minidress cut on the bias and fitted with the corsetry boning for a cinched waist.</p>
-              <ul className="list-disc pl-16 leading-relaxed">
+              <ul className="list-disc pl-8 leading-relaxed">
                 <li>Exclusive retailer</li>
                 <li>32" length (size Small)</li>
                 <li>Hidden back-zip closure</li>
@@ -198,7 +199,7 @@ export default function Product() {
               </ul>
               <div className="p-1">
                 <p className="font-bold text-xl">Size Info</p>
-                <ul className="list-disc pl-16 leading-relaxed">
+                <ul className="list-disc pl-8 leading-relaxed">
                   <li>Runs small; order one size up</li>
                   <li>XS=2-4, S=4-6, M=6-8, L=8-10, XL (L+)=10-12.</li>
                   <li>Get the fit you want. Book an appointment with our onsite experts or stop by your nearest store.</li>
@@ -234,7 +235,7 @@ export default function Product() {
                       <span>Fabric gift bag ($5)</span>
                     </div>
                     <div className="flex items-center space-x-3">
-                      <SignalIcon className="w-6 h-6 stroke-black" />
+                      <PiSignature className="w-6 h-6 stroke-black" />
                       <span>Signature gift wrap ($5)</span>
                     </div>
                   </div>
@@ -324,11 +325,11 @@ export default function Product() {
                       <p>Sold by Nordstrom</p>
                     </div>
                   </div>
-                  <button className="w-full py-4 bg-cyan-800 rounded-md text-white flex items-center justify-center space-x-3">
+                  <button className="w-full py-2 bg-cyan-800 rounded-md text-white flex items-center justify-center space-x-3">
                     <ShoppingBagIcon className="w-6 h-7 stroke-white" />
                     <span>Add to Bag</span>
                   </button>
-                  <button className="w-full py-4 bg-cyan-800 rounded-md text-white flex items-center justify-center space-x-3">
+                  <button className="w-full py-2 bg-cyan-800 rounded-md text-white flex items-center justify-center space-x-3">
                     <HeartIcon className="w-6 h-6 stroke-white" />
                     <span>Add To Wish List</span>
                   </button>
@@ -416,12 +417,12 @@ export default function Product() {
               </div>
               <div className="col-span-5">
                 <div>
-                  <p className="my-2">You may also like</p>
+                <p className="my-2 text-center font-bold">You may also like</p>
                   <div className="p-3 relative">
                     <div className="group">
                       <Link href={`/product/name/143`}>
                         <Image
-                          src={`/samples/currently-loving/12.jpg`}
+                          src={`/samples/recently-viewed/1.jpg`}
                           alt="something is happening"
                           width={0}
                           height={0}
@@ -457,7 +458,7 @@ export default function Product() {
                     <div className="group">
                       <Link href={`/product/name/143`}>
                         <Image
-                          src={`/samples/currently-loving/12.jpg`}
+                          src={`/samples/recently-viewed/2.jpg`}
                           alt="something is happening"
                           width={0}
                           height={0}
@@ -493,7 +494,7 @@ export default function Product() {
                     <div className="group">
                       <Link href={`/product/name/143`}>
                         <Image
-                          src={`/samples/currently-loving/12.jpg`}
+                          src={`/samples/recently-viewed/3.jpg`}
                           alt="something is happening"
                           width={0}
                           height={0}
@@ -529,7 +530,7 @@ export default function Product() {
                     <div className="group">
                       <Link href={`/product/name/143`}>
                         <Image
-                          src={`/samples/currently-loving/12.jpg`}
+                          src={`/samples/recently-viewed/4.jpg`}
                           alt="something is happening"
                           width={0}
                           height={0}
@@ -568,12 +569,12 @@ export default function Product() {
           {/** You might also like for large screen */}
           <div className="md:col-span-2 md:block hidden col-span-12 sticky top-0">
             <div className="sticky top-2">
-              <p className="my-2">You may also like</p>
+              <p className="my-2 text-center font-bold">You may also like</p>
               <div className="p-3 relative">
                 <div className="group">
                   <Link href={`/product/name/143`}>
                     <Image
-                      src={`/samples/currently-loving/12.jpg`}
+                      src={`/samples/recently-viewed/1.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -609,7 +610,7 @@ export default function Product() {
                 <div className="group">
                   <Link href={`/product/name/143`}>
                     <Image
-                      src={`/samples/currently-loving/12.jpg`}
+                      src={`/samples/recently-viewed/2.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -645,7 +646,7 @@ export default function Product() {
                 <div className="group">
                   <Link href={`/product/name/143`}>
                     <Image
-                      src={`/samples/currently-loving/12.jpg`}
+                      src={`/samples/recently-viewed/3.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -681,7 +682,7 @@ export default function Product() {
                 <div className="group">
                   <Link href={`/product/name/143`}>
                     <Image
-                      src={`/samples/currently-loving/12.jpg`}
+                      src={`/samples/recently-viewed/4.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
