@@ -71,7 +71,7 @@ export default function SliderSeederLarge(props: {photoName: string, numberOfSli
           return (
             <div className="p-3 relative" key={i}>
               <div className="group">
-                <Link href={`product/name/143`}>
+                <Link href={`/product/name/143`}>
                   <Image
                     src={`/samples/${props.photoName}/${i+1}.jpg`}
                     alt="something is happening"
