@@ -2,13 +2,15 @@
 import { EnvelopeIcon, GifIcon, HeartIcon, ShoppingBagIcon } from "@heroicons/react/16/solid";
 import { GiftIcon, HomeIcon, PrinterIcon, SignalIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
+import Link from "next/link";
+import StarRatings from "react-star-ratings";
 
 export default function Product() {
   return (
     <section>
-      <div className="max-w-screen-xl mx-auto p-4">
+      <div className="max-w-screen-xl mx-auto py-1 px-3">
         <div className="grid grid-cols-12 gap-4 pb-4">
-          <div className="md:col-span-7 col-span-12">
+          <div className="md:col-span-6 col-span-12">
             <div className="grid md:grid-cols-2 grid-cols-2">
               <div className="p-1">
                 <Image
@@ -261,8 +263,8 @@ export default function Product() {
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-12 md:hidden gap-3">
-              <div className="col-span-9">
+            <div className="grid grid-cols-12 md:hidden gap-2">
+              <div className="col-span-7">
                 <div className="p-1 flex flex-col space-y-3">
                   <div className="flex items-center">
                     <p>Star rating</p>
@@ -330,9 +332,9 @@ export default function Product() {
                     <HeartIcon className="w-6 h-6 stroke-white" />
                     <span>Add To Wish List</span>
                   </button>
-                  <p className="p-1">Details & care</p>
-                  <p className="p-1">A bold cutout is softened by an elegant cowl neck on a satin minidress cut on the bias and fitted with the corsetry boning for a cinched waist.</p>
-                  <ul className="list-disc pl-16 leading-relaxed">
+                  <p className="md:p-1">Details & care</p>
+                  <p className="md:p-1">A bold cutout is softened by an elegant cowl neck on a satin minidress cut on the bias and fitted with the corsetry boning for a cinched waist.</p>
+                  <ul className="list-disc md:pl-16 pl-2 leading-relaxed">
                     <li>Exclusive retailer</li>
                     <li>32" length (size Small)</li>
                     <li>Hidden back-zip closure</li>
@@ -346,7 +348,7 @@ export default function Product() {
                   </ul>
                   <div className="p-1">
                     <p className="font-bold text-xl">Size Info</p>
-                    <ul className="list-disc pl-16 leading-relaxed">
+                    <ul className="list-disc md:pl-16 pl-2 leading-relaxed">
                       <li>Runs small; order one size up</li>
                       <li>XS=2-4, S=4-6, M=6-8, L=8-10, XL (L+)=10-12.</li>
                       <li>Get the fit you want. Book an appointment with our onsite experts or stop by your nearest store.</li>
@@ -407,120 +409,312 @@ export default function Product() {
                       </div>
                       <p>Need help finding the perfect gift? We've got you covered.
                       </p>
-                      <button className="block p-3 border-2 border-black rounded-md hover:scale-105 transition duration-200 ease-in-out w-60">Shop Gifts</button>
+                      <button className="block md:p-3 p-1 border-2 border-black rounded-md hover:scale-105 transition duration-200 ease-in-out md:w-60">Shop Gifts</button>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="col-span-3">
+              <div className="col-span-5">
                 <div>
                   <p className="my-2">You may also like</p>
-                  <div className="flex flex-col space-y-1 mb-2">
-                    <Image src={"/samples/sale-pics-for-you/4.jpg"} alt="something is happening" width={0} height={0} sizes="100vh"
-                      className="w-full h-auto object-contain" />
-                    <p>You might also like</p>
-                    <p className="capitalize">house of cb</p>
-                    <p>$76.50Current Price $76.50
-                      (70% off)</p>
-                    <p className="line-through">$255.00Previous Price $255.00</p>
+                  <div className="p-3 relative">
+                    <div className="group">
+                      <Link href={`/product/name/143`}>
+                        <Image
+                          src={`/samples/currently-loving/12.jpg`}
+                          alt="something is happening"
+                          width={0}
+                          height={0}
+                          sizes="100vh"
+                          className="w-full h-full object-contain"
+                        />
+                      </Link>
+                      <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-44  left-5 right-5 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black w-40 md:group-hover:block">
+                        Quick Show
+                      </Link>
+                    </div>
+                    <div className="mt-2 flex flex-col">
+                      <span className="text-sm">color slider</span>
+                      <span className="text-sm">New Markdown</span>
+                      <span className="text-sm">UGG®</span>
+                      <span className="text-sm">$112.00</span>
+                      <span className="line-through">$160.00</span>
+
+                      <div className="flex space-x-2">
+                        <StarRatings
+                          rating={5}
+                          starDimension="18px"
+                          starRatedColor="#FF9529"
+                          starSpacing="0"
+                          numberOfStars={5}
+                          name='rating'
+                        />
+                        <span>(325)</span>
+                      </div>
+                    </div>
                   </div>
-                  <div className="flex flex-col space-y-1 mb-2">
-                    <Image src={"/samples/sale-pics-for-you/2.jpg"} alt="something is happening" width={0} height={0} sizes="100vh"
-                      className="w-full h-auto object-contain" />
-                    <p>You might also like</p>
-                    <p className="capitalize">house of cb</p>
-                    <p>$76.50Current Price $76.50
-                      (70% off)</p>
-                    <p className="line-through">$255.00Previous Price $255.00</p>
+                  <div className="p-3 relative">
+                    <div className="group">
+                      <Link href={`/product/name/143`}>
+                        <Image
+                          src={`/samples/currently-loving/12.jpg`}
+                          alt="something is happening"
+                          width={0}
+                          height={0}
+                          sizes="100vh"
+                          className="w-full h-full object-contain"
+                        />
+                      </Link>
+                      <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-44  left-5 right-5 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black w-40 md:group-hover:block">
+                        Quick Show
+                      </Link>
+                    </div>
+                    <div className="mt-2 flex flex-col">
+                      <span className="text-sm">color slider</span>
+                      <span className="text-sm">New Markdown</span>
+                      <span className="text-sm">UGG®</span>
+                      <span className="text-sm">$112.00</span>
+                      <span className="line-through">$160.00</span>
+
+                      <div className="flex space-x-2">
+                        <StarRatings
+                          rating={5}
+                          starDimension="18px"
+                          starRatedColor="#FF9529"
+                          starSpacing="0"
+                          numberOfStars={5}
+                          name='rating'
+                        />
+                        <span>(325)</span>
+                      </div>
+                    </div>
                   </div>
-                  <div className="flex flex-col space-y-1 mb-2">
-                    <Image src={"/samples/sale-pics-for-you/4.jpg"} alt="something is happening" width={0} height={0} sizes="100vh"
-                      className="w-full h-auto object-contain" />
-                    <p>You might also like</p>
-                    <p className="capitalize">house of cb</p>
-                    <p>$76.50Current Price $76.50
-                      (70% off)</p>
-                    <p className="line-through">$255.00Previous Price $255.00</p>
+                  <div className="p-3 relative">
+                    <div className="group">
+                      <Link href={`/product/name/143`}>
+                        <Image
+                          src={`/samples/currently-loving/12.jpg`}
+                          alt="something is happening"
+                          width={0}
+                          height={0}
+                          sizes="100vh"
+                          className="w-full h-full object-contain"
+                        />
+                      </Link>
+                      <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-44  left-5 right-5 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black w-40 md:group-hover:block">
+                        Quick Show
+                      </Link>
+                    </div>
+                    <div className="mt-2 flex flex-col">
+                      <span className="text-sm">color slider</span>
+                      <span className="text-sm">New Markdown</span>
+                      <span className="text-sm">UGG®</span>
+                      <span className="text-sm">$112.00</span>
+                      <span className="line-through">$160.00</span>
+
+                      <div className="flex space-x-2">
+                        <StarRatings
+                          rating={5}
+                          starDimension="18px"
+                          starRatedColor="#FF9529"
+                          starSpacing="0"
+                          numberOfStars={5}
+                          name='rating'
+                        />
+                        <span>(325)</span>
+                      </div>
+                    </div>
                   </div>
-                  <div className="flex flex-col space-y-1 mb-2">
-                    <Image src={"/samples/sale-pics-for-you/5.jpg"} alt="something is happening" width={0} height={0} sizes="100vh"
-                      className="w-full h-auto object-contain" />
-                    <p>You might also like</p>
-                    <p className="capitalize">house of cb</p>
-                    <p>$76.50Current Price $76.50
-                      (70% off)</p>
-                    <p className="line-through">$255.00Previous Price $255.00</p>
+                  <div className="p-3 relative">
+                    <div className="group">
+                      <Link href={`/product/name/143`}>
+                        <Image
+                          src={`/samples/currently-loving/12.jpg`}
+                          alt="something is happening"
+                          width={0}
+                          height={0}
+                          sizes="100vh"
+                          className="w-full h-full object-contain"
+                        />
+                      </Link>
+                      <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-44  left-5 right-5 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black w-40 md:group-hover:block">
+                        Quick Show
+                      </Link>
+                    </div>
+                    <div className="mt-2 flex flex-col">
+                      <span className="text-sm">color slider</span>
+                      <span className="text-sm">New Markdown</span>
+                      <span className="text-sm">UGG®</span>
+                      <span className="text-sm">$112.00</span>
+                      <span className="line-through">$160.00</span>
+
+                      <div className="flex space-x-2">
+                        <StarRatings
+                          rating={5}
+                          starDimension="18px"
+                          starRatedColor="#FF9529"
+                          starSpacing="0"
+                          numberOfStars={5}
+                          name='rating'
+                        />
+                        <span>(325)</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="md:col-span-1 md:block hidden col-span-12 sticky top-0">
+          {/** You might also like for large screen */}
+          <div className="md:col-span-2 md:block hidden col-span-12 sticky top-0">
             <div className="sticky top-2">
               <p className="my-2">You may also like</p>
-              <div className="flex flex-col space-y-1 mb-2">
-                <Image
-                  src={"/samples/sale-pics-for-you/4.jpg"}
-                  alt="something is happening"
-                  width={0}
-                  height={0}
-                  sizes="100vh"
-                  className="w-full h-auto object-contain"
-                />
-                <p>You might also like</p>
-                <p className="capitalize">house of cb</p>
-                <p>$76.50Current Price $76.50
-                  (70% off)</p>
-                <p className="line-through">$255.00Previous Price $255.00</p>
+              <div className="p-3 relative">
+                <div className="group">
+                  <Link href={`/product/name/143`}>
+                    <Image
+                      src={`/samples/currently-loving/12.jpg`}
+                      alt="something is happening"
+                      width={0}
+                      height={0}
+                      sizes="100vh"
+                      className="w-full h-full object-contain"
+                    />
+                  </Link>
+                  <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-44  left-5 right-5 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black w-40 md:group-hover:block">
+                    Quick Show
+                  </Link>
+                </div>
+                <div className="mt-2 flex flex-col">
+                  <span className="text-sm">color slider</span>
+                  <span className="text-sm">New Markdown</span>
+                  <span className="text-sm">UGG®</span>
+                  <span className="text-sm">$112.00</span>
+                  <span className="line-through">$160.00</span>
+
+                  <div className="flex space-x-2">
+                    <StarRatings
+                      rating={5}
+                      starDimension="18px"
+                      starRatedColor="#FF9529"
+                      starSpacing="0"
+                      numberOfStars={5}
+                      name='rating'
+                    />
+                    <span>(325)</span>
+                  </div>
+                </div>
               </div>
-              <div className="flex flex-col space-y-1 mb-2">
-                <Image
-                  src={"/samples/sale-pics-for-you/2.jpg"}
-                  alt="something is happening"
-                  width={0}
-                  height={0}
-                  sizes="100vh"
-                  className="w-full h-auto object-contain"
-                />
-                <p>You might also like</p>
-                <p className="capitalize">house of cb</p>
-                <p>$76.50Current Price $76.50
-                  (70% off)</p>
-                <p className="line-through">$255.00Previous Price $255.00</p>
+              <div className="p-3 relative">
+                <div className="group">
+                  <Link href={`/product/name/143`}>
+                    <Image
+                      src={`/samples/currently-loving/12.jpg`}
+                      alt="something is happening"
+                      width={0}
+                      height={0}
+                      sizes="100vh"
+                      className="w-full h-full object-contain"
+                    />
+                  </Link>
+                  <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-44  left-5 right-5 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black w-40 md:group-hover:block">
+                    Quick Show
+                  </Link>
+                </div>
+                <div className="mt-2 flex flex-col">
+                  <span className="text-sm">color slider</span>
+                  <span className="text-sm">New Markdown</span>
+                  <span className="text-sm">UGG®</span>
+                  <span className="text-sm">$112.00</span>
+                  <span className="line-through">$160.00</span>
+
+                  <div className="flex space-x-2">
+                    <StarRatings
+                      rating={5}
+                      starDimension="18px"
+                      starRatedColor="#FF9529"
+                      starSpacing="0"
+                      numberOfStars={5}
+                      name='rating'
+                    />
+                    <span>(325)</span>
+                  </div>
+                </div>
               </div>
-              <div className="flex flex-col space-y-1 mb-2">
-                <Image
-                  src={"/samples/sale-pics-for-you/4.jpg"}
-                  alt="something is happening"
-                  width={0}
-                  height={0}
-                  sizes="100vh"
-                  className="w-full h-auto object-contain"
-                />
-                <p>You might also like</p>
-                <p className="capitalize">house of cb</p>
-                <p>$76.50Current Price $76.50
-                  (70% off)</p>
-                <p className="line-through">$255.00Previous Price $255.00</p>
+              <div className="p-3 relative">
+                <div className="group">
+                  <Link href={`/product/name/143`}>
+                    <Image
+                      src={`/samples/currently-loving/12.jpg`}
+                      alt="something is happening"
+                      width={0}
+                      height={0}
+                      sizes="100vh"
+                      className="w-full h-full object-contain"
+                    />
+                  </Link>
+                  <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-44  left-5 right-5 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black w-40 md:group-hover:block">
+                    Quick Show
+                  </Link>
+                </div>
+                <div className="mt-2 flex flex-col">
+                  <span className="text-sm">color slider</span>
+                  <span className="text-sm">New Markdown</span>
+                  <span className="text-sm">UGG®</span>
+                  <span className="text-sm">$112.00</span>
+                  <span className="line-through">$160.00</span>
+
+                  <div className="flex space-x-2">
+                    <StarRatings
+                      rating={5}
+                      starDimension="18px"
+                      starRatedColor="#FF9529"
+                      starSpacing="0"
+                      numberOfStars={5}
+                      name='rating'
+                    />
+                    <span>(325)</span>
+                  </div>
+                </div>
               </div>
-              <div className="flex flex-col space-y-1 mb-2">
-                <Image
-                  src={"/samples/sale-pics-for-you/5.jpg"}
-                  alt="something is happening"
-                  width={0}
-                  height={0}
-                  sizes="100vh"
-                  className="w-full h-auto object-contain"
-                />
-                <p>You might also like</p>
-                <p className="capitalize">house of cb</p>
-                <p>$76.50Current Price $76.50
-                  (70% off)</p>
-                <p className="line-through">$255.00Previous Price $255.00</p>
+              <div className="p-3 relative">
+                <div className="group">
+                  <Link href={`/product/name/143`}>
+                    <Image
+                      src={`/samples/currently-loving/12.jpg`}
+                      alt="something is happening"
+                      width={0}
+                      height={0}
+                      sizes="100vh"
+                      className="w-full h-full object-contain"
+                    />
+                  </Link>
+                  <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-44  left-5 right-5 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black w-40 md:group-hover:block">
+                    Quick Show
+                  </Link>
+                </div>
+                <div className="mt-2 flex flex-col">
+                  <span className="text-sm">color slider</span>
+                  <span className="text-sm">New Markdown</span>
+                  <span className="text-sm">UGG®</span>
+                  <span className="text-sm">$112.00</span>
+                  <span className="line-through">$160.00</span>
+
+                  <div className="flex space-x-2">
+                    <StarRatings
+                      rating={5}
+                      starDimension="18px"
+                      starRatedColor="#FF9529"
+                      starSpacing="0"
+                      numberOfStars={5}
+                      name='rating'
+                    />
+                    <span>(325)</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div className="col-span-2"></div>
         </div>
       </div>
     </section>

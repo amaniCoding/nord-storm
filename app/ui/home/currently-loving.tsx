@@ -453,7 +453,8 @@ export default function Lovings() {
                   <span>(325)</span>
                 </div>
               </div>
-            </div><div className="p-3 relative">
+            </div>
+            <div className="p-3 relative">
               <div className="group">
                 <Link href={`/product/name/143`}>
                   <Image

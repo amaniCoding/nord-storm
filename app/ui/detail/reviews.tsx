@@ -5,30 +5,12 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Image from "next/image";
 import { MagnifyingGlassIcon } from "@heroicons/react/16/solid";
-import { ArrowLeftIcon, ArrowRightIcon, HandThumbUpIcon } from "@heroicons/react/24/outline";
-import { useRef } from "react";
+import { HandThumbUpIcon } from "@heroicons/react/24/outline";
+import RecentlyViewed from "../home/recently-viewed";
+import SliderMobile from "@/app/components/slider-seeder-mobile";
+import SliderLarge from "@/app/components/slider-seeder-large";
 
-import { DetailRecentlyViewed } from "./recently-viewed";
 export default function Reviews() {
-  //react/no-unescaped-entities
-  const sliderRef = useRef<Slider>(null);
-  const sliderRef2 = useRef<Slider>(null);
-
-  const handelNext2 = () => {
-    sliderRef2?.current?.slickNext();
-  }
-
-  const handelPrev2 = () => {
-    sliderRef2?.current?.slickPrev();
-  }
-  const handelNext = () => {
-    sliderRef?.current?.slickNext();
-  }
-
-  const handelPrev = () => {
-    sliderRef?.current?.slickPrev();
-  }
-
   const settings2 = {
     dots: false,
     infinite: true,
@@ -64,29 +46,22 @@ export default function Reviews() {
       }
     ]
   };
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
 
-  };
   return (
     <section className="py-6">
-      <div className="max-w-screen-xl mx-auto">
+      <div className="max-w-screen-xl mx-auto py-1 px-3">
         <div className="flex items-center md:space-x-44 md:pl-20 md:py-3 pl-3 py-4">
           <div className="flex flex-col space-y-3">
-            <p>Reviews</p>
-            <p>Review Icons</p>
-            <p>3.3 out of 5</p>
-            <p>Fit: Runs slightly small</p>
+            <span>Reviews</span>
+            <span>Review Icons</span>
+            <span>3.3 out of 5</span>
+            <span>Fit: Runs slightly small</span>
           </div>
-          <button className="w-60 p-2 border-2 border-black inline-block hover:scale-105 transition duration-200 ease-in-out hover:bg-gray-300 rounded-lg">Write Review</button>
+          <button className="md:w-60 md:p-2 p-1 border-2 border-black inline-block hover:scale-105 transition duration-200 ease-in-out hover:bg-gray-300 rounded-lg">Write Review</button>
         </div>
         <div className="grid md:grid-cols-2 grid-cols-1 md:gap-4 gap-2">
           <div className="p-2">
-            <p className="font-bold text-xl mb-2">Most helpful positive review</p>
+            <p className="font-bold md:text-xl mb-2">Most helpful positive review</p>
             <div className="border border-gray-300 p-4 flex flex-col space-y-3">
               <div className="flex space-x-2">
                 <span>Rating</span>
@@ -105,7 +80,7 @@ export default function Reviews() {
             </div>
           </div>
           <div className="p-2">
-            <p className="font-bold text-xl mb-2">Most helpful positive review</p>
+            <p className="font-bold md:text-xl mb-2">Most helpful positive review</p>
             <div className="border border-gray-300 p-4 flex flex-col space-y-3">
               <div className="flex space-x-2">
                 <span>Rating</span>
@@ -468,429 +443,14 @@ export default function Reviews() {
             <span>More from HOUSE OF CB</span>
 
           </div>
-          <div className="md:hidden block relative">
-            <ArrowLeftIcon onClick={handelPrev2} className="md:hidden w-7 h-7 flex items-center justify-center absolute top-1/2 left-3 z-20 bg-slate-100 cursor-pointer rounded-full p-1 stroke-black hover:text-white dark:bg-slate-800 dark:stroke-white " />
-            <ArrowRightIcon onClick={handelNext2} className="md:hidden w-7 h-7 flex items-center justify-center absolute top-1/2 right-3 z-20 bg-slate-100 cursor-pointer rounded-full p-1 stroke-black hover:text-whitedark:bg-slate-800 dark:stroke-white " />
-            <Slider {...settings} ref={sliderRef2}>
-              <span className="font-bold text-lg cursor-pointer">Frequently Bought Together</span>
-              <span className="font-bold text-lg cursor-pointer">More from HOUSE OF CB</span>
+          <SliderMobile>
+            <span className="font-bold text-lg cursor-pointer md:ml-0 ml-20">Frequently Bought Together</span>
+            <span className="md:ml-0 ml-20 font-bold text-lg cursor-pointer">More from HOUSE OF CB</span>
 
-            </Slider>
-          </div>
-          <ArrowLeftIcon onClick={handelPrev} className="md:w-10 md:h-10 w-8 h-8 flex items-center justify-center absolute top-1/2 left-3 z-20 bg-black cursor-pointer rounded-full p-2 stroke-white hover:text-white hover:scale-110 transition duration-300 ease-out hover:stroke-white dark:bg-slate-800 dark:stroke-white hover:-translate-x-1" />
-          <ArrowRightIcon onClick={handelNext} className="md:w-10 md:h-10 w-8 h-8 flex items-center justify-center absolute top-1/2 right-3 z-20 bg-black cursor-pointer rounded-full p-2 stroke-white hover:text-white hover:scale-110 transition duration-300 ease-out hover:stroke-white dark:bg-slate-800 dark:stroke-white hover:-translate-x-1" />
-          <Slider {...settings2} ref={sliderRef}>
-            <div className="p-3">
-              <Image
-                src={"/samples/recently-viewed/1.jpg"}
-                alt="something is happening"
-                width={0}
-                height={0}
-                sizes="100vh"
-                className="w-full h-auto object-contain"
-              />
-              <div className="mt-2 flex flex-col">
-                <p className="text-sm">Amanuel</p>
-                <p className="text-sm">555 $</p>
-                <div className="flex space-x-3">
-                  <span>star rating</span><span>(56)</span>
-                </div>
-              </div>
-            </div>
-            <div className="p-3">
-              <Image
-                src={"/samples/recently-viewed/2.jpg"}
-                alt="something is happening"
-                width={0}
-                height={0}
-                sizes="100vh"
-                className="w-full h-auto object-contain"
-              />
-              <div className="mt-2 flex flex-col">
-                <p className="text-sm">Amanuel</p>
-                <p className="text-sm">555 $</p>
-                <div className="flex space-x-3">
-                  <span>star rating</span><span>(56)</span>
-                </div>
-              </div>
-            </div>
-            <div className="p-3">
-              <Image
-                src={"/samples/recently-viewed/3.jpg"}
-                alt="something is happening"
-                width={0}
-                height={0}
-                sizes="100vh"
-                className="w-full h-auto object-contain"
-              />
-              <div className="mt-2 flex flex-col">
-                <p className="text-sm">Amanuel</p>
-                <p className="text-sm">555 $</p>
-                <div className="flex space-x-3">
-                  <span>star rating</span><span>(56)</span>
-                </div>
-              </div>
-            </div>
-            <div className="p-3">
-              <Image
-                src={"/samples/recently-viewed/4.jpg"}
-                alt="something is happening"
-                width={0}
-                height={0}
-                sizes="100vh"
-                className="w-full h-auto object-contain"
-              />
-              <div className="mt-2 flex flex-col">
-                <p className="text-sm">Amanuel</p>
-                <p className="text-sm">555 $</p>
-                <div className="flex space-x-3">
-                  <span>star rating</span><span>(56)</span>
-                </div>
-              </div>
-            </div>
-            <div className="p-3">
-              <Image
-                src={"/samples/recently-viewed/5.jpg"}
-                alt="something is happening"
-                width={0}
-                height={0}
-                sizes="100vh"
-                className="w-full h-auto object-contain"
-              />
-              <div className="mt-2 flex flex-col">
-                <p className="text-sm">Amanuel</p>
-                <p className="text-sm">555 $</p>
-                <div className="flex space-x-3">
-                  <span>star rating</span><span>(56)</span>
-                </div>
-              </div>
-            </div>
-            <div className="p-3">
-              <Image
-                src={"/samples/recently-viewed/6.jpg"}
-                alt="something is happening"
-                width={0}
-                height={0}
-                sizes="100vh"
-                className="w-full h-auto object-contain"
-              />
-              <div className="mt-2 flex flex-col">
-                <p className="text-sm">Amanuel</p>
-                <p className="text-sm">555 $</p>
-                <div className="flex space-x-3">
-                  <span>star rating</span><span>(56)</span>
-                </div>
-              </div>
-            </div>
-            <div className="p-3">
-              <Image
-                src={"/samples/recently-viewed/7.jpg"}
-                alt="something is happening"
-                width={0}
-                height={0}
-                sizes="100vh"
-                className="w-full h-auto object-contain"
-              />
-              <div className="mt-2 flex flex-col">
-                <p className="text-sm">Amanuel</p>
-                <p className="text-sm">555 $</p>
-                <div className="flex space-x-3">
-                  <span>star rating</span><span>(56)</span>
-                </div>
-              </div>
-            </div>
-            <div className="p-3">
-              <Image
-                src={"/samples/recently-viewed/8.jpg"}
-                alt="something is happening"
-                width={0}
-                height={0}
-                sizes="100vh"
-                className="w-full h-auto object-contain"
-              />
-              <div className="mt-2 flex flex-col">
-                <p className="text-sm">Amanuel</p>
-                <p className="text-sm">555 $</p>
-                <div className="flex space-x-3">
-                  <span>star rating</span><span>(56)</span>
-                </div>
-              </div>
-            </div>
-            <div className="p-3">
-              <Image
-                src={"/samples/recently-viewed/9.jpg"}
-                alt="something is happening"
-                width={0}
-                height={0}
-                sizes="100vh"
-                className="w-full h-auto object-contain"
-              />
-              <div className="mt-2 flex flex-col">
-                <p className="text-sm">Amanuel</p>
-                <p className="text-sm">555 $</p>
-                <div className="flex space-x-3">
-                  <span>star rating</span><span>(56)</span>
-                </div>
-              </div>
-            </div>
-            <div className="p-3">
-              <Image
-                src={"/samples/recently-viewed/10.jpg"}
-                alt="something is happening"
-                width={0}
-                height={0}
-                sizes="100vh"
-                className="w-full h-auto object-contain"
-              />
-              <div className="mt-2 flex flex-col">
-                <p className="text-sm">Amanuel</p>
-                <p className="text-sm">555 $</p>
-                <div className="flex space-x-3">
-                  <span>star rating</span><span>(56)</span>
-                </div>
-              </div>
-            </div>
-            <div className="p-3">
-              <Image
-                src={"/samples/recently-viewed/11.jpg"}
-                alt="something is happening"
-                width={0}
-                height={0}
-                sizes="100vh"
-                className="w-full h-auto object-contain"
-              />
-              <div className="mt-2 flex flex-col">
-                <p className="text-sm">Amanuel</p>
-                <p className="text-sm">555 $</p>
-                <div className="flex space-x-3">
-                  <span>star rating</span><span>(56)</span>
-                </div>
-              </div>
-            </div>
-            <div className="p-3">
-              <Image
-                src={"/samples/recently-viewed/12.jpg"}
-                alt="something is happening"
-                width={0}
-                height={0}
-                sizes="100vh"
-                className="w-full h-auto object-contain"
-              />
-              <div className="mt-2 flex flex-col">
-                <p className="text-sm">Amanuel</p>
-                <p className="text-sm">555 $</p>
-                <div className="flex space-x-3">
-                  <span>star rating</span><span>(56)</span>
-                </div>
-              </div>
-            </div>
-            <div className="p-3">
-              <Image
-                src={"/samples/recently-viewed/13.jpg"}
-                alt="something is happening"
-                width={0}
-                height={0}
-                sizes="100vh"
-                className="w-full h-auto object-contain"
-              />
-              <div className="mt-2 flex flex-col">
-                <p className="text-sm">Amanuel</p>
-                <p className="text-sm">555 $</p>
-                <div className="flex space-x-3">
-                  <span>star rating</span><span>(56)</span>
-                </div>
-              </div>
-            </div>
-            <div className="p-3">
-              <Image
-                src={"/samples/recently-viewed/14.jpg"}
-                alt="something is happening"
-                width={0}
-                height={0}
-                sizes="100vh"
-                className="w-full h-auto object-contain"
-              />
-              <div className="mt-2 flex flex-col">
-                <p className="text-sm">Amanuel</p>
-                <p className="text-sm">555 $</p>
-                <div className="flex space-x-3">
-                  <span>star rating</span><span>(56)</span>
-                </div>
-              </div>
-            </div>
-            <div className="p-3">
-              <Image
-                src={"/samples/recently-viewed/15.jpg"}
-                alt="something is happening"
-                width={0}
-                height={0}
-                sizes="100vh"
-                className="w-full h-auto object-contain"
-              />
-              <div className="mt-2 flex flex-col">
-                <p className="text-sm">Amanuel</p>
-                <p className="text-sm">555 $</p>
-                <div className="flex space-x-3">
-                  <span>star rating</span><span>(56)</span>
-                </div>
-              </div>
-            </div>
-            <div className="p-3">
-              <Image
-                src={"/samples/recently-viewed/16.jpg"}
-                alt="something is happening"
-                width={0}
-                height={0}
-                sizes="100vh"
-                className="w-full h-auto object-contain"
-              />
-              <div className="mt-2 flex flex-col">
-                <p className="text-sm">Amanuel</p>
-                <p className="text-sm">555 $</p>
-                <div className="flex space-x-3">
-                  <span>star rating</span><span>(56)</span>
-                </div>
-              </div>
-            </div>
-            <div className="p-3">
-              <Image
-                src={"/samples/recently-viewed/17.jpg"}
-                alt="something is happening"
-                width={0}
-                height={0}
-                sizes="100vh"
-                className="w-full h-auto object-contain"
-              />
-              <div className="mt-2 flex flex-col">
-                <p className="text-sm">Amanuel</p>
-                <p className="text-sm">555 $</p>
-                <div className="flex space-x-3">
-                  <span>star rating</span><span>(56)</span>
-                </div>
-              </div>
-            </div>
-            <div className="p-3">
-              <Image
-                src={"/samples/recently-viewed/18.jpg"}
-                alt="something is happening"
-                width={0}
-                height={0}
-                sizes="100vh"
-                className="w-full h-auto object-contain"
-              />
-              <div className="mt-2 flex flex-col">
-                <p className="text-sm">Amanuel</p>
-                <p className="text-sm">555 $</p>
-                <div className="flex space-x-3">
-                  <span>star rating</span><span>(56)</span>
-                </div>
-              </div>
-            </div>
-            <div className="p-3">
-              <Image
-                src={"/samples/recently-viewed/19.jpg"}
-                alt="something is happening"
-                width={0}
-                height={0}
-                sizes="100vh"
-                className="w-full h-auto object-contain"
-              />
-              <div className="mt-2 flex flex-col">
-                <p className="text-sm">Amanuel</p>
-                <p className="text-sm">555 $</p>
-                <div className="flex space-x-3">
-                  <span>star rating</span><span>(56)</span>
-                </div>
-              </div>
-            </div>
-            <div className="p-3">
-              <Image
-                src={"/samples/recently-viewed/20.jpg"}
-                alt="something is happening"
-                width={0}
-                height={0}
-                sizes="100vh"
-                className="w-full h-auto object-contain"
-              />
-              <div className="mt-2 flex flex-col">
-                <p className="text-sm">Amanuel</p>
-                <p className="text-sm">555 $</p>
-                <div className="flex space-x-3">
-                  <span>star rating</span><span>(56)</span>
-                </div>
-              </div>
-            </div>
-            <div className="p-3">
-              <Image
-                src={"/samples/recently-viewed/21.jpg"}
-                alt="something is happening"
-                width={0}
-                height={0}
-                sizes="100vh"
-                className="w-full h-auto object-contain"
-              />
-              <div className="mt-2 flex flex-col">
-                <p className="text-sm">Amanuel</p>
-                <p className="text-sm">555 $</p>
-                <div className="flex space-x-3">
-                  <span>star rating</span><span>(56)</span>
-                </div>
-              </div>
-            </div>
-            <div className="p-3">
-              <Image
-                src={"/samples/recently-viewed/22.jpg"}
-                alt="something is happening"
-                width={0}
-                height={0}
-                sizes="100vh"
-                className="w-full h-auto object-contain"
-              />
-              <div className="mt-2 flex flex-col">
-                <p className="text-sm">Amanuel</p>
-                <p className="text-sm">555 $</p>
-                <div className="flex space-x-3">
-                  <span>star rating</span><span>(56)</span>
-                </div>
-              </div>
-            </div>
-            <div className="p-3">
-              <Image
-                src={"/samples/recently-viewed/23.jpg"}
-                alt="something is happening"
-                width={0}
-                height={0}
-                sizes="100vh"
-                className="w-full h-auto object-contain"
-              />
-              <div className="mt-2 flex flex-col">
-                <p className="text-sm">Amanuel</p>
-                <p className="text-sm">555 $</p>
-                <div className="flex space-x-3">
-                  <span>star rating</span><span>(56)</span>
-                </div>
-              </div>
-            </div>
-            <div className="p-3">
-              <Image
-                src={"/samples/recently-viewed/24.jpg"}
-                alt="something is happening"
-                width={0}
-                height={0}
-                sizes="100vh"
-                className="w-full h-auto object-contain"
-              />
-              <div className="mt-2 flex flex-col">
-                <p className="text-sm">Amanuel</p>
-                <p className="text-sm">555 $</p>
-                <div className="flex space-x-3">
-                  <span>star rating</span><span>(56)</span>
-                </div>
-              </div>
-            </div>
-          </Slider>
+          </SliderMobile>
+          <SliderLarge photoName="great-deals"/>
         </div>
-        <DetailRecentlyViewed />
+        <RecentlyViewed />
       </div>
     </section>
   )
