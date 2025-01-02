@@ -69,7 +69,7 @@ export default function SmallMenMega(props: { onClose: Dispatch<SetStateAction<b
       <span className="block p-2">Vacation & Resort</span>
       <span className="block p-2">Young Adult</span>
       <Image
-        src={`/men/m-1.jpg`}
+        src={`/samples/men.jpg`}
         alt="something is happening"
         width={0}
         height={0}

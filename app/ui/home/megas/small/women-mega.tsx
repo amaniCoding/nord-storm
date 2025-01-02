@@ -78,7 +78,7 @@ export default function SmallWomenMega(props: { onClose: Dispatch<SetStateAction
         <span className="block p-2">Maternity</span>
         <span className="block p-2">Young Adult</span>
         <Image
-          src={`/women/wo-1.jpg`}
+          src={`/samples/women.jpg`}
           alt="something is happening"
           width={0}
           height={0}

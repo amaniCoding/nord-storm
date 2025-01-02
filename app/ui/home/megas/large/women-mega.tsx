@@ -109,7 +109,7 @@ export default function WomenMega(props: { onClose: Dispatch<SetStateAction<bool
           <div className="p-1">
             <div className="flex flex-col space-y-2">
               <Image
-                src={"/samples/women/wo-1.jpg"}
+                src={"/samples/women.jpg"}
                 alt="something is happening"
                 width={0}
                 height={0}

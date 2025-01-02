@@ -1,13 +1,14 @@
 'use client'
 import { TruckIcon } from "@heroicons/react/16/solid"
-import { ArchiveBoxIcon, ArrowLeftIcon, ArrowRightIcon, GiftIcon, NoSymbolIcon } from "@heroicons/react/24/outline"
+import { FaRegCircleDot } from "react-icons/fa6";
+import { ArchiveBoxIcon, ArrowLeftIcon, ArrowRightIcon, GiftIcon, RadioIcon } from "@heroicons/react/24/outline"
+import { MdNotInterested } from "react-icons/md";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Image from "next/image";
 import { useRef } from "react";
 import { KeyIcon } from "@heroicons/react/24/outline";
-import { CheckCircleIcon } from "@heroicons/react/20/solid";
 
 export default function ShoppingBag() {
   //react/no-unescaped-entities
@@ -140,63 +141,70 @@ export default function ShoppingBag() {
                   <span>International shipping</span>
                 </div>
               </div>
-              <div className="pt-4 flex space-x-4 flex-wrap">
+              <div className="grid grid-cols-12">
 
-                <div className="p-1">
-                  <Image
-                    src={`/samples/sale-pics-for-you/4.jpg`}
-                    alt="something is happening"
-                    width={0}
-                    height={0}
-                    sizes="100vh"
-                    className="w-full h-auto object-contain"
-                  />
+                <div className="md:col-span-3 col-span-12">
+                  <div className="p-1">
+                    <Image
+                      src={`/samples/sale-pics-for-you/4.jpg`}
+                      alt="something is happening"
+                      width={0}
+                      height={0}
+                      sizes="100vh"
+                      className="w-full h-auto object-contain"
+                    />
+                  </div>
                 </div>
-                <div className="p-1">
-                  <div className="flex flex-col space-y-4">
-                    <div className="flex-col">
-                      <span>Dress the Population</span>
-                      <span>Alicia Mixed Media Midi Dress</span>
+                <div className="md:col-span-3 col-span-12">
+                  <div className="p-1">
+
+                    <div className="mb-2">
+                      <p>Dress the Population</p>
+                      <p>Alicia Mixed Media Midi Dress</p>
                     </div>
-                    <div className="flex-col">
-                      <span>Size: Medium</span>
-                      <span>Color: ELECTRIC BLUE</span>
-                      <span>Item: 5413220</span>
+                    <div className="mb-2">
+                      <p>Size: Medium</p>
+                      <p>Color: ELECTRIC BLUE</p>
+                      <p>Item: 5413220</p>
                     </div>
-                    <div>
+                    <div className="mb-2">
                       <select className="p-2 w-full focus:border border-gray-800">
                         <option value="">Qty 1</option>
                       </select>
                     </div>
-                    <div className="flex items-center space-x-3">
+                    <div className="flex items-center space-x-3 ">
                       <ArchiveBoxIcon className="w-7 h-7 stroke-black" />
-                      <div className="flex flex-col">
-                        <span className="text-sm md:text-nowrap font-bold">Free returns anytime</span>
-                        <span className="text-sm md:text-nowrap">Sold by Nordstrom</span>
+                      <div>
+                        <p className="text-sm md:text-nowrap font-bold">Free returns anytime</p>
+                        <p className="text-sm md:text-nowrap">Sold by Nordstrom</p>
                       </div>
                     </div>
-                    <div className="flex items-center space-x-3">
-                      <span>Remove</span>
-                      <span>Save for later</span>
+                    <div className="mb-2">
+                      <p>Remove</p>
+                      <p>Save for later</p>
                     </div>
                   </div>
                 </div>
-                <div className="p-1">
-                  <div className="flex items-center space-x-2">
-                    <NoSymbolIcon className="w-8 h-8 stroke-black" />
-                    <span className="md:text-nowrap">Not available for pickup</span>
+                <div className="md:col-span-5 col-span-12">
+                  <div className="p-1">
+
+                    <div className="flex space-x-2">
+                      <MdNotInterested className="w-7 h-7" />
+                      <span className="w-full">Not available for pickup</span>
+                    </div>
                   </div>
-                  <div className="flex space-x-2">
-                    <CheckCircleIcon className="w-10 h-10 stroke-black" />
-                    <div className="flex flex-col space-y-1">
-                      <span>Shipping</span>
-                      <span>
+                  <div className="p-1">
+                    <div className="flex space-x-2">
+                      <FaRegCircleDot className="w-7 h-7" />
+                      <span className="w-full">
                         International orders usually arrive within 5–13 business days. We'll give you shipping dates in checkout.</span>
                     </div>
                   </div>
                 </div>
-                <div className="p-1">
-                  <p>$198.00</p>
+                <div className="md:col-span-1 col-span-12">
+                  <div className="p-1">
+                    <p>$198.00</p>
+                  </div>
                 </div>
               </div>
             </div>

@@ -100,7 +100,7 @@ export default function MenMega(props: {onClose: Dispatch<SetStateAction<boolean
           <div className="p-1">
             <div className="flex flex-col space-y-2">
               <Image
-                src={"/samples/men/m-1.jpg"}
+                src={"/samples/men.jpg"}
                 alt="something is happening"
                 width={0}
                 height={0}
