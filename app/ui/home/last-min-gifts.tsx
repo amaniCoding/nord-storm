@@ -56,9 +56,8 @@ export default function LastMinGifts() {
   };
   return (
     <section className="">
-      <div className="max-w-screen-xl mx-auto py-5 px-3">
-
-        <p className="mb-2 text-xl font-bold">
+      <div className="max-w-screen-xl mx-auto py-1 px-3">
+        <p className="mb-2 text-xl font-bold text-center">
           Last-Minute Gifts
         </p>
         <div className="slider-container relative">

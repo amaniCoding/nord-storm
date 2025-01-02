@@ -63,23 +63,23 @@ export default function RecentlyViewed() {
       <div className="max-w-screen-xl mx-auto py-5 px-3">
         <p className="my-3 text-xl font-bold">Here's What Caught Your Eye</p>
         <p className="mb-2">
-          Recently viewed
+        Recently viewed
         </p>
         <div className="slider-container relative">
-          <ArrowLeftIcon onClick={handelPrev} className="md:w-10 md:h-10 w-8 h-8 flex items-center justify-center absolute top-1/2 -left-5 z-20  cursor-pointer p-2 stroke-black hover:bg-black/75 transition duration-300 ease-out hover:stroke-white dark:bg-slate-800 dark:stroke-white " />
-          <ArrowRightIcon onClick={handelNext} className="md:w-10 md:h-10 w-8 h-8 flex items-center justify-center absolute top-1/2 -right-5 z-20  cursor-pointer p-2 stroke-black hover:text-white hover:bg-black/75 transition duration-300 ease-out hover:stroke-white dark:bg-slate-800 dark:stroke-white " />
-          <Slider {...settings2} ref={sliderRef}>
+        <ArrowLeftIcon onClick={handelPrev} className="md:w-10 md:h-10 w-8 h-8 flex items-center justify-center absolute top-1/2 -left-5 z-20  cursor-pointer p-2 stroke-black hover:bg-black/75 transition duration-300 ease-out hover:stroke-white dark:bg-slate-800 dark:stroke-white " />
+        <ArrowRightIcon onClick={handelNext} className="md:w-10 md:h-10 w-8 h-8 flex items-center justify-center absolute top-1/2 -right-5 z-20  cursor-pointer p-2 stroke-black hover:text-white hover:bg-black/75 transition duration-300 ease-out hover:stroke-white dark:bg-slate-800 dark:stroke-white " />
+        <Slider {...settings2} ref={sliderRef}>
             <div className="p-3 relative">
               <div className="group">
                 <Link href={`/product/name/143`}>
-                  <Image
-                    src={`/samples/great-deals/1.jpg`}
-                    alt="something is happening"
-                    width={0}
-                    height={0}
-                    sizes="100vh"
-                    className="w-full h-full object-contain"
-                  />
+                <Image
+                  src={`/samples/great-deals/1.jpg`}
+                  alt="something is happening"
+                  width={0}
+                  height={0}
+                  sizes="100vh"
+                  className="w-full h-full object-contain"
+                />
                 </Link>
                 <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-44  left-5 right-5 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black w-40 md:group-hover:block">
                   Quick Show
@@ -108,14 +108,14 @@ export default function RecentlyViewed() {
             <div className="p-3 relative">
               <div className="group">
                 <Link href={`/product/name/143`}>
-                  <Image
-                    src={`/samples/great-deals/2.jpg`}
-                    alt="something is happening"
-                    width={0}
-                    height={0}
-                    sizes="100vh"
-                    className="w-full h-full object-contain"
-                  />
+                <Image
+                  src={`/samples/great-deals/2.jpg`}
+                  alt="something is happening"
+                  width={0}
+                  height={0}
+                  sizes="100vh"
+                  className="w-full h-full object-contain"
+                />
                 </Link>
                 <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-44  left-5 right-5 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black w-40 md:group-hover:block">
                   Quick Show
@@ -143,14 +143,14 @@ export default function RecentlyViewed() {
             </div><div className="p-3 relative">
               <div className="group">
                 <Link href={`/product/name/143`}>
-                  <Image
-                    src={`/samples/great-deals/3.jpg`}
-                    alt="something is happening"
-                    width={0}
-                    height={0}
-                    sizes="100vh"
-                    className="w-full h-full object-contain"
-                  />
+                <Image
+                  src={`/samples/great-deals/3.jpg`}
+                  alt="something is happening"
+                  width={0}
+                  height={0}
+                  sizes="100vh"
+                  className="w-full h-full object-contain"
+                />
                 </Link>
                 <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-44  left-5 right-5 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black w-40 md:group-hover:block">
                   Quick Show
@@ -178,14 +178,14 @@ export default function RecentlyViewed() {
             </div><div className="p-3 relative">
               <div className="group">
                 <Link href={`/product/name/143`}>
-                  <Image
-                    src={`/samples/great-deals/4.jpg`}
-                    alt="something is happening"
-                    width={0}
-                    height={0}
-                    sizes="100vh"
-                    className="w-full h-full object-contain"
-                  />
+                <Image
+                  src={`/samples/great-deals/4.jpg`}
+                  alt="something is happening"
+                  width={0}
+                  height={0}
+                  sizes="100vh"
+                  className="w-full h-full object-contain"
+                />
                 </Link>
                 <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-44  left-5 right-5 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black w-40 md:group-hover:block">
                   Quick Show
@@ -213,14 +213,14 @@ export default function RecentlyViewed() {
             </div><div className="p-3 relative">
               <div className="group">
                 <Link href={`/product/name/143`}>
-                  <Image
-                    src={`/samples/great-deals/5.jpg`}
-                    alt="something is happening"
-                    width={0}
-                    height={0}
-                    sizes="100vh"
-                    className="w-full h-full object-contain"
-                  />
+                <Image
+                  src={`/samples/great-deals/5.jpg`}
+                  alt="something is happening"
+                  width={0}
+                  height={0}
+                  sizes="100vh"
+                  className="w-full h-full object-contain"
+                />
                 </Link>
                 <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-44  left-5 right-5 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black w-40 md:group-hover:block">
                   Quick Show
@@ -248,14 +248,14 @@ export default function RecentlyViewed() {
             </div><div className="p-3 relative">
               <div className="group">
                 <Link href={`/product/name/143`}>
-                  <Image
-                    src={`/samples/great-deals/6.jpg`}
-                    alt="something is happening"
-                    width={0}
-                    height={0}
-                    sizes="100vh"
-                    className="w-full h-full object-contain"
-                  />
+                <Image
+                  src={`/samples/great-deals/6.jpg`}
+                  alt="something is happening"
+                  width={0}
+                  height={0}
+                  sizes="100vh"
+                  className="w-full h-full object-contain"
+                />
                 </Link>
                 <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-44  left-5 right-5 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black w-40 md:group-hover:block">
                   Quick Show
@@ -283,14 +283,14 @@ export default function RecentlyViewed() {
             </div><div className="p-3 relative">
               <div className="group">
                 <Link href={`/product/name/143`}>
-                  <Image
-                    src={`/samples/great-deals/7.jpg`}
-                    alt="something is happening"
-                    width={0}
-                    height={0}
-                    sizes="100vh"
-                    className="w-full h-full object-contain"
-                  />
+                <Image
+                  src={`/samples/great-deals/7.jpg`}
+                  alt="something is happening"
+                  width={0}
+                  height={0}
+                  sizes="100vh"
+                  className="w-full h-full object-contain"
+                />
                 </Link>
                 <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-44  left-5 right-5 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black w-40 md:group-hover:block">
                   Quick Show
@@ -318,14 +318,14 @@ export default function RecentlyViewed() {
             </div><div className="p-3 relative">
               <div className="group">
                 <Link href={`/product/name/143`}>
-                  <Image
-                    src={`/samples/great-deals/8.jpg`}
-                    alt="something is happening"
-                    width={0}
-                    height={0}
-                    sizes="100vh"
-                    className="w-full h-full object-contain"
-                  />
+                <Image
+                  src={`/samples/great-deals/8.jpg`}
+                  alt="something is happening"
+                  width={0}
+                  height={0}
+                  sizes="100vh"
+                  className="w-full h-full object-contain"
+                />
                 </Link>
                 <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-44  left-5 right-5 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black w-40 md:group-hover:block">
                   Quick Show
@@ -353,14 +353,14 @@ export default function RecentlyViewed() {
             </div><div className="p-3 relative">
               <div className="group">
                 <Link href={`/product/name/143`}>
-                  <Image
-                    src={`/samples/great-deals/9.jpg`}
-                    alt="something is happening"
-                    width={0}
-                    height={0}
-                    sizes="100vh"
-                    className="w-full h-full object-contain"
-                  />
+                <Image
+                  src={`/samples/great-deals/9.jpg`}
+                  alt="something is happening"
+                  width={0}
+                  height={0}
+                  sizes="100vh"
+                  className="w-full h-full object-contain"
+                />
                 </Link>
                 <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-44  left-5 right-5 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black w-40 md:group-hover:block">
                   Quick Show
@@ -389,14 +389,14 @@ export default function RecentlyViewed() {
             <div className="p-3 relative">
               <div className="group">
                 <Link href={`/product/name/143`}>
-                  <Image
-                    src={`/samples/great-deals/10.jpg`}
-                    alt="something is happening"
-                    width={0}
-                    height={0}
-                    sizes="100vh"
-                    className="w-full h-full object-contain"
-                  />
+                <Image
+                  src={`/samples/great-deals/10.jpg`}
+                  alt="something is happening"
+                  width={0}
+                  height={0}
+                  sizes="100vh"
+                  className="w-full h-full object-contain"
+                />
                 </Link>
                 <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-44  left-5 right-5 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black w-40 md:group-hover:block">
                   Quick Show

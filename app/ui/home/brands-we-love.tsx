@@ -4,8 +4,8 @@ export default function Brands() {
   //react/no-unescaped-entities
   return (
     <section className="">
-      <div className="max-w-screen-xl mx-auto py-5 px-3">
-        <p className="text-xl my-2">Brands We Love</p>
+      <div className="max-w-screen-xl mx-auto py-1 px-3">
+        <p className="text-xl my-2 font-bold text-center">Brands We Love</p>
         <div className="grid md:grid-cols-3 grid-cols-1 gap-3">
           <div className="p-1">
             <Image
@@ -16,7 +16,7 @@ export default function Brands() {
               sizes="100vh"
               className="w-full h-auto object-contain"
             />
-            <div className="flex flex-col space-y-2 mt-3">
+            <div className="flex flex-col space-y-1 mt-2">
               <p className="font-bold">MOTHER</p>
               <p>From cult-favorite denim to inspired collections, MOTHER's '70s vibe is always witty and irreverent.</p>
               <div className="flex space-x-3">
@@ -34,7 +34,7 @@ export default function Brands() {
               sizes="100vh"
               className="w-full h-auto object-contain"
             />
-            <div className="flex flex-col space-y-2 mt-3">
+            <div className="flex flex-col space-y-1 mt-2">
               <p className="font-bold">Nuna</p>
               <p>With thoughtful design in every detail, Nuna is designed around your life.</p>
               <div className="flex space-x-3">
@@ -52,7 +52,7 @@ export default function Brands() {
               sizes="100vh"
               className="w-full h-auto object-contain"
             />
-            <div className="flex flex-col space-y-2 mt-3">
+            <div className="flex flex-col space-y-1 mt-2">
               <p className="font-bold">Tory Burch</p>
               <p>A season of glamorous escape and fashion to make you dream.</p>
               <div className="flex space-x-3">

@@ -4,9 +4,9 @@ export default function GetEx() {
   //react/no-unescaped-entities
   return (
     <section className="">
-      <div className="max-w-screen-xl mx-auto py-5 px-3">
+      <div className="max-w-screen-xl mx-auto py-1 px-3">
         <p className="mb-2 text-xl text-center font-bold">
-          GET EXCITED
+          Get Excited
         </p>
         <p className="mb-2 text-center">
           Discover the latest stories from The Thread, plus more we're loving in fashion, beauty and lifestyle.

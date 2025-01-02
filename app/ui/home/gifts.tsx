@@ -77,7 +77,7 @@ export default function Gifts() {
   };
   return (
     <section className="">
-      <div className="max-w-screen-xl mx-auto py-5 px-3">
+      <div className="max-w-screen-xl mx-auto py-1 px-3">
         <div className="md:flex hidden md:space-x-10 space-x-10 border-b-4 border-b-gray-300 pb-3 mb-4">
           <span className="font-bold text-lg cursor-pointer border-b-4 border-b-black">Gift For Her</span>
           <span>Gift For Him</span>

@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function ShopByCat() {
   return (
     <section className="">
-      <div className="max-w-screen-xl mx-auto py-5 px-3">
+      <div className="max-w-screen-xl mx-auto py-1 px-3">
         <p className="my-3 text-xl text-center font-bold">
         SHOP BY CATEGORY</p>
         <div className="grid md:grid-cols-6 grid-cols-2 md:gap-3 gap-1">

@@ -80,7 +80,7 @@ export default function SalePics() {
   };
   return (
     <section className="">
-      <div className="max-w-screen-xl mx-auto py-5 px-3">
+      <div className="max-w-screen-xl mx-auto py-1 px-3">
         <i className="fa fa-star fa-lg" aria-hidden="true"></i>
         <p className="my-3 text-xl font-bold">Sale Picks for You</p>
 

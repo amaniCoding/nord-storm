@@ -2,7 +2,7 @@
 export default function ExploreMore() {
   return (
     <section>
-      <div className="max-w-screen-xl mx-auto py-5 px-3">
+      <div className="max-w-screen-xl mx-auto py-1 px-3">
         <p className="text-2xl my-6 font-bold text-center">Explore More</p>
         <div className="grid md:grid-cols-6 grid-cols-2 md:gap-7 gap-3">
           <div>
