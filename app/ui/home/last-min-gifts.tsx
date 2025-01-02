@@ -64,10 +64,11 @@ export default function LastMinGifts() {
         <div className="slider-container relative">
           <ArrowLeftIcon onClick={handelPrev} className="md:w-10 md:h-10 w-8 h-8 flex items-center justify-center absolute top-1/2 -left-5 z-20  cursor-pointer p-2 stroke-black hover:bg-black/75 transition duration-300 ease-out hover:stroke-white dark:bg-slate-800 dark:stroke-white " />
           <ArrowRightIcon onClick={handelNext} className="md:w-10 md:h-10 w-8 h-8 flex items-center justify-center absolute top-1/2 -right-5 z-20  cursor-pointer p-2 stroke-black hover:text-white hover:bg-black/75 transition duration-300 ease-out hover:stroke-white dark:bg-slate-800 dark:stroke-white " />
-          
+
           <Slider {...settings2} ref={sliderRef}>
             <div className="p-3 relative">
               <div className="group">
+                <Link href={`/product/name/143`}>
                 <Image
                   src={`/samples/last-min-gifts/1.jpg`}
                   alt="something is happening"
@@ -76,6 +77,7 @@ export default function LastMinGifts() {
                   sizes="100vh"
                   className="w-full h-full object-contain"
                 />
+                </Link>
                 <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-44  left-5 right-5 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black w-40 md:group-hover:block">
                   Quick Show
                 </Link>
@@ -102,6 +104,7 @@ export default function LastMinGifts() {
             </div>
             <div className="p-3 relative">
               <div className="group">
+                <Link href={`/product/name/143`}>
                 <Image
                   src={`/samples/last-min-gifts/2.jpg`}
                   alt="something is happening"
@@ -110,6 +113,7 @@ export default function LastMinGifts() {
                   sizes="100vh"
                   className="w-full h-full object-contain"
                 />
+                </Link>
                 <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-44  left-5 right-5 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black w-40 md:group-hover:block">
                   Quick Show
                 </Link>
@@ -135,6 +139,7 @@ export default function LastMinGifts() {
               </div>
             </div><div className="p-3 relative">
               <div className="group">
+                <Link href={`/product/name/143`}>
                 <Image
                   src={`/samples/last-min-gifts/3.jpg`}
                   alt="something is happening"
@@ -143,6 +148,7 @@ export default function LastMinGifts() {
                   sizes="100vh"
                   className="w-full h-full object-contain"
                 />
+                </Link>
                 <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-44  left-5 right-5 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black w-40 md:group-hover:block">
                   Quick Show
                 </Link>
@@ -168,6 +174,7 @@ export default function LastMinGifts() {
               </div>
             </div><div className="p-3 relative">
               <div className="group">
+                <Link href={`/product/name/143`}>
                 <Image
                   src={`/samples/last-min-gifts/4.jpg`}
                   alt="something is happening"
@@ -176,6 +183,7 @@ export default function LastMinGifts() {
                   sizes="100vh"
                   className="w-full h-full object-contain"
                 />
+                </Link>
                 <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-44  left-5 right-5 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black w-40 md:group-hover:block">
                   Quick Show
                 </Link>
@@ -201,6 +209,7 @@ export default function LastMinGifts() {
               </div>
             </div><div className="p-3 relative">
               <div className="group">
+                <Link href={`/product/name/143`}>
                 <Image
                   src={`/samples/last-min-gifts/5.jpg`}
                   alt="something is happening"
@@ -209,6 +218,7 @@ export default function LastMinGifts() {
                   sizes="100vh"
                   className="w-full h-full object-contain"
                 />
+                </Link>
                 <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-44  left-5 right-5 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black w-40 md:group-hover:block">
                   Quick Show
                 </Link>
@@ -234,6 +244,7 @@ export default function LastMinGifts() {
               </div>
             </div><div className="p-3 relative">
               <div className="group">
+                <Link href={`/product/name/143`}>
                 <Image
                   src={`/samples/last-min-gifts/6.jpg`}
                   alt="something is happening"
@@ -242,6 +253,7 @@ export default function LastMinGifts() {
                   sizes="100vh"
                   className="w-full h-full object-contain"
                 />
+                </Link>
                 <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-44  left-5 right-5 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black w-40 md:group-hover:block">
                   Quick Show
                 </Link>
@@ -267,6 +279,7 @@ export default function LastMinGifts() {
               </div>
             </div><div className="p-3 relative">
               <div className="group">
+                <Link href={`/product/name/143`}>
                 <Image
                   src={`/samples/last-min-gifts/7.jpg`}
                   alt="something is happening"
@@ -275,6 +288,7 @@ export default function LastMinGifts() {
                   sizes="100vh"
                   className="w-full h-full object-contain"
                 />
+                </Link>
                 <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-44  left-5 right-5 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black w-40 md:group-hover:block">
                   Quick Show
                 </Link>
@@ -300,6 +314,7 @@ export default function LastMinGifts() {
               </div>
             </div><div className="p-3 relative">
               <div className="group">
+                <Link href={`/product/name/143`}>
                 <Image
                   src={`/samples/last-min-gifts/8.jpg`}
                   alt="something is happening"
@@ -308,6 +323,7 @@ export default function LastMinGifts() {
                   sizes="100vh"
                   className="w-full h-full object-contain"
                 />
+                </Link>
                 <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-44  left-5 right-5 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black w-40 md:group-hover:block">
                   Quick Show
                 </Link>
@@ -333,6 +349,7 @@ export default function LastMinGifts() {
               </div>
             </div><div className="p-3 relative">
               <div className="group">
+                <Link href={`/product/name/143`}>
                 <Image
                   src={`/samples/last-min-gifts/9.jpg`}
                   alt="something is happening"
@@ -341,6 +358,7 @@ export default function LastMinGifts() {
                   sizes="100vh"
                   className="w-full h-full object-contain"
                 />
+                </Link>
                 <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-44  left-5 right-5 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black w-40 md:group-hover:block">
                   Quick Show
                 </Link>
@@ -366,6 +384,7 @@ export default function LastMinGifts() {
               </div>
             </div><div className="p-3 relative">
               <div className="group">
+                <Link href={`/product/name/143`}>
                 <Image
                   src={`/samples/last-min-gifts/10.jpg`}
                   alt="something is happening"
@@ -374,6 +393,7 @@ export default function LastMinGifts() {
                   sizes="100vh"
                   className="w-full h-full object-contain"
                 />
+                </Link>
                 <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-44  left-5 right-5 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black w-40 md:group-hover:block">
                   Quick Show
                 </Link>
@@ -399,6 +419,7 @@ export default function LastMinGifts() {
               </div>
             </div><div className="p-3 relative">
               <div className="group">
+                <Link href={`/product/name/143`}>
                 <Image
                   src={`/samples/last-min-gifts/11.jpg`}
                   alt="something is happening"
@@ -407,6 +428,7 @@ export default function LastMinGifts() {
                   sizes="100vh"
                   className="w-full h-full object-contain"
                 />
+                </Link>
                 <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-44  left-5 right-5 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black w-40 md:group-hover:block">
                   Quick Show
                 </Link>
@@ -432,6 +454,7 @@ export default function LastMinGifts() {
               </div>
             </div><div className="p-3 relative">
               <div className="group">
+                <Link href={`/product/name/143`}>
                 <Image
                   src={`/samples/last-min-gifts/12.jpg`}
                   alt="something is happening"
@@ -440,6 +463,7 @@ export default function LastMinGifts() {
                   sizes="100vh"
                   className="w-full h-full object-contain"
                 />
+                </Link>
                 <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-44  left-5 right-5 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black w-40 md:group-hover:block">
                   Quick Show
                 </Link>

@@ -110,14 +110,16 @@ export default function SalePics() {
           <Slider {...settings2} ref={sliderRef}>
             <div className="p-3 relative">
               <div className="group">
-                <Image
-                  src={`/samples/sale-pics-for-you/1.jpg`}
-                  alt="something is happening"
-                  width={0}
-                  height={0}
-                  sizes="100vh"
-                  className="w-full h-full object-contain"
-                />
+                <Link href={`/product/name/143`}>
+                  <Image
+                    src={`/samples/sale-pics-for-you/1.jpg`}
+                    alt="something is happening"
+                    width={0}
+                    height={0}
+                    sizes="100vh"
+                    className="w-full h-full object-contain"
+                  />
+                </Link>
                 <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-52 left-0 right-0 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black ml-10 mr-10 md:group-hover:block">
                   Quick Show
                 </Link>
@@ -142,14 +144,16 @@ export default function SalePics() {
             </div>
             <div className="p-3 relative">
               <div className="group">
-                <Image
-                  src={`/samples/sale-pics-for-you/1.jpg`}
-                  alt="something is happening"
-                  width={0}
-                  height={0}
-                  sizes="100vh"
-                  className="w-full h-full object-contain"
-                />
+                <Link href={`/product/name/143`}>
+                  <Image
+                    src={`/samples/sale-pics-for-you/1.jpg`}
+                    alt="something is happening"
+                    width={0}
+                    height={0}
+                    sizes="100vh"
+                    className="w-full h-full object-contain"
+                  />
+                </Link>
                 <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-52 left-0 right-0 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black ml-10 mr-10 md:group-hover:block">
                   Quick Show
                 </Link>
@@ -175,14 +179,16 @@ export default function SalePics() {
             </div>
             <div className="p-3 relative">
               <div className="group">
-                <Image
-                  src={`/samples/sale-pics-for-you/2.jpg`}
-                  alt="something is happening"
-                  width={0}
-                  height={0}
-                  sizes="100vh"
-                  className="w-full h-full object-contain"
-                />
+                <Link href={`/product/name/143`}>
+                  <Image
+                    src={`/samples/sale-pics-for-you/2.jpg`}
+                    alt="something is happening"
+                    width={0}
+                    height={0}
+                    sizes="100vh"
+                    className="w-full h-full object-contain"
+                  />
+                </Link>
                 <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-52 left-0 right-0 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black ml-10 mr-10 md:group-hover:block">
                   Quick Show
                 </Link>
@@ -208,14 +214,16 @@ export default function SalePics() {
             </div>
             <div className="p-3 relative">
               <div className="group">
-                <Image
-                  src={`/samples/sale-pics-for-you/3.jpg`}
-                  alt="something is happening"
-                  width={0}
-                  height={0}
-                  sizes="100vh"
-                  className="w-full h-full object-contain"
-                />
+                <Link href={`/product/name/143`}>
+                  <Image
+                    src={`/samples/sale-pics-for-you/3.jpg`}
+                    alt="something is happening"
+                    width={0}
+                    height={0}
+                    sizes="100vh"
+                    className="w-full h-full object-contain"
+                  />
+                </Link>
                 <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-52 left-0 right-0 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black ml-10 mr-10 md:group-hover:block">
                   Quick Show
                 </Link>
@@ -241,14 +249,16 @@ export default function SalePics() {
             </div>
             <div className="p-3 relative">
               <div className="group">
-                <Image
-                  src={`/samples/sale-pics-for-you/4.jpg`}
-                  alt="something is happening"
-                  width={0}
-                  height={0}
-                  sizes="100vh"
-                  className="w-full h-full object-contain"
-                />
+                <Link href={`/product/name/143`}>
+                  <Image
+                    src={`/samples/sale-pics-for-you/4.jpg`}
+                    alt="something is happening"
+                    width={0}
+                    height={0}
+                    sizes="100vh"
+                    className="w-full h-full object-contain"
+                  />
+                </Link>
                 <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-52 left-0 right-0 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black ml-10 mr-10 md:group-hover:block">
                   Quick Show
                 </Link>
@@ -274,14 +284,16 @@ export default function SalePics() {
             </div>
             <div className="p-3 relative">
               <div className="group">
-                <Image
-                  src={`/samples/sale-pics-for-you/5.jpg`}
-                  alt="something is happening"
-                  width={0}
-                  height={0}
-                  sizes="100vh"
-                  className="w-full h-full object-contain"
-                />
+                <Link href={`/product/name/143`}>
+                  <Image
+                    src={`/samples/sale-pics-for-you/5.jpg`}
+                    alt="something is happening"
+                    width={0}
+                    height={0}
+                    sizes="100vh"
+                    className="w-full h-full object-contain"
+                  />
+                </Link>
                 <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-52 left-0 right-0 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black ml-10 mr-10 md:group-hover:block">
                   Quick Show
                 </Link>
@@ -307,14 +319,16 @@ export default function SalePics() {
             </div>
             <div className="p-3 relative">
               <div className="group">
-                <Image
-                  src={`/samples/sale-pics-for-you/6.jpg`}
-                  alt="something is happening"
-                  width={0}
-                  height={0}
-                  sizes="100vh"
-                  className="w-full h-full object-contain"
-                />
+                <Link href={`/product/name/143`}>
+                  <Image
+                    src={`/samples/sale-pics-for-you/6.jpg`}
+                    alt="something is happening"
+                    width={0}
+                    height={0}
+                    sizes="100vh"
+                    className="w-full h-full object-contain"
+                  />
+                </Link>
                 <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-52 left-0 right-0 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black ml-10 mr-10 md:group-hover:block">
                   Quick Show
                 </Link>
@@ -340,14 +354,16 @@ export default function SalePics() {
             </div>
             <div className="p-3 relative">
               <div className="group">
-                <Image
-                  src={`/samples/sale-pics-for-you/7.jpg`}
-                  alt="something is happening"
-                  width={0}
-                  height={0}
-                  sizes="100vh"
-                  className="w-full h-full object-contain"
-                />
+                <Link href={`/product/name/143`}>
+                  <Image
+                    src={`/samples/sale-pics-for-you/7.jpg`}
+                    alt="something is happening"
+                    width={0}
+                    height={0}
+                    sizes="100vh"
+                    className="w-full h-full object-contain"
+                  />
+                </Link>
                 <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-52 left-0 right-0 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black ml-10 mr-10 md:group-hover:block">
                   Quick Show
                 </Link>
@@ -373,14 +389,16 @@ export default function SalePics() {
             </div>
             <div className="p-3 relative">
               <div className="group">
-                <Image
-                  src={`/samples/sale-pics-for-you/8.jpg`}
-                  alt="something is happening"
-                  width={0}
-                  height={0}
-                  sizes="100vh"
-                  className="w-full h-full object-contain"
-                />
+                <Link href={`/product/name/143`}>
+                  <Image
+                    src={`/samples/sale-pics-for-you/8.jpg`}
+                    alt="something is happening"
+                    width={0}
+                    height={0}
+                    sizes="100vh"
+                    className="w-full h-full object-contain"
+                  />
+                </Link>
                 <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-52 left-0 right-0 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black ml-10 mr-10 md:group-hover:block">
                   Quick Show
                 </Link>
@@ -406,14 +424,16 @@ export default function SalePics() {
             </div>
             <div className="p-3 relative">
               <div className="group">
-                <Image
-                  src={`/samples/sale-pics-for-you/9.jpg`}
-                  alt="something is happening"
-                  width={0}
-                  height={0}
-                  sizes="100vh"
-                  className="w-full h-full object-contain"
-                />
+                <Link href={`/product/name/143`}>
+                  <Image
+                    src={`/samples/sale-pics-for-you/9.jpg`}
+                    alt="something is happening"
+                    width={0}
+                    height={0}
+                    sizes="100vh"
+                    className="w-full h-full object-contain"
+                  />
+                </Link>
                 <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-52 left-0 right-0 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black ml-10 mr-10 md:group-hover:block">
                   Quick Show
                 </Link>
@@ -439,14 +459,16 @@ export default function SalePics() {
             </div>
             <div className="p-3 relative">
               <div className="group">
-                <Image
-                  src={`/samples/sale-pics-for-you/10.jpg`}
-                  alt="something is happening"
-                  width={0}
-                  height={0}
-                  sizes="100vh"
-                  className="w-full h-full object-contain"
-                />
+                <Link href={`/product/name/143`}>
+                  <Image
+                    src={`/samples/sale-pics-for-you/10.jpg`}
+                    alt="something is happening"
+                    width={0}
+                    height={0}
+                    sizes="100vh"
+                    className="w-full h-full object-contain"
+                  />
+                </Link>
                 <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-52 left-0 right-0 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black ml-10 mr-10 md:group-hover:block">
                   Quick Show
                 </Link>
