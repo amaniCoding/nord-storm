@@ -7,7 +7,7 @@ import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
 import { useRef } from "react";
 import StarRatings from "react-star-ratings";
 import Link from "next/link";
-export default function SliderSeederLarge(props: {photoName: string}) {
+export default function SliderSeederLarge(props: {photoName: string, numberOfSlides?: number}) {
 
   const sliderRef = useRef<Slider>(null);
 
@@ -24,8 +24,8 @@ export default function SliderSeederLarge(props: {photoName: string}) {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 5,
-    slidesToScroll: 5,
+    slidesToShow: props.numberOfSlides || 5,
+    slidesToScroll: props.numberOfSlides || 5,
     arrows: false,
     responsive: [
       {

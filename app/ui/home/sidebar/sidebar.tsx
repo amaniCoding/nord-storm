@@ -1,9 +1,7 @@
 'use client'
 import { PlusIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
-
 export default function CategorySideBar() {
-//react/no-unescaped-entities
   type SideBarType = {
     id: number;
     name: string;
@@ -475,12 +473,7 @@ export default function CategorySideBar() {
 
 
   ]
-  
- 
-
   const [sideBar, setSideBar] = useState<SideBarType[]>(sideBarItems);
-
-
   const handelSideBarItemClick = (item: SideBarType) => {
     const newSiderBarItems = sideBar.map(
       el => {
@@ -496,32 +489,32 @@ export default function CategorySideBar() {
   return (
     <div>
       {
-              sideBar.map(el => {
-                return (
-                  <div className="flex flex-col" key={el.id}>
-                    <div className="flex p-3 items-center justify-between border-t border-t-gray-300 mb-3">
-                      <span className="font-bold font-sans">{el.name}</span>
-                      <PlusIcon className="w-6 h-6 cursor-pointer" onClick={() => { handelSideBarItemClick(el) }} />
-                    </div>
-                    <div className="ml-4 p-3">
-                      {
-                        el.innerSide.map((el2, i) => {
-                          return (
-                            <div className={`transition-all duration-300 ease-in-out ${el.isOpen ? 'leading-2 h-auto overflow-hidden' : 'h-0 leading-none overflow-auto'}`} key={i}>
+        sideBar.map(el => {
+          return (
+            <div className="flex flex-col" key={el.id}>
+              <div className="flex p-3 items-center justify-between border-t border-t-gray-300 mb-3">
+                <span className="font-bold font-sans">{el.name}</span>
+                <PlusIcon className="w-6 h-6 cursor-pointer" onClick={() => { handelSideBarItemClick(el) }} />
+              </div>
+              <div className="ml-4 p-3">
+                {
+                  el.innerSide.map((el2, i) => {
+                    return (
+                      <div className={`transition-all duration-300 ease-in-out ${el.isOpen ? 'leading-2 h-auto overflow-hidden' : 'h-0 leading-none overflow-auto'}`} key={i}>
 
-                              <div className="flex items-center space-x-4">
-                                <input type="checkbox" className="w-6 h-6" />
-                                <span className="block mb-2">{el2}</span>
-                              </div>
-                            </div>
-                          )
-                        })
-                      }
-                    </div>
-                  </div>
-                )
-              })
-            }
+                        <div className="flex items-center space-x-4">
+                          <input type="checkbox" className="w-6 h-6" />
+                          <span className="block mb-2">{el2}</span>
+                        </div>
+                      </div>
+                    )
+                  })
+                }
+              </div>
+            </div>
+          )
+        })
+      }
     </div>
   )
 }
