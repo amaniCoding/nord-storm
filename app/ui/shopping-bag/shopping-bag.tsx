@@ -140,7 +140,7 @@ export default function ShoppingBag() {
                   <span>International shipping</span>
                 </div>
               </div>
-              <div className="pt-4 flex space-x-4">
+              <div className="pt-4 flex space-x-4 flex-wrap">
 
                 <div className="p-1">
                   <Image
