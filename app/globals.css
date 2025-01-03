@@ -73,4 +73,52 @@ body {
     scrollbar-color: #888 #f1f1f1;
     scrollbar-width: none;
 }
+.bg-green {
+  background-color: green !important;
+}
+.bg-blue {
+  background-color: blue !important;
+}
+.bg-yellow {
+  background-color: yellow !important;
+}
+.bg-pink {
+  background-color: pink !important;
+}
+
+.bg-magenta {
+  background-color: magenta !important;
+}
+.bg-cyan {
+  background-color: cyan !important;
+}
+.bg-black {
+  background-color: black !important;
+}
+.bg-red {
+  background-color: red !important;
+}
+
+.color-slider .slick-slide div {
+  display: flex !important;
+  width: 20px !important;
+  height: 20px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border-radius: 9999px !important;
+  text-align: center !important;
+  border: 1.6px solid black;
+}
+.color-slider .slick-slide > div {
+  margin: 0 !important
+}
+
+
+@media (min-width:801px) {
+  .color-slider .slick-list {
+    margin-left: 0 !important;
+    margin-right: 90px !important;
+  }
+}
+
 }

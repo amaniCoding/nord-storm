@@ -19,7 +19,7 @@ export default function ShoppingBag() {
                   <p className="text-xl font-bold">Guest Shopping Bag (1)</p>
                   <div className="flex space-x-2 items-center">
                     <span>Items in your bag are not on hold.</span>
-                    <span className="flex items-center space-x-2">
+                    <span className="flex space-x-2">
                       <GiftIcon className="w-6 h-6 stroke-black" />
                       <span>Choose gift options when you check out.</span>
                     </span>

@@ -7,7 +7,9 @@ import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
 import { useRef } from "react";
 import StarRatings from "react-star-ratings";
 import Link from "next/link";
-export default function SliderSeederLarge(props: {photoName: string, numberOfSlides?: number}) {
+import ColorSlider from "./color-slider";
+import { colorsSeeder } from "../libs/placeholder";
+export default function SliderSeederLarge(props: { photoName: string, numberOfSlides?: number }) {
 
   const sliderRef = useRef<Slider>(null);
 
@@ -51,8 +53,8 @@ export default function SliderSeederLarge(props: {photoName: string, numberOfSli
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToShow: 2,
+          slidesToScroll: 2,
           dots: false,
           arrows: false,
         }
@@ -69,11 +71,11 @@ export default function SliderSeederLarge(props: {photoName: string, numberOfSli
       <Slider {...settings} ref={sliderRef}>
         {Array.from(Array(10).keys()).map((_, i) => {
           return (
-            <div className="p-3 relative" key={i}>
+            <div className="py-2 px-4 relative" key={i}>
               <div className="group">
                 <Link href={`/product/name/143`}>
                   <Image
-                    src={`/samples/${props.photoName}/${i+1}.jpg`}
+                    src={`/samples/${props.photoName}/${i + 1}.jpg`}
                     alt="something is happening"
                     width={0}
                     height={0}
@@ -85,12 +87,14 @@ export default function SliderSeederLarge(props: {photoName: string, numberOfSli
                   Quick Show
                 </Link>
               </div>
-              <div className="mt-2 flex flex-col">
-                <span className="text-sm">color slider</span>
-                <span className="text-sm">New Markdown</span>
-                <span className="text-sm">UGG®</span>
-                <span className="text-sm">$112.00</span>
-                <span className="line-through">$160.00</span>
+              <div className="mt-2 flex flex-col mb-2">
+                <ColorSlider colors={colorsSeeder} />
+                <div>
+                  <span className="text-sm block">New Markdown</span>
+                  <span className="text-sm block">UGG®</span>
+                  <span className="text-sm block font-bold">$112.00</span>
+                  <span className="line-through block">$160.00</span>
+                </div>
 
                 <div className="flex space-x-2">
                   <StarRatings
@@ -107,7 +111,7 @@ export default function SliderSeederLarge(props: {photoName: string, numberOfSli
             </div>
           )
         })
-      }
+        }
       </Slider>
     </div>
   )
