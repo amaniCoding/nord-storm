@@ -29,8 +29,8 @@ export default function ColorSlider(props: { colors: Color[] }) {
   };
   return (
     <div className="relative color-slider">
-      <PiLessThan onClick={handelPrev} className="absolute top-0.5 -left-2 z-20 cursor-pointer w-4 h-4 md:mr-[18px]"/>
-      <PiGreaterThan onClick={handelNext} className=" absolute top-0.5 right-1 z-20 cursor-pointer w-4 h-4 md:mr-[70px]"/>
+      <PiLessThan onClick={handelPrev} className="absolute top-1 -left-2 z-20 cursor-pointer w-5 h-5 p-1 rounded-full bg-gray-50 shadow-md hover:bg-white"/>
+      <PiGreaterThan onClick={handelNext} className=" absolute top-1 right-0 z-20 cursor-pointer w-5 h-5 md:mr-[50px] p-1 rounded-full bg-gray-50 shadow-md hover:bg-white"/>
 
       <Slider {...settings} ref={sliderRef}>
         {

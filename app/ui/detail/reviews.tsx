@@ -233,15 +233,15 @@ export default function Reviews() {
         </div>
         <div className="mt-3">
           <p className="my-2">Pros</p>
-          <div className="grid md:grid-cols-5 grid-cols-3 gap-3">
+          <div className="grid md:grid-cols-5 grid-cols-2 gap-3">
             <button className="rounded-md inline-block p-2 w-full border-2 border-black hover:bg-gray-300 transition duration-300 ease-in-out">fit(11)</button>
-            <button className="rounded-md inline-block p-2 w-full border-2 border-black hover:bg-gray-300 transition duration-300 ease-in-out">flattering(11)</button>
+            <button className="rounded-md inline-block p-2 w-full border-2 border-black hover:bg-gray-300 transition duration-300 ease-in-out ">flattering(11)</button>
             <button className="rounded-md inline-block p-2 w-full border-2 border-black hover:bg-gray-300 transition duration-300 ease-in-out">appearance(11)</button>
             <button className="rounded-md inline-block p-2 w-full border-2 border-black hover:bg-gray-300 transition duration-300 ease-in-out">cute(11)</button>
             <button className="rounded-md inline-block p-2 w-full border-2 border-black hover:bg-gray-300 transition duration-300 ease-in-out">quality(11)</button>
           </div>
           <p className="my-2">Cons</p>
-          <div className="grid md:grid-cols-5 grid-cols-3 gap-3">
+          <div className="grid md:grid-cols-5 grid-cols-2 gap-3">
             <button className="rounded-md inline-block p-2 w-full border-2 border-black hover:bg-gray-300 transition duration-300 ease-in-out">small(11)</button>
             <button className="rounded-md inline-block p-2 w-full border-2 border-black hover:bg-gray-300 transition duration-300 ease-in-out">short(11)</button>
             <button className="rounded-md inline-block p-2 w-full border-2 border-black hover:bg-gray-300 transition duration-300 ease-in-out">material(23)</button>
@@ -251,7 +251,7 @@ export default function Reviews() {
         </div>
         <div className="py-4">
           <div className="relative">
-            <input className="w-3/6 pl-12 py-3 border-2 border-gray-300" placeholder="Search Reviews"
+            <input className="md:w-3/6 pl-12 py-3 border-2 border-gray-300 w-full" placeholder="Search Reviews"
             />
             <MagnifyingGlassIcon className="absolute md:left-3 md:top-1/2 w-7 h-7 md:-translate-y-1/2 -translate-y-8 left-2 top-11 stroke-gray-500 peer-focus:text-gray-900" />
           </div>

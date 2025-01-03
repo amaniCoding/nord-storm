@@ -33,8 +33,8 @@ export default function SliderSeederLarge(props: { photoName: string, numberOfSl
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
           infinite: true,
           dots: false,
           arrows: false,
@@ -43,8 +43,8 @@ export default function SliderSeederLarge(props: { photoName: string, numberOfSl
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
           initialSlide: 2,
           dots: false,
           arrows: false,
@@ -53,8 +53,8 @@ export default function SliderSeederLarge(props: { photoName: string, numberOfSl
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
           dots: false,
           arrows: false,
         }
@@ -89,10 +89,10 @@ export default function SliderSeederLarge(props: { photoName: string, numberOfSl
               </div>
               <div className="mt-2 flex flex-col mb-2">
                 <ColorSlider colors={colorsSeeder} />
-                <div>
-                  <span className="text-sm block">New Markdown</span>
-                  <span className="text-sm block">UGG®</span>
-                  <span className="text-sm block font-bold">$112.00</span>
+                <div className="my-2">
+                  <span className="block">New Markdown</span>
+                  <span className="block">UGG®</span>
+                  <span className="block font-bold">$112.00</span>
                   <span className="line-through block">$160.00</span>
                 </div>
 
