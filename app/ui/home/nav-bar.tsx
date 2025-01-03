@@ -51,7 +51,7 @@ export default function NavBar() {
           <span className="cursor-pointer border-b-2 border-b-transparent hover:border-black">Explore</span>
         </div>
 
-        <div className={`pt-6 md:hidden fixed z-10 h-screen w-56 overflow-y-scroll socrollabar top-0 left-0 transition duration-200 ease-in-out bg-white ${isNavItemShown ? 'translate-x-0' : '-translate-x-full'}`}>
+        <div className={`pt-6 md:hidden fixed z-10 h-screen w-56 overflow-y-scroll socrollabar scroll_content top-0 left-0 transition duration-200 ease-in-out bg-white ${isNavItemShown ? 'translate-x-0' : '-translate-x-full'}`}>
           <XMarkIcon className="w-9 h-9 absolute top-2 right-4 p-1 cursor-pointer hover:bg-gray-200 rounded-full" onClick={() => setIsNavItemShown(false)}/>
           <span className="block p-2 hover:bg-gray-200 cursor-pointer" onClick={() => {handelNavItemClick(null)}}>Holiday Gifts</span>
           <span className="block p-2 hover:bg-gray-200 cursor-pointer" onClick={() => {handelNavItemClick(null)}}>Sale</span>

@@ -16,11 +16,11 @@ export default function SalePics() {
           <span>Beauty & Fragrance Sale</span>
         </div>
         <SliderSeederMobile>
-          <span className="font-bold text-lg cursor-pointer md:border-b-4 border-b-black">New Markdowns</span>
-          <span className="font-bold text-lg cursor-pointer">Designer Sale Clothing, Shoes & Accessories</span>
-          <span className="font-bold text-lg cursor-pointer">Sale Cold-Weather Clothing, Shoes & Accessories</span>
-          <span className="font-bold text-lg cursor-pointer">Limited-Time Sale</span>
-          <span className="font-bold text-lg cursor-pointer">Beauty & Fragrance Sale</span>
+          <span className="font-bold text-lg text-center cursor-pointer md:border-b-4 border-b-black">New Markdowns</span>
+          <span className="font-bold text-lg text-center cursor-pointer">Designer Sale Clothing, Shoes & Accessories</span>
+          <span className="font-bold text-lg text-center cursor-pointer">Sale Cold-Weather Clothing, Shoes & Accessories</span>
+          <span className="font-bold text-lg text-center cursor-pointer">Limited-Time Sale</span>
+          <span className="font-bold text-lg text-center cursor-pointer">Beauty & Fragrance Sale</span>
         </SliderSeederMobile>
         <SliderSeederLarge photoName="sale-pics-for-you" />
       </div>
