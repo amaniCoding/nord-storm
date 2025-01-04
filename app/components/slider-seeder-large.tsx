@@ -89,9 +89,9 @@ export default function SliderSeederLarge(props: { photoName: string, numberOfSl
                   Quick Show
                 </Link>
               </div>
-              <div className="mt-2 flex flex-col mb-2">
+              <div className="mt-2 flex flex-col space-y-1">
                 <ColorSlider colors={colorsSeeder} />
-                <div className="my-2">
+                <div className="my-1">
                   <span className="block">New Markdown</span>
                   <span className="block">UGG®</span>
                   <span className="block font-bold">$112.00</span>

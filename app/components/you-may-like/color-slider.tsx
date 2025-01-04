@@ -28,9 +28,9 @@ export default function YouMayAlsoLikeColorSlider(props: { colors: Color[] }) {
 
   };
   return (
-    <div className="relative you-may-also-like-color-slider mt-3">
+    <div className="relative you-may-also-like-color-slider mt-1">
       <PiLessThan onClick={handelPrev} className="absolute top-0 -left-5 z-20 cursor-pointer w-5 h-5 p-1 rounded-full bg-gray-50 shadow-md hover:bg-white"/>
-      <PiGreaterThan onClick={handelNext} className=" absolute top-0 -right-2 z-20 cursor-pointer w-5 h-5 p-1 rounded-full bg-gray-50 shadow-md hover:bg-white"/>
+      <PiGreaterThan onClick={handelNext} className=" absolute top-0 right-0 z-20 cursor-pointer w-5 h-5 p-1 rounded-full bg-gray-50 shadow-md hover:bg-white"/>
 
       <Slider {...settings} ref={sliderRef}>
         {
