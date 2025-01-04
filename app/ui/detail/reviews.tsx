@@ -223,7 +223,7 @@ export default function Reviews() {
           </div>
           <div className="flex items-center space-x-3">
             <input type="checkbox" className="w-6 h-6" />
-            <span className="text-nowrap">1 stars</span>
+            <span className="text-nowrap">1 star</span>
             <div className="relative w-full h-4 rounded-md bg-slate-300">
               <div className="absolute top-0 bottom-0 left-0 bg-black w-[23%]"></div>
             </div>
@@ -251,7 +251,7 @@ export default function Reviews() {
         </div>
         <div className="py-4">
           <div className="relative">
-            <input className="md:w-3/6 pl-12 py-3 border-2 border-gray-300 w-full" placeholder="Search Reviews"
+            <input className="pl-12 py-3 border-2 border-gray-300 w-full" placeholder="Search Reviews"
             />
             <MagnifyingGlassIcon className="absolute md:left-3 md:top-1/2 w-7 h-7 md:-translate-y-1/2 -translate-y-8 left-2 top-11 stroke-gray-500 peer-focus:text-gray-900" />
           </div>
@@ -437,7 +437,7 @@ export default function Reviews() {
       </div>
       <div className="max-w-screen-xl mx-auto">
         <div className="slider-container relative">
-          <p className="font-bold text-xl my-2">Recommended for You</p>
+          <p className="md:font-bold md:text-xl my-2 md:text-left text-center">Recommended for You</p>
           <div className="md:flex hidden md:space-x-10 space-x-10 border-b-2 border-b-gray-300 mb-1">
             <span className="border-b-4 border-b-slate-900">Frequently Bought Together</span>
             <span>More from HOUSE OF CB</span>

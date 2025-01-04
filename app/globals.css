@@ -109,7 +109,7 @@ body {
   text-align: center !important;
   border: 1.6px solid rgb(46, 3, 3);
   opacity: 0.8 !important;
-  outline: 1.2px solid #888;
+  outline: 1.2px solid #ddd;
   outline-offset: 1.9px;
 }
 .color-slider .slick-slide div {
@@ -129,5 +129,26 @@ body {
     margin-right: 65px !important;
   }
 }
+
+
+
+
+
+
+
+
+
+.you-may-also-like-color-slider .slick-slide div {
+  display: flex !important;
+  width: 18px !important;
+  height: 18px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border-radius: 9999px !important;
+  text-align: center !important;
+  border: 1.6px solid rgb(46, 3, 3);
+  opacity: 0.8 !important;
+}
+
 
 }

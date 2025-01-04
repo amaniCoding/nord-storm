@@ -492,11 +492,11 @@ export default function CategorySideBar() {
         sideBar.map(el => {
           return (
             <div className="flex flex-col" key={el.id}>
-              <div className="flex p-3 items-center justify-between border-t border-t-gray-300 mb-3">
+              <div className="flex p-3 items-center justify-between border-t border-t-gray-300">
                 <span className="font-bold font-sans">{el.name}</span>
                 <PlusIcon className="w-6 h-6 cursor-pointer" onClick={() => { handelSideBarItemClick(el) }} />
               </div>
-              <div className="ml-4 p-3">
+              <div className="ml-4">
                 {
                   el.innerSide.map((el2, i) => {
                     return (

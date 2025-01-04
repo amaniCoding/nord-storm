@@ -71,9 +71,11 @@ export default function SliderSeederLarge(props: { photoName: string, numberOfSl
       <Slider {...settings} ref={sliderRef}>
         {Array.from(Array(10).keys()).map((_, i) => {
           return (
-            <div className="py-2 px-4 relative" key={i}>
-              <div className="group">
-                <Link href={`/product/name/143`}>
+            <div className="py-2 px-3" key={i}>
+              <div className="group relative">
+              <Link href={`/product/name/143`}>
+                <div className="hidden absolute top-0 bottom-0 left-0 right-0 bg-black/15 group-hover:block"></div>
+                
                   <Image
                     src={`/samples/${props.photoName}/${i + 1}.jpg`}
                     alt="something is happening"
@@ -83,7 +85,7 @@ export default function SliderSeederLarge(props: { photoName: string, numberOfSl
                     className="w-full h-full object-contain"
                   />
                 </Link>
-                <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-44 right-1/2 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black w-1/2 translate-x-1/2 md:group-hover:block">
+                <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-3 right-1/2 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black w-1/2 translate-x-1/2 md:group-hover:block">
                   Quick Show
                 </Link>
               </div>

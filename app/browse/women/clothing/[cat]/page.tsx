@@ -14,7 +14,7 @@ export default async function Page(props: { params: Promise<{ cat: string }> }) 
   return (
     <section>
       <div className="max-w-screen-xl mx-auto">
-        <div className="flex items-center justify-start p-5 space-x-5">
+      <div className="max-w-screen-xl mx-auto px-3">
           <Link href={`/`}>Home /</Link>
           <Link href={`../`}>Women /</Link>
           <Link href={`./`}>Clothing /</Link>
