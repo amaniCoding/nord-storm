@@ -8,7 +8,7 @@ export default function SalePics() {
         <i className="fa fa-star fa-lg" aria-hidden="true"></i>
         <p className="my-3 text-xl font-bold">Sale Picks for You</p>
 
-        <div className="md:flex hidden md:space-x-10 border-b-4 border-b-gray-300 pb-3 mb-4">
+        <div className="md:flex hidden md:space-x-10 border-b-2 border-b-gray-300 pb-3 mb-4">
           <span className="border-b-4 border-b-black">New Markdowns</span>
           <span>Designer Sale Clothing, Shoes & Accessories</span>
           <span>Sale Cold-Weather Clothing, Shoes & Accessories</span>

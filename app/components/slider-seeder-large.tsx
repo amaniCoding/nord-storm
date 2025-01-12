@@ -63,15 +63,13 @@ export default function SliderSeederLarge(props: { photoName: string, numberOfSl
   };
   return (
     <div className="relative slider-container">
-      <ArrowLeftIcon onClick={handelPrev} className="md:w-10 md:h-10 w-8 h-8 flex items-center justify-center absolute top-1/2 bg-white shadow-md rounded-full left-1 z-20  cursor-pointer p-2 stroke-black font-bold transition duration-300 ease-out 
-           dark:bg-slate-800 dark:stroke-white " />
-      <ArrowRightIcon onClick={handelNext} className="md:w-10 md:h-10 w-8 h-8 flex items-center justify-center absolute top-1/2 bg-white shadow-md rounded-full right-1 z-20  cursor-pointer p-2 stroke-black font-bold transition duration-300 ease-out 
-           dark:bg-slate-800 dark:stroke-white " />
+      <ArrowLeftIcon onClick={handelPrev} className="md:flex hidden md:w-10 md:h-10 w-8 h-8  items-center justify-center absolute top-1/2 bg-white shadow-md rounded-full left-1 z-20  cursor-pointer p-2 stroke-black font-bold transition duration-300 ease-out dark:bg-slate-800 dark:stroke-white md " />
+      <ArrowRightIcon onClick={handelNext} className="md:flex hidden md:w-10 md:h-10 w-8 h-8  items-center justify-center absolute top-1/2 bg-white shadow-md rounded-full right-1 z-20  cursor-pointer p-2 stroke-black font-bold transition duration-300 ease-out dark:bg-slate-800 dark:stroke-white " />
 
       <Slider {...settings} ref={sliderRef}>
         {Array.from(Array(10).keys()).map((_, i) => {
           return (
-            <div className="py-2 px-3" key={i}>
+            <div className="" key={i}>
               <div className="group relative">
               <Link href={`/product/name/143`}>
                 <div className="hidden absolute top-0 bottom-0 left-0 right-0 bg-black/15 group-hover:block"></div>

@@ -3,8 +3,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { useRef } from "react";
-import { PiGreaterThan, PiLessThan} from "react-icons/pi";
 import { Color } from "@/app/types/types";
+import { MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from "react-icons/md";
 export default function YouMayAlsoLikeColorSlider(props: { colors: Color[] }) {
 
   const sliderRef = useRef<Slider>(null);
@@ -22,16 +22,15 @@ export default function YouMayAlsoLikeColorSlider(props: { colors: Color[] }) {
     dots: false,
     infinite: false,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     arrows: false,
 
   };
   return (
     <div className="relative you-may-also-like-color-slider mt-1">
-      <PiLessThan onClick={handelPrev} className="absolute top-0 -left-5 z-20 cursor-pointer w-5 h-5 p-1 rounded-full bg-gray-50 shadow-md hover:bg-white"/>
-      <PiGreaterThan onClick={handelNext} className=" absolute top-0 right-0 z-20 cursor-pointer w-5 h-5 p-1 rounded-full bg-gray-50 shadow-md hover:bg-white"/>
-
+       <MdOutlineKeyboardArrowLeft size={30}  onClick={handelPrev} className="absolute -top-1.5 -left-7 z-20 cursor-pointer rounded-full"/>
+       <MdOutlineKeyboardArrowRight size={30}  onClick={handelNext} className=" absolute -top-1.5 right-0 z-20 cursor-pointer rounded-full"/>
       <Slider {...settings} ref={sliderRef}>
         {
           props.colors.map((color, i) => {
