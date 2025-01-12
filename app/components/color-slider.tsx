@@ -29,8 +29,8 @@ export default function ColorSlider(props: { colors: Color[] }) {
   };
   return (
     <div className="relative color-slider">
-      <MdOutlineKeyboardArrowLeft size={30}  onClick={handelPrev} className="absolute -top-1.5 md:-left-2 -left-1 z-20 cursor-pointer rounded-full"/>
-      <MdOutlineKeyboardArrowRight size={30}  onClick={handelNext} className=" absolute -top-1.5 right-0 z-20 cursor-pointer mr-[108px] rounded-full"/>
+      <MdOutlineKeyboardArrowLeft size={26}  onClick={handelPrev} className="absolute top-1/2 -translate-y-1/2 -left-3 z-20 cursor-pointer rounded-full"/>
+      <MdOutlineKeyboardArrowRight size={26}  onClick={handelNext} className=" absolute top-1/2  -translate-y-1/2 right-2 z-20 cursor-pointer rounded-full"/>
 
       <Slider {...settings} ref={sliderRef}>
         {

@@ -33,8 +33,8 @@ export default function SliderSeederLarge(props: { photoName: string, numberOfSl
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToShow: props.numberOfSlides || 3,
+          slidesToScroll: props.numberOfSlides || 3,
           infinite: true,
           dots: false,
           arrows: false,
@@ -43,8 +43,8 @@ export default function SliderSeederLarge(props: { photoName: string, numberOfSl
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToShow: props.numberOfSlides || 3,
+          slidesToScroll: props.numberOfSlides || 3,
           initialSlide: 2,
           dots: false,
           arrows: false,
@@ -53,8 +53,8 @@ export default function SliderSeederLarge(props: { photoName: string, numberOfSl
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToShow: props.numberOfSlides || 2,
+          slidesToScroll: props.numberOfSlides || 2,
           dots: false,
           arrows: false,
         }
@@ -66,14 +66,15 @@ export default function SliderSeederLarge(props: { photoName: string, numberOfSl
       <ArrowLeftIcon onClick={handelPrev} className="md:flex hidden md:w-10 md:h-10 w-8 h-8  items-center justify-center absolute top-1/2 bg-white shadow-md rounded-full left-1 z-20  cursor-pointer p-2 stroke-black font-bold transition duration-300 ease-out dark:bg-slate-800 dark:stroke-white md " />
       <ArrowRightIcon onClick={handelNext} className="md:flex hidden md:w-10 md:h-10 w-8 h-8  items-center justify-center absolute top-1/2 bg-white shadow-md rounded-full right-1 z-20  cursor-pointer p-2 stroke-black font-bold transition duration-300 ease-out dark:bg-slate-800 dark:stroke-white " />
 
+      <div className="large-color">
       <Slider {...settings} ref={sliderRef}>
         {Array.from(Array(10).keys()).map((_, i) => {
           return (
-            <div className="" key={i}>
+            <div className="p-1" key={i}>
               <div className="group relative">
-              <Link href={`/product/name/143`}>
-                <div className="hidden absolute top-0 bottom-0 left-0 right-0 bg-black/15 group-hover:block"></div>
-                
+                <Link href={`/product/name/143`}>
+                  <div className="hidden absolute top-0 bottom-0 left-0 right-0 bg-black/15 group-hover:block"></div>
+
                   <Image
                     src={`/samples/${props.photoName}/${i + 1}.jpg`}
                     alt="something is happening"
@@ -87,16 +88,16 @@ export default function SliderSeederLarge(props: { photoName: string, numberOfSl
                   Quick Show
                 </Link>
               </div>
-              <div className="mt-2 flex flex-col space-y-1">
-                <ColorSlider colors={colorsSeeder} />
+              <div className="mt-1">
+               
                 <div className="my-1">
                   <span className="block">New Markdown</span>
                   <span className="block">UGG®</span>
                   <span className="block font-bold">$112.00</span>
                   <span className="line-through block">$160.00</span>
                 </div>
-
-                <div className="flex space-x-2">
+                <ColorSlider colors={colorsSeeder}/>
+                <div className="flex md:items-center">
                   <StarRatings
                     rating={5}
                     starDimension="18px"
@@ -105,14 +106,18 @@ export default function SliderSeederLarge(props: { photoName: string, numberOfSl
                     numberOfStars={5}
                     name='rating'
                   />
+                  
                   <span>(325)</span>
                 </div>
+
+
               </div>
             </div>
           )
         })
         }
       </Slider>
+      </div>
     </div>
   )
 }

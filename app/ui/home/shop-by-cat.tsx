@@ -2,10 +2,9 @@
 import Image from "next/image";
 export default function ShopByCat() {
   return (
-    <section className="">
-      <div className="max-w-screen-xl mx-auto py-1 px-3">
-        <p className="my-3 text-xl text-center font-bold">
-        SHOP BY CATEGORY</p>
+    <section className="p-3">
+      <div className="max-w-screen-xl mx-auto">
+        <p className="my-3 font-semibold">SHOP BY CATEGORY</p>
         <div className="grid md:grid-cols-6 grid-cols-2 md:gap-3 gap-1">
           <div className="p-1">
             <Image

@@ -4,7 +4,6 @@ import StarRatings from "react-star-ratings";
 import Image from "next/image";
 import ColorSlider from "../color-slider";
 import { colorsSeeder } from "../../libs/placeholder";
-import YouMayAlsoLikeColorSlider from "./color-slider";
 export default function YouMayAlsoLike() {
   return (
     <>
@@ -25,7 +24,7 @@ export default function YouMayAlsoLike() {
           </Link>
         </div>
         <div className="mt-2 flex flex-col">
-          <YouMayAlsoLikeColorSlider colors={colorsSeeder}/>
+          <ColorSlider colors={colorsSeeder}/>
           <div className="my-3">
             <span className="text-sm block">New Markdown</span>
           <span className="text-sm block">UGG®</span>
@@ -63,7 +62,7 @@ export default function YouMayAlsoLike() {
           </Link>
         </div>
         <div className="mt-2 flex flex-col">
-          <YouMayAlsoLikeColorSlider colors={colorsSeeder}/>
+          <ColorSlider colors={colorsSeeder}/>
           <div className="my-3">
             <span className="text-sm block">New Markdown</span>
           <span className="text-sm block">UGG®</span>
@@ -101,7 +100,7 @@ export default function YouMayAlsoLike() {
           </Link>
         </div>
         <div className="mt-2 flex flex-col">
-          <YouMayAlsoLikeColorSlider colors={colorsSeeder}/>
+          <ColorSlider colors={colorsSeeder}/>
           <div className="my-3">
             <span className="text-sm block">New Markdown</span>
           <span className="text-sm block">UGG®</span>
@@ -139,7 +138,7 @@ export default function YouMayAlsoLike() {
           </Link>
         </div>
         <div className="mt-2 flex flex-col">
-          <YouMayAlsoLikeColorSlider colors={colorsSeeder}/>
+          <ColorSlider colors={colorsSeeder}/>
           <div className="my-3">
             <span className="text-sm block">New Markdown</span>
           <span className="text-sm block">UGG®</span>

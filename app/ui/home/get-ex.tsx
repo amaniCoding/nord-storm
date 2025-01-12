@@ -3,11 +3,9 @@ import Image from "next/image";
 export default function GetEx() {
   //react/no-unescaped-entities
   return (
-    <section className="">
-      <div className="max-w-screen-xl mx-auto py-1 px-3">
-        <p className="mb-2 text-xl text-center font-bold">
-          Get Excited
-        </p>
+    <section className="p-3">
+      <div className="max-w-screen-xl mx-auto">
+        <p className="my-3 font-semibold text-center">Get Excited</p>
         <p className="mb-2 text-center">
           Discover the latest stories from The Thread, plus more we're loving in fashion, beauty and lifestyle.
         </p>
