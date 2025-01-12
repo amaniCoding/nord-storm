@@ -3,10 +3,10 @@ import SliderSeederLarge from "@/app/components/slider-seeder-large";
 import SliderSeederMobile from "@/app/components/slider-seeder-mobile";
 export default function SalePics() {
   return (
-    <section className=" bg-gray-50">
+    <section className="pt-2 bg-gray-50">
       <div className="max-w-screen-xl mx-auto">
         <i className="fa fa-star fa-lg" aria-hidden="true"></i>
-        <p className="my-3 font-semibold">Sale Picks for You</p>
+        <p className="my-3 font-semibold pl-4">Sale Picks for You</p>
 
         <div className="md:flex hidden md:space-x-10 border-b-2 border-b-gray-300 pb-3 mb-4 bg-white p-3">
           <span className="border-b-4 border-b-black">New Markdowns</span>
