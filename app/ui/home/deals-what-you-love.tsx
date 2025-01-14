@@ -4,8 +4,8 @@ export default function DealsForYou() {
   return (
     <section className=" bg-gray-50">
       <div className="max-w-screen-xl mx-auto">
-        <p className="my-3 text-xl font-bold">Great Deals on What You Love</p>
-        <p className="mb-2">
+        <p className="my-3 text-xl font-bold pl-4">Great Deals on What You Love</p>
+        <p className="mb-2 pl-4">
           Items similar to what you've browsed are on sale
         </p>
         <SliderSeederLarge photoName="great-deals" />
