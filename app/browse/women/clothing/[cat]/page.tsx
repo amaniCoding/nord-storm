@@ -1,10 +1,9 @@
-'use client'
 import ShoppingSeeder from "@/app/components/shpping-seeder";
 import CategorySideBar from "@/app/ui/home/sidebar/sidebar";
 import SubCategory from "@/app/ui/home/sidebar/sub-category";
-import Image from "next/image";
+
 import Link from "next/link";
-import StarRatings from "react-star-ratings";
+
 
 export default async function Page(props: { params: Promise<{ cat: string }> }) {
   const params = await props.params;
@@ -14,7 +13,7 @@ export default async function Page(props: { params: Promise<{ cat: string }> }) 
   return (
     <section>
       <div className="max-w-screen-xl mx-auto">
-      <div className="max-w-screen-xl mx-auto px-3">
+        <div className="max-w-screen-xl mx-auto px-3">
           <Link href={`/`}>Home /</Link>
           <Link href={`../`}>Women /</Link>
           <Link href={`./`}>Clothing /</Link>
@@ -39,15 +38,17 @@ export default async function Page(props: { params: Promise<{ cat: string }> }) 
               </div>
 
             </div>
-            <div className="grid md:grid-cols-4 grid-cols-1 gap-3">
-              <ShoppingSeeder/>
-              <ShoppingSeeder/>
-              <ShoppingSeeder/>
-              <ShoppingSeeder/>
-              <ShoppingSeeder/>
-              <ShoppingSeeder/>
-              <ShoppingSeeder/>
-              <ShoppingSeeder/>
+            <div className="bg-gray-50 px-6">
+              <div className="grid md:grid-cols-4 grid-cols-1 gap-5">
+                <ShoppingSeeder />
+                <ShoppingSeeder />
+                <ShoppingSeeder />
+                <ShoppingSeeder />
+                <ShoppingSeeder />
+                <ShoppingSeeder />
+                <ShoppingSeeder />
+                <ShoppingSeeder />
+              </div>
             </div>
           </div>
         </div>

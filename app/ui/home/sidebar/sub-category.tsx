@@ -12,8 +12,21 @@ export default function SubCategory() {
 
   };
   return (
-    <div className="py-3">
-      <Slider {...settings2}>
+    <>
+      <div className="py-3 md:hidden block">
+        <Slider {...settings2}>
+          <span className="font-sans">All Skirts</span>
+          <span className="font-sans">Denim</span>
+          <span className="font-sans">Leather</span>
+          <span className="font-sans">Maxi</span>
+          <span className="font-sans">Midi</span>
+          <span className="font-sans">Mini</span>
+          <span className="font-sans">Slip</span>
+          <span className="font-sans">Juniors</span>
+        </Slider>
+      </div>
+
+      <div className="md:flex hidden items-center space-x-14">
         <span className="font-sans">All Skirts</span>
         <span className="font-sans">Denim</span>
         <span className="font-sans">Leather</span>
@@ -22,7 +35,8 @@ export default function SubCategory() {
         <span className="font-sans">Mini</span>
         <span className="font-sans">Slip</span>
         <span className="font-sans">Juniors</span>
-      </Slider>
-    </div>
+      </div>
+    </>
+
   )
 } 
