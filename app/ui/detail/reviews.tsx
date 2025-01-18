@@ -438,7 +438,7 @@ export default function Reviews() {
       <div className="max-w-screen-xl mx-auto">
         <div className="slider-container relative">
           <p className="md:font-bold md:text-xl my-2 md:text-left text-center">Recommended for You</p>
-          <div className="md:flex hidden md:space-x-10 space-x-10 border-b-2 border-b-gray-300 mb-1">
+          <div className="md:flex hidden md:space-x-10 space-x-10 border-b-2 border-b-gray-300 mb-1 pb-3">
             <span className="border-b-4 border-b-slate-900">Frequently Bought Together</span>
             <span>More from HOUSE OF CB</span>
 
@@ -448,7 +448,9 @@ export default function Reviews() {
             <span className="md:ml-0 ml-20 font-bold text-lg cursor-pointer">More from HOUSE OF CB</span>
 
           </SliderMobile>
+          <div className="bg-gray-50 mt-3">
           <SliderLarge photoName="great-deals"/>
+          </div>
         </div>
         <RecentlyViewed />
       </div>
