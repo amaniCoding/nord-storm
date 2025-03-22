@@ -139,7 +139,7 @@ export default function Product() {
               </div>
               <p>Color: Vintage Cream</p>
               <div className="flex items-center space-x-3">
-                <div className="w-14 h-14 rounded-lg p-1 border-2 border-black">
+                <div className="w-14 h-14 rounded-lg p-1 border-2 border-gray-300">
                   <Image
                     src={"/samples/sale-pics-for-you/2.jpg"}
                     alt="something is happening"
@@ -149,7 +149,7 @@ export default function Product() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <div className="w-14 h-14 rounded-lg p-1 border-2 border-black">
+                <div className="w-14 h-14 rounded-lg p-1 border-2 border-gray-300">
                   <Image
                     src={"/samples/sale-pics-for-you/4.jpg"}
                     alt="something is happening"
@@ -159,7 +159,7 @@ export default function Product() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <div className="w-14 h-14 rounded-lg p-1 border-2 border-black">
+                <div className="w-14 h-14 rounded-lg p-1 border-2 border-gray-300">
                   <Image
                     src={"/samples/sale-pics-for-you/6.jpg"}
                     alt="something is happening"
