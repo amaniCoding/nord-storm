@@ -15,7 +15,7 @@ export default function YouMayAlsoLike() {
             <div className="group">
               <Link href={`/product/name/143`}>
                 <Image
-                  src={`/samples/great-deals/${i+1}.jpg`}
+                  src={`/samples/great-deals/${i + 1}.jpg`}
                   alt="something is happening"
                   width={0}
                   height={0}
@@ -23,7 +23,7 @@ export default function YouMayAlsoLike() {
                   className="w-full h-full object-contain"
                 />
               </Link>
-              <Link href={`/product/name/40/quick-show`} className="md:block hidden bg-gray-50/95 p-2 text-center absolute bottom-44  left-5 right-5 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black w-3/4 md:group-hover:block">
+              <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-3 right-1/2 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black w-3/4 translate-x-1/2 md:group-hover:block">
                 Quick Show
               </Link>
             </div>
