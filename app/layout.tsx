@@ -1,20 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+
 import "./globals.css";
 import SearchBar from "./ui/home/search-bar";
 import NavBar from "./ui/home/nav-bar";
 import Footer from "./ui/home/footer";
 import EmailUpdates from "./ui/home/email-updates";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import { Outfit } from 'next/font/google'
+const inter = Outfit({ subsets: ['latin']  })
 
 export const metadata: Metadata = {
   title: "Nordstorm clone",
@@ -29,13 +22,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={inter.className}
       >
         <SearchBar />
         <NavBar />
-          {children}
+        {children}
         <EmailUpdates />
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

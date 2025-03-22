@@ -9,13 +9,13 @@ export default function YouMayAlsoLike() {
     <>
 
 
-      {Array.from(Array(5).keys()).map((_, i) => {
+      {Array.from(Array(10).keys()).map((_, i) => {
         return (
           <div className="py-2 px-3">
             <div className="group">
               <Link href={`/product/name/143`}>
                 <Image
-                  src={`/samples/recently-viewed/${i+1}.jpg`}
+                  src={`/samples/great-deals/${i+1}.jpg`}
                   alt="something is happening"
                   width={0}
                   height={0}

@@ -50,15 +50,7 @@ export default function Reviews() {
   return (
     <section className="py-6">
       <div className="max-w-screen-xl mx-auto py-1 px-3">
-        <div className="flex items-center md:space-x-44 md:pl-20 md:py-3 pl-3 py-4">
-          <div className="flex flex-col space-y-3">
-            <span>Reviews</span>
-            <span>Review Icons</span>
-            <span>3.3 out of 5</span>
-            <span>Fit: Runs slightly small</span>
-          </div>
-          <button className="md:w-60 md:p-2 p-1 border-2 border-black inline-block hover:scale-105 transition duration-200 ease-in-out hover:bg-gray-300 rounded-lg">Write Review</button>
-        </div>
+        <h2 className="text-2xl font-bold text-center my-2">Reviews</h2>
         <div className="grid md:grid-cols-2 grid-cols-1 md:gap-4 gap-2">
           <div className="p-2">
             <p className="font-bold md:text-xl mb-2">Most helpful positive review</p>
@@ -183,257 +175,351 @@ export default function Reviews() {
           </div>
         </Slider>
       </div>
-      <div className="md:max-w-screen-lg max-w-full mx-auto p-5">
-        <div className="mt-3 w-full flex flex-col space-y-4">
-          <div className="flex items-center space-x-3">
-            <input type="checkbox" className="w-6 h-6" />
-            <span className="text-nowrap">5 stars</span>
-            <div className="relative w-full h-4 rounded-md bg-slate-300">
-              <div className="absolute top-0 bottom-0 left-0 bg-black w-[35%]"></div>
-            </div>
-            <span className="text-nowrap">35%</span>
+      <div className="md:max-w-screen-xl max-w-full mx-auto p-6">
 
-          </div>
-          <div className="flex items-center space-x-3">
-            <input type="checkbox" className="w-6 h-6" />
-            <span className="text-nowrap">4 stars</span>
-            <div className="relative w-full h-4 rounded-md bg-slate-300">
-              <div className="absolute top-0 bottom-0 left-0 bg-black w-[16%]"></div>
-            </div>
-            <span className="text-nowrap">16%</span>
+        <div className="grid grid-cols-12 gap-10">
+          <div className="md:col-span-3 col-span-12">
 
-          </div>
-          <div className="flex items-center space-x-3">
-            <input type="checkbox" className="w-6 h-6" />
-            <span className="text-nowrap">3 stars</span>
-            <div className="relative w-full h-4 rounded-md bg-slate-300">
-              <div className="absolute top-0 bottom-0 left-0 bg-black w-[11%]"></div>
-            </div>
-            <span className="text-nowrap">11%</span>
-
-          </div>
-          <div className="flex items-center space-x-3">
-            <input type="checkbox" className="w-6 h-6" />
-            <span className="text-nowrap">2 stars</span>
-            <div className="relative w-full h-4 rounded-md bg-slate-300">
-              <div className="absolute top-0 bottom-0 left-0 bg-black w-[14%]"></div>
-            </div>
-            <span className="text-nowrap">14%</span>
-
-          </div>
-          <div className="flex items-center space-x-3">
-            <input type="checkbox" className="w-6 h-6" />
-            <span className="text-nowrap">1 star</span>
-            <div className="relative w-full h-4 rounded-md bg-slate-300">
-              <div className="absolute top-0 bottom-0 left-0 bg-black w-[23%]"></div>
-            </div>
-            <span className="text-nowrap">23%</span>
-
-          </div>
-        </div>
-        <div className="mt-3">
-          <p className="my-2">Pros</p>
-          <div className="grid md:grid-cols-5 grid-cols-2 gap-3">
-            <button className="rounded-md inline-block p-2 w-full border-2 border-black hover:bg-gray-300 transition duration-300 ease-in-out">fit(11)</button>
-            <button className="rounded-md inline-block p-2 w-full border-2 border-black hover:bg-gray-300 transition duration-300 ease-in-out ">flattering(11)</button>
-            <button className="rounded-md inline-block p-2 w-full border-2 border-black hover:bg-gray-300 transition duration-300 ease-in-out">appearance(11)</button>
-            <button className="rounded-md inline-block p-2 w-full border-2 border-black hover:bg-gray-300 transition duration-300 ease-in-out">cute(11)</button>
-            <button className="rounded-md inline-block p-2 w-full border-2 border-black hover:bg-gray-300 transition duration-300 ease-in-out">quality(11)</button>
-          </div>
-          <p className="my-2">Cons</p>
-          <div className="grid md:grid-cols-5 grid-cols-2 gap-3">
-            <button className="rounded-md inline-block p-2 w-full border-2 border-black hover:bg-gray-300 transition duration-300 ease-in-out">small(11)</button>
-            <button className="rounded-md inline-block p-2 w-full border-2 border-black hover:bg-gray-300 transition duration-300 ease-in-out">short(11)</button>
-            <button className="rounded-md inline-block p-2 w-full border-2 border-black hover:bg-gray-300 transition duration-300 ease-in-out">material(23)</button>
-            <button className="rounded-md inline-block p-2 w-full border-2 border-black hover:bg-gray-300 transition duration-300 ease-in-out">comfort(11)</button>
-
-          </div>
-        </div>
-        <div className="py-4">
-          <div className="relative">
-            <input className="pl-12 py-3 border-2 border-gray-300 w-full" placeholder="Search Reviews"
-            />
-            <MagnifyingGlassIcon className="absolute md:left-3 md:top-1/2 w-7 h-7 md:-translate-y-1/2 -translate-y-8 left-2 top-11 stroke-gray-500 peer-focus:text-gray-900" />
-          </div>
-        </div>
-        <div className="mt-2">
-          <div className="grid md:grid-cols-5 grid-cols-3  gap-3">
-            <select className="border border-gray-800 p-4 w-full text-sm md:text-md">
-              <option value="">Sortby: Most Helpfull</option>
-            </select>
-            <select className="border border-gray-800 p-4 w-full text-sm md:text-md">
-              <option value="">Size</option>
-            </select>
-            <select className="border border-gray-800 p-4 w-full text-sm md:text-md">
-              <option value="">Color</option>
-            </select>
-            <div className="flex items-center space-x-2">
-              <input type="checkbox" className="w-6 h-6" /> <span>Photos</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <input type="checkbox" className="w-6 h-6" /> <span>Verified</span>
-            </div>
-          </div>
-        </div>
-        {/* comments for a product */}
-        <div className="my-3 border-b-2 border-b-gray-300 pb-3">
-          <div className="grid grid-cols-12">
-            <div className="md:col-span-5 col-span-12">
-              <div className="flex flex-col space-y-3">
-                <p>Anonymous</p>
-                <div className="flex items-center space-x-2">
-                  <CheckCircleIcon className="w-7 h-7 stroke-white" />
-                  <span className="grow">Verified Purchase</span>
-                </div>
-                <p className="font-bold">Fit</p>
-                <div className="relative flex">
-                  <div className="w-52 h-0.5 absolute -z-10 bg-gray-300 self-center"></div>
-                  <div className="flex items-center space-x-7 ">
-                    <div className="w-5 h-5 border-[2px] border-gray-400 bg-white rounded-full"></div>
-                    <div className="w-5 h-5 border-[2px] border-gray-400 bg-white rounded-full"></div>
-                    <div className="w-5 h-5 border-[2px] border-gray-400 bg-white rounded-full"></div>
-                    <div className="w-5 h-5 border-[2px] border-gray-400 bg-white rounded-full"></div>
-                    <div className="w-5 h-5 border-[2px] border-gray-400 bg-white rounded-full"></div>
-                  </div>
-                </div>
-                <div className="flex flex-col space-y-2">
-                  <p>Color: IVORY</p>
-                  <p>Height: 5'10"</p>
-                  <p>Weight: 179 lb.</p>
-                </div>
-              </div>
-            </div>
-            <div className="md:col-span-7 col-span-12">
-              <div className="flex flex-col space-y-3">
+            <div className="main-container sticky top-0 pt-3 left-0 bottom-0">
+              <div className="my-3 w-full flex flex-col space-y-4 pb-5 border-b border-b-gray-300">
                 <div className="flex items-center space-x-3">
-                  <span>Star rating</span>
-                  <span>Jan 24, 2023</span>
-                </div>
-                <p>Absolutely Gorgeous</p>
-                <p>This dress was a show stopper! I’m 5’10, 179lbs with an athletic build and I bought a XL. The corset bodice makes the “girls” sit high! The dress is short but I had no problem sitting daintily! I have long arms and the flared sleeves were the perfect ...</p>
-                <span>Show More</span>
-                <div className="grid grid-cols-4 gap-4">
-                  <div className="p-1">
-                    <Image
-                      src={"/samples/recently-viewed/1.jpg"}
-                      alt="something is happening"
-                      width={0}
-                      height={0}
-                      sizes="100vh"
-                      className="w-full h-auto object-contain"
-                    />
+                  <input type="checkbox" className="w-6 h-6" />
+                  <span className="text-nowrap">5 stars</span>
+                  <div className="relative w-full h-4 rounded-md bg-slate-300">
+                    <div className="absolute top-0 bottom-0 left-0 bg-black w-[35%]"></div>
                   </div>
-                  <div className="p-1">
-                    <Image
-                      src={"/samples/recently-viewed/2.jpg"}
-                      alt="something is happening"
-                      width={0}
-                      height={0}
-                      sizes="100vh"
-                      className="w-full h-auto object-contain"
-                    />
-                  </div>
-                  <div className="p-1">
-                    <Image
-                      src={"/samples/recently-viewed/3.jpg"}
-                      alt="something is happening"
-                      width={0}
-                      height={0}
-                      sizes="100vh"
-                      className="w-full h-auto object-contain"
-                    />
-                  </div>
-                </div>
-                <div className="flex space-x-3">
-                  <HandThumbUpIcon className="h-6 w-6 stroke-black" />
-                  <span><span className="font-bold">69</span> found this helpful</span>
-                </div>
+                  <span className="text-nowrap">35%</span>
 
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="my-3 border-b-2 border-b-gray-300 pb-3">
-          <div className="grid grid-cols-12">
-            <div className="md:col-span-5 col-span-12">
-              <div className="flex flex-col space-y-3">
-                <p>Anonymous</p>
-                <div className="flex items-center space-x-2">
-                  <CheckCircleIcon className="w-7 h-7 stroke-white" />
-                  <span className="grow">Verified Purchase</span>
                 </div>
-                <p className="font-bold">Fit</p>
-                <div className="relative flex">
-                  <div className="w-52 h-0.5 absolute -z-10 bg-gray-300 self-center"></div>
-                  <div className="flex items-center space-x-7 ">
-                    <div className="w-5 h-5 border-[2px] border-gray-400 bg-white rounded-full"></div>
-                    <div className="w-5 h-5 border-[2px] border-gray-400 bg-white rounded-full"></div>
-                    <div className="w-5 h-5 border-[2px] border-gray-400 bg-white rounded-full"></div>
-                    <div className="w-5 h-5 border-[2px] border-gray-400 bg-white rounded-full"></div>
-                    <div className="w-5 h-5 border-[2px] border-gray-400 bg-white rounded-full"></div>
-                  </div>
-                </div>
-                <div className="flex flex-col space-y-2">
-                  <p>Color: IVORY</p>
-                  <p>Height: 5'10"</p>
-                  <p>Weight: 179 lb.</p>
-                </div>
-              </div>
-            </div>
-            <div className="md:col-span-7 col-span-12">
-              <div className="flex flex-col space-y-3">
                 <div className="flex items-center space-x-3">
-                  <span>Star rating</span>
-                  <span>Jan 24, 2023</span>
-                </div>
-                <p>Absolutely Gorgeous</p>
-                <p>This dress was a show stopper! I’m 5’10, 179lbs with an athletic build and I bought a XL. The corset bodice makes the “girls” sit high! The dress is short but I had no problem sitting daintily! I have long arms and the flared sleeves were the perfect ...</p>
-                <span>Show More</span>
-                <div className="grid grid-cols-4 gap-4">
-                  <div className="p-1">
-                    <Image
-                      src={"/samples/recently-viewed/1.jpg"}
-                      alt="something is happening"
-                      width={0}
-                      height={0}
-                      sizes="100vh"
-                      className="w-full h-auto object-contain"
-                    />
+                  <input type="checkbox" className="w-6 h-6" />
+                  <span className="text-nowrap">4 stars</span>
+                  <div className="relative w-full h-4 rounded-md bg-slate-300">
+                    <div className="absolute top-0 bottom-0 left-0 bg-black w-[16%]"></div>
                   </div>
-                  <div className="p-1">
-                    <Image
-                      src={"/samples/recently-viewed/2.jpg"}
-                      alt="something is happening"
-                      width={0}
-                      height={0}
-                      sizes="100vh"
-                      className="w-full h-auto object-contain"
-                    />
-                  </div>
-                  <div className="p-1">
-                    <Image
-                      src={"/samples/recently-viewed/3.jpg"}
-                      alt="something is happening"
-                      width={0}
-                      height={0}
-                      sizes="100vh"
-                      className="w-full h-auto object-contain"
-                    />
-                  </div>
-                </div>
-                <div className="flex space-x-3">
-                  <HandThumbUpIcon className="h-6 w-6 stroke-black" />
-                  <span><span className="font-bold">69</span> found this helpful</span>
-                </div>
+                  <span className="text-nowrap">16%</span>
 
+                </div>
+                <div className="flex items-center space-x-3">
+                  <input type="checkbox" className="w-6 h-6" />
+                  <span className="text-nowrap">3 stars</span>
+                  <div className="relative w-full h-4 rounded-md bg-slate-300">
+                    <div className="absolute top-0 bottom-0 left-0 bg-black w-[11%]"></div>
+                  </div>
+                  <span className="text-nowrap">11%</span>
+
+                </div>
+                <div className="flex items-center space-x-3">
+                  <input type="checkbox" className="w-6 h-6" />
+                  <span className="text-nowrap">2 stars</span>
+                  <div className="relative w-full h-4 rounded-md bg-slate-300">
+                    <div className="absolute top-0 bottom-0 left-0 bg-black w-[14%]"></div>
+                  </div>
+                  <span className="text-nowrap">14%</span>
+
+                </div>
+                <div className="flex items-center space-x-3">
+                  <input type="checkbox" className="w-6 h-6" />
+                  <span className="text-nowrap">1 star</span>
+                  <div className="relative w-full h-4 rounded-md bg-slate-300">
+                    <div className="absolute top-0 bottom-0 left-0 bg-black w-[23%]"></div>
+                  </div>
+                  <span className="text-nowrap">23%</span>
+
+                </div>
+              </div>
+
+
+              <div className="pb-5 mt-3 border-b border-b-gray-300">
+                <p className="my-2">Pros</p>
+                <div className="flex flex-wrap">
+                  <button className="rounded-3xl mr-2 mb-2 inline-block px-3 py-1 border-2 border-y-gray-300 hover:bg-gray-300 transition duration-300 ease-in-out">fit(11)</button>
+                  <button className="rounded-3xl mr-2 mb-2 inline-block px-3 py-1 border-2 border-y-gray-300 hover:bg-gray-300 transition duration-300 ease-in-out ">flattering(11)</button>
+                  <button className="rounded-3xl mr-2 mb-2 inline-block px-3 py-1 border-2 border-y-gray-300 hover:bg-gray-300 transition duration-300 ease-in-out">appearance(11)</button>
+                  <button className="rounded-3xl mr-2 mb-2 inline-block px-3 py-1 border-2 border-y-gray-300 hover:bg-gray-300 transition duration-300 ease-in-out">cute(11)</button>
+                  <button className="rounded-3xl mr-2 mb-2 inline-block px-3 py-1 border-2 border-y-gray-300 hover:bg-gray-300 transition duration-300 ease-in-out">quality(11)</button>
+                </div>
+                <p className="my-2">Cons</p>
+                <div className="flex flex-wrap">
+                  <button className="rounded-3xl mr-2 mb-2 inline-block px-3 py-1 border-2 border-y-gray-300 hover:bg-gray-300 transition duration-300 ease-in-out">small(11)</button>
+                  <button className="rounded-3xl mr-2 mb-2 inline-block px-3 py-1 border-2 border-y-gray-300 hover:bg-gray-300 transition duration-300 ease-in-out">short(11)</button>
+                  <button className="rounded-3xl mr-2 mb-2 inline-block px-3 py-1 border-2 border-y-gray-300 hover:bg-gray-300 transition duration-300 ease-in-out">material(23)</button>
+                  <button className="rounded-3xl mr-2 mb-2 inline-block px-3 py-1 border-2 border-y-gray-300 hover:bg-gray-300 transition duration-300 ease-in-out">comfort(11)</button>
+
+                </div>
+              </div>
+
+              
+
+              <div className="pb-5 mt-3 border-b border-b-gray-300">
+                <div className="flex flex-wrap">
+                  <select className="border border-gray-200 p-3 mr-2 mb-2 rounded-3xl text-sm md:text-md">
+                    <option value="">Sortby: Most Helpfull</option>
+                  </select>
+                  <select className="border border-gray-200 p-3 mr-2 mb-2 rounded-3xl text-sm md:text-md">
+                    <option value="">Size</option>
+                  </select>
+                  <select className="border border-gray-200 p-3 mr-2 mb-2 rounded-3xl text-sm md:text-md">
+                    <option value="">Color</option>
+                  </select>
+                  <div>
+                    <div className="flex items-center space-x-2 mb-2">
+                      <input type="checkbox" className="w-6 h-6" /> <span>Photos</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <input type="checkbox" className="w-6 h-6" /> <span>Verified</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="pb-5 mt-3">
+                <div className="relative">
+                  <input className="pl-12 py-3 border-2 border-gray-200 w-full rounded-3xl" placeholder="Search Reviews"
+                  />
+                  <MagnifyingGlassIcon className="absolute md:left-3 md:top-1/2 w-7 h-7 md:-translate-y-1/2 -translate-y-8 left-2 top-11 stroke-gray-500 peer-focus:text-gray-900" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div className="md:col-span-9 col-span-12">
+            <div className="main-container">
+              <div className="my-3 border-b-2 border-b-gray-300 pb-3">
+                <div className="grid grid-cols-12">
+                  <div className="md:col-span-4 col-span-12">
+                    <div className="flex flex-col space-y-3 justify-center pl-3 pb-3 pt-3">
+                      <p>Anonymous</p>
+                      <div className="flex items-center space-x-2">
+                        <CheckCircleIcon className="w-7 h-7 stroke-white" />
+                        <span className="grow">Verified Purchase</span>
+                      </div>
+                      <p className="font-bold">Fit</p>
+                      <div className="relative flex">
+                        <div className="w-52 h-0.5 absolute -z-10 bg-gray-300 self-center"></div>
+                        <div className="flex items-center space-x-7 ">
+                          <div className="w-5 h-5 border-[2px] border-gray-400 bg-white rounded-full"></div>
+                          <div className="w-5 h-5 border-[2px] border-gray-400 bg-white rounded-full"></div>
+                          <div className="w-5 h-5 border-[2px] border-gray-400 bg-white rounded-full"></div>
+                          <div className="w-5 h-5 border-[2px] border-gray-400 bg-white rounded-full"></div>
+                          <div className="w-5 h-5 border-[2px] border-gray-400 bg-white rounded-full"></div>
+                        </div>
+                      </div>
+                      <div className="flex flex-col space-y-2">
+                        <p>Color: IVORY</p>
+                        <p>Height: 5'10"</p>
+                        <p>Weight: 179 lb.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="md:col-span-8 col-span-12">
+                    <div className="flex flex-col space-y-3">
+                      <div className="flex items-center space-x-3">
+                        <span>Star rating</span>
+                        <span>Jan 24, 2023</span>
+                      </div>
+                      <p>Absolutely Gorgeous</p>
+                      <p>This dress was a show stopper! I’m 5’10, 179lbs with an athletic build and I bought a XL. The corset bodice makes the “girls” sit high! The dress is short but I had no problem sitting daintily! I have long arms and the flared sleeves were the perfect ...</p>
+                      <span>Show More</span>
+                      <div className="grid grid-cols-4 gap-4">
+                        <div className="p-1">
+                          <Image
+                            src={"/samples/recently-viewed/1.jpg"}
+                            alt="something is happening"
+                            width={0}
+                            height={0}
+                            sizes="100vh"
+                            className="w-full h-auto object-contain"
+                          />
+                        </div>
+                        <div className="p-1">
+                          <Image
+                            src={"/samples/recently-viewed/2.jpg"}
+                            alt="something is happening"
+                            width={0}
+                            height={0}
+                            sizes="100vh"
+                            className="w-full h-auto object-contain"
+                          />
+                        </div>
+                        <div className="p-1">
+                          <Image
+                            src={"/samples/recently-viewed/3.jpg"}
+                            alt="something is happening"
+                            width={0}
+                            height={0}
+                            sizes="100vh"
+                            className="w-full h-auto object-contain"
+                          />
+                        </div>
+                      </div>
+                      <div className="flex space-x-3">
+                        <HandThumbUpIcon className="h-6 w-6 stroke-black" />
+                        <span><span className="font-bold">69</span> found this helpful</span>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="my-3 border-b-2 border-b-gray-300 pb-3">
+                <div className="grid grid-cols-12">
+                  <div className="md:col-span-4 col-span-12">
+                    <div className="flex flex-col space-y-3 justify-center pl-3 pb-3 pt-3">
+                      <p>Anonymous</p>
+                      <div className="flex items-center space-x-2">
+                        <CheckCircleIcon className="w-7 h-7 stroke-white" />
+                        <span className="grow">Verified Purchase</span>
+                      </div>
+                      <p className="font-bold">Fit</p>
+                      <div className="relative flex">
+                        <div className="w-52 h-0.5 absolute -z-10 bg-gray-300 self-center"></div>
+                        <div className="flex items-center space-x-7 ">
+                          <div className="w-5 h-5 border-[2px] border-gray-400 bg-white rounded-full"></div>
+                          <div className="w-5 h-5 border-[2px] border-gray-400 bg-white rounded-full"></div>
+                          <div className="w-5 h-5 border-[2px] border-gray-400 bg-white rounded-full"></div>
+                          <div className="w-5 h-5 border-[2px] border-gray-400 bg-white rounded-full"></div>
+                          <div className="w-5 h-5 border-[2px] border-gray-400 bg-white rounded-full"></div>
+                        </div>
+                      </div>
+                      <div className="flex flex-col space-y-2">
+                        <p>Color: IVORY</p>
+                        <p>Height: 5'10"</p>
+                        <p>Weight: 179 lb.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="md:col-span-8 col-span-12">
+                    <div className="flex flex-col space-y-3">
+                      <div className="flex items-center space-x-3">
+                        <span>Star rating</span>
+                        <span>Jan 24, 2023</span>
+                      </div>
+                      <p>Absolutely Gorgeous</p>
+                      <p>This dress was a show stopper! I’m 5’10, 179lbs with an athletic build and I bought a XL. The corset bodice makes the “girls” sit high! The dress is short but I had no problem sitting daintily! I have long arms and the flared sleeves were the perfect ...</p>
+                      <span>Show More</span>
+                      <div className="grid grid-cols-4 gap-4">
+                        <div className="p-1">
+                          <Image
+                            src={"/samples/recently-viewed/1.jpg"}
+                            alt="something is happening"
+                            width={0}
+                            height={0}
+                            sizes="100vh"
+                            className="w-full h-auto object-contain"
+                          />
+                        </div>
+                        <div className="p-1">
+                          <Image
+                            src={"/samples/recently-viewed/2.jpg"}
+                            alt="something is happening"
+                            width={0}
+                            height={0}
+                            sizes="100vh"
+                            className="w-full h-auto object-contain"
+                          />
+                        </div>
+                        <div className="p-1">
+                          <Image
+                            src={"/samples/recently-viewed/3.jpg"}
+                            alt="something is happening"
+                            width={0}
+                            height={0}
+                            sizes="100vh"
+                            className="w-full h-auto object-contain"
+                          />
+                        </div>
+                      </div>
+                      <div className="flex space-x-3">
+                        <HandThumbUpIcon className="h-6 w-6 stroke-black" />
+                        <span><span className="font-bold">69</span> found this helpful</span>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="my-3 border-b-2 border-b-gray-300 pb-3">
+                <div className="grid grid-cols-12">
+                  <div className="md:col-span-4 col-span-12">
+                    <div className="flex flex-col space-y-3 justify-center pl-3 pb-3 pt-3">
+                      <p>Anonymous</p>
+                      <div className="flex items-center space-x-2">
+                        <CheckCircleIcon className="w-7 h-7 stroke-white" />
+                        <span className="grow">Verified Purchase</span>
+                      </div>
+                      <p className="font-bold">Fit</p>
+                      <div className="relative flex">
+                        <div className="w-52 h-0.5 absolute -z-10 bg-gray-300 self-center"></div>
+                        <div className="flex items-center space-x-7 ">
+                          <div className="w-5 h-5 border-[2px] border-gray-400 bg-white rounded-full"></div>
+                          <div className="w-5 h-5 border-[2px] border-gray-400 bg-white rounded-full"></div>
+                          <div className="w-5 h-5 border-[2px] border-gray-400 bg-white rounded-full"></div>
+                          <div className="w-5 h-5 border-[2px] border-gray-400 bg-white rounded-full"></div>
+                          <div className="w-5 h-5 border-[2px] border-gray-400 bg-white rounded-full"></div>
+                        </div>
+                      </div>
+                      <div className="flex flex-col space-y-2">
+                        <p>Color: IVORY</p>
+                        <p>Height: 5'10"</p>
+                        <p>Weight: 179 lb.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="md:col-span-8 col-span-12">
+                    <div className="flex flex-col space-y-3">
+                      <div className="flex items-center space-x-3">
+                        <span>Star rating</span>
+                        <span>Jan 24, 2023</span>
+                      </div>
+                      <p>Absolutely Gorgeous</p>
+                      <p>This dress was a show stopper! I’m 5’10, 179lbs with an athletic build and I bought a XL. The corset bodice makes the “girls” sit high! The dress is short but I had no problem sitting daintily! I have long arms and the flared sleeves were the perfect ...</p>
+                      <span>Show More</span>
+                      <div className="grid grid-cols-4 gap-4">
+                        <div className="p-1">
+                          <Image
+                            src={"/samples/recently-viewed/1.jpg"}
+                            alt="something is happening"
+                            width={0}
+                            height={0}
+                            sizes="100vh"
+                            className="w-full h-auto object-contain"
+                          />
+                        </div>
+                        <div className="p-1">
+                          <Image
+                            src={"/samples/recently-viewed/2.jpg"}
+                            alt="something is happening"
+                            width={0}
+                            height={0}
+                            sizes="100vh"
+                            className="w-full h-auto object-contain"
+                          />
+                        </div>
+                        <div className="p-1">
+                          <Image
+                            src={"/samples/recently-viewed/3.jpg"}
+                            alt="something is happening"
+                            width={0}
+                            height={0}
+                            sizes="100vh"
+                            className="w-full h-auto object-contain"
+                          />
+                        </div>
+                      </div>
+                      <div className="flex space-x-3">
+                        <HandThumbUpIcon className="h-6 w-6 stroke-black" />
+                        <span><span className="font-bold">69</span> found this helpful</span>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-
-
-
       </div>
       <div className="max-w-screen-xl mx-auto">
         <div className="slider-container relative">
@@ -448,8 +534,8 @@ export default function Reviews() {
             <span className="md:ml-0 ml-20 font-bold text-lg cursor-pointer">More from HOUSE OF CB</span>
 
           </SliderMobile>
-          <div className="bg-gray-50 mt-3">
-          <SliderLarge photoName="great-deals"/>
+          <div className="mt-3">
+            <SliderLarge photoName="great-deals" />
           </div>
         </div>
         <RecentlyViewed />

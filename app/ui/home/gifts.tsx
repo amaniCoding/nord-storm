@@ -3,7 +3,7 @@ import SliderSeederLarge from "@/app/components/slider-seeder-large"
 import SliderSeederMobile from "@/app/components/slider-seeder-mobile"
 export default function Gifts() {
   return (
-    <section className="pt-2 bg-gray-100">
+    <section className="pt-2">
       <div className="max-w-screen-xl mx-auto">
       <p className="my-3 font-semibold pl-4">Gifts</p>
         <div className="md:flex hidden md:space-x-10 space-x-10 border-b-2 border-b-gray-300 pb-3 mb-4 bg-white p-3">
