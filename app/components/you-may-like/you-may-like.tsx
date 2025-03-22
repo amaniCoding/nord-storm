@@ -12,15 +12,17 @@ export default function YouMayAlsoLike() {
       {Array.from(Array(10).keys()).map((_, i) => {
         return (
           <div className="py-2 px-3" key={i}>
-            <div className="group">
+            <div className="group relative ">
               <Link href={`/product/name/143`}>
+                <div className="hidden absolute top-0 bottom-0 left-0 right-0 bg-black/15 group-hover:block"></div>
+
                 <Image
                   src={`/samples/great-deals/${i + 1}.jpg`}
                   alt="something is happening"
                   width={0}
                   height={0}
                   sizes="100vh"
-                  className="w-full h-full object-contain"
+                  className="w-full object-contain"
                 />
               </Link>
               <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-3 right-1/2 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black w-3/4 translate-x-1/2 md:group-hover:block">
