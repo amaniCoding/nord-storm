@@ -11,7 +11,7 @@ export default function YouMayAlsoLike() {
 
       {Array.from(Array(10).keys()).map((_, i) => {
         return (
-          <div className="py-2 px-3">
+          <div className="py-2 px-3" key={i}>
             <div className="group">
               <Link href={`/product/name/143`}>
                 <Image
