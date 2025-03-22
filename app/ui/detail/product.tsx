@@ -287,7 +287,7 @@ export default function Product() {
                       <p>Need help finding the perfect gift? We've got you covered.
                       </p>
                       <button
-                        className="block p-2 border-2 border-black rounded-md hover:scale-105 transition duration-200 ease-in-out w-60">Shop
+                        className="block p-2 border-2 border-gray-300 rounded-3xl hover:scale-105 transition duration-200 ease-in-out w-60">Shop
                         Gifts</button>
                     </div>
                   </div>
