@@ -7,7 +7,7 @@ import StarRatings from "react-star-ratings";
 import Link from "next/link";
 export default function SalePics() {
   return (
-    <section className="pt-2">
+    <section className="p-4">
       <div className="max-w-[1200px] mx-auto">
         <i className="fa fa-star fa-lg" aria-hidden="true"></i>
         <p className="my-3 font-semibold pl-4">Sale Picks for You</p>

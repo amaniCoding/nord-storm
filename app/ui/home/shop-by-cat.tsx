@@ -2,7 +2,7 @@
 import Image from "next/image";
 export default function ShopByCat() {
   return (
-    <section className="p-3">
+    <section className="p-4">
       <div className="max-w-screen-xl mx-auto">
         <p className="my-3 font-semibold">SHOP BY CATEGORY</p>
         <div className="grid md:grid-cols-6 grid-cols-2 md:gap-3 gap-1">

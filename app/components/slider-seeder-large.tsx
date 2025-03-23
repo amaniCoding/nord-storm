@@ -27,36 +27,40 @@ export default function SliderSeederLarge(props: { photoName: string, numberOfSl
     infinite: true,
     speed: 500,
     slidesToShow: props.numberOfSlides || 5,
-    slidesToScroll: props.numberOfSlides || 5,
+    slidesToScroll: props.numberOfSlides || 1,
     arrows: false,
+    centerMode: true,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: props.numberOfSlides || 3,
-          slidesToScroll: props.numberOfSlides || 3,
+          slidesToShow: props.numberOfSlides || 1,
+          slidesToScroll: props.numberOfSlides || 1,
           infinite: true,
           dots: false,
           arrows: false,
+          centerMode: true,
         }
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: props.numberOfSlides || 2,
-          slidesToScroll: props.numberOfSlides || 2,
+          slidesToShow: props.numberOfSlides || 1,
+          slidesToScroll: props.numberOfSlides || 1,
           initialSlide: 2,
           dots: false,
           arrows: false,
+          centerMode: true,
         }
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: props.numberOfSlides || 2,
-          slidesToScroll: props.numberOfSlides || 2,
+          slidesToShow: props.numberOfSlides || 1,
+          slidesToScroll: props.numberOfSlides || 1,
           dots: false,
           arrows: false,
+          centerMode: true,
         }
       }
     ]
@@ -70,7 +74,7 @@ export default function SliderSeederLarge(props: { photoName: string, numberOfSl
         <Slider {...settings} ref={sliderRef}>
           {Array.from(Array(10).keys()).map((_, i) => {
             return (
-              <div className="p-6 bg-white" key={i}>
+              <div className="p-4 bg-white" key={i}>
                 <div className="group relative">
                   <Link href={`/product/name/143`}>
                     <div className="hidden absolute top-0 bottom-0 left-0 right-0 bg-black/15 group-hover:block"></div>
@@ -81,7 +85,7 @@ export default function SliderSeederLarge(props: { photoName: string, numberOfSl
                       width={0}
                       height={0}
                       sizes="100vh"
-                      className="w-full h-full object-contain"
+                      className="w-full"
                     />
                   </Link>
                   <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-3 right-1/2 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black w-3/4 translate-x-1/2 md:group-hover:block">

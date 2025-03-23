@@ -8,7 +8,7 @@ import { MagnifyingGlassIcon } from "@heroicons/react/16/solid";
 import { HandThumbUpIcon } from "@heroicons/react/24/outline";
 import RecentlyViewed from "../home/recently-viewed";
 import SliderMobile from "@/app/components/slider-seeder-mobile";
-import SliderLarge from "@/app/components/slider-seeder-large";
+import SliderSeederLarge from "@/app/components/slider-seeder-large";
 
 export default function Reviews() {
   const settings2 = {
@@ -48,13 +48,13 @@ export default function Reviews() {
   };
 
   return (
-    <section className="py-6">
-      <div className="max-w-screen-xl mx-auto py-1 px-3">
+    <section className="md:p-4 p-2">
+      <div className="md:max-w-screen-xl mx-auto w-full">
         <h2 className="text-2xl font-bold text-center my-2">Reviews</h2>
-        <div className="grid md:grid-cols-2 grid-cols-1 md:gap-4 gap-2">
-          <div className="p-2">
+        <div className="grid md:grid-cols-2 grid-cols-1 md:gap-6 gap-0">
+          <div className="border border-gray-300 p-3">
             <p className="font-bold md:text-xl mb-2">Most helpful positive review</p>
-            <div className="border border-gray-300 p-4 flex flex-col space-y-3">
+            <div className="  flex flex-col space-y-3">
               <div className="flex space-x-2">
                 <span>Rating</span>
                 <span>Jan 24, 2023</span>
@@ -71,9 +71,10 @@ export default function Reviews() {
                 found this helpful</span>
             </div>
           </div>
-          <div className="p-2">
+
+          <div className="border border-gray-300 p-3">
             <p className="font-bold md:text-xl mb-2">Most helpful positive review</p>
-            <div className="border border-gray-300 p-4 flex flex-col space-y-3">
+            <div className=" flex flex-col space-y-3">
               <div className="flex space-x-2">
                 <span>Rating</span>
                 <span>Jan 24, 2023</span>
@@ -90,10 +91,11 @@ export default function Reviews() {
                 found this helpful</span>
             </div>
           </div>
+          
         </div>
         <p className="my-2">Customer photos</p>
         <Slider {...settings2}>
-          <div className="p-3">
+          <div className="">
             <Image
               src={"/samples/sale-pics-for-you/1.jpg"}
               alt="something is happening"
@@ -103,7 +105,7 @@ export default function Reviews() {
               className="w-full h-auto object-contain"
             />
           </div>
-          <div className="p-3">
+          <div className="">
             <Image
               src={"/samples/sale-pics-for-you/2.jpg"}
               alt="something is happening"
@@ -113,7 +115,7 @@ export default function Reviews() {
               className="w-full h-auto object-contain"
             />
           </div>
-          <div className="p-3">
+          <div className="">
             <Image
               src={"/samples/sale-pics-for-you/3.jpg"}
               alt="something is happening"
@@ -123,7 +125,7 @@ export default function Reviews() {
               className="w-full h-auto object-contain"
             />
           </div>
-          <div className="p-3">
+          <div className="">
             <Image
               src={"/samples/sale-pics-for-you/4.jpg"}
               alt="something is happening"
@@ -133,7 +135,7 @@ export default function Reviews() {
               className="w-full h-auto object-contain"
             />
           </div>
-          <div className="p-3">
+          <div className="">
             <Image
               src={"/samples/sale-pics-for-you/5.jpg"}
               alt="something is happening"
@@ -143,7 +145,7 @@ export default function Reviews() {
               className="w-full h-auto object-contain"
             />
           </div>
-          <div className="p-3">
+          <div className="">
             <Image
               src={"/samples/sale-pics-for-you/6.jpg"}
               alt="something is happening"
@@ -153,7 +155,7 @@ export default function Reviews() {
               className="w-full h-auto object-contain"
             />
           </div>
-          <div className="p-3">
+          <div className="">
             <Image
               src={"/samples/sale-pics-for-you/7.jpg"}
               alt="something is happening"
@@ -163,7 +165,7 @@ export default function Reviews() {
               className="w-full h-auto object-contain"
             />
           </div>
-          <div className="p-3">
+          <div className="">
             <Image
               src={"/samples/sale-pics-for-you/8.jpg"}
               alt="something is happening"
@@ -175,56 +177,56 @@ export default function Reviews() {
           </div>
         </Slider>
       </div>
-      <div className="md:max-w-screen-xl max-w-full mx-auto p-6">
+      <div className="md:max-w-screen-xl max-w-full mx-auto">
 
-        <div className="grid grid-cols-12 gap-10">
+        <div className="grid grid-cols-12 md:gap-10 gap-0">
           <div className="md:col-span-3 col-span-12">
 
-            <div className="main-container sticky top-0 pt-3 left-0 bottom-0">
+            <div className="main-container sticky top-0 pt-3">
               <div className="my-3 w-full flex flex-col space-y-4 pb-5 border-b border-b-gray-300">
                 <div className="flex items-center space-x-3">
-                  <input type="checkbox" className="w-6 h-6" />
-                  <span className="text-nowrap">5 stars</span>
-                  <div className="relative w-full h-4 rounded-md bg-slate-300">
+                  <input type="checkbox" className="w-6 h-6 flex-none" />
+                  <span className="flex-none">5 stars</span>
+                  <div className="relative h-4 rounded-md bg-slate-300 grow">
                     <div className="absolute top-0 bottom-0 left-0 bg-black w-[35%]"></div>
                   </div>
-                  <span className="text-nowrap">35%</span>
+                  <span className="flex-none">35%</span>
 
                 </div>
                 <div className="flex items-center space-x-3">
-                  <input type="checkbox" className="w-6 h-6" />
-                  <span className="text-nowrap">4 stars</span>
-                  <div className="relative w-full h-4 rounded-md bg-slate-300">
+                  <input type="checkbox" className="w-6 h-6 flex-none" />
+                  <span className="flex-none">4 stars</span>
+                  <div className="relative h-4 rounded-md bg-slate-300 grow">
                     <div className="absolute top-0 bottom-0 left-0 bg-black w-[16%]"></div>
                   </div>
-                  <span className="text-nowrap">16%</span>
+                  <span className="flex-none">16%</span>
 
                 </div>
                 <div className="flex items-center space-x-3">
-                  <input type="checkbox" className="w-6 h-6" />
-                  <span className="text-nowrap">3 stars</span>
-                  <div className="relative w-full h-4 rounded-md bg-slate-300">
+                  <input type="checkbox" className="w-6 h-6 flex-none" />
+                  <span className="flex-none">3 stars</span>
+                  <div className="relative h-4 rounded-md bg-slate-300 grow">
                     <div className="absolute top-0 bottom-0 left-0 bg-black w-[11%]"></div>
                   </div>
-                  <span className="text-nowrap">11%</span>
+                  <span className="flex-none">11%</span>
 
                 </div>
                 <div className="flex items-center space-x-3">
-                  <input type="checkbox" className="w-6 h-6" />
-                  <span className="text-nowrap">2 stars</span>
-                  <div className="relative w-full h-4 rounded-md bg-slate-300">
+                  <input type="checkbox" className="w-6 h-6 flex-none" />
+                  <span className="flex-none">2 stars</span>
+                  <div className="relative h-4 rounded-md bg-slate-300 grow">
                     <div className="absolute top-0 bottom-0 left-0 bg-black w-[14%]"></div>
                   </div>
-                  <span className="text-nowrap">14%</span>
+                  <span className="flex-none">14%</span>
 
                 </div>
                 <div className="flex items-center space-x-3">
-                  <input type="checkbox" className="w-6 h-6" />
-                  <span className="text-nowrap">1 star</span>
-                  <div className="relative w-full h-4 rounded-md bg-slate-300">
+                  <input type="checkbox" className="w-6 h-6 flex-none" />
+                  <span className="flex-none">1 star</span>
+                  <div className="relative h-4 rounded-md bg-slate-300 grow">
                     <div className="absolute top-0 bottom-0 left-0 bg-black w-[23%]"></div>
                   </div>
-                  <span className="text-nowrap">23%</span>
+                  <span className="flex-none">23%</span>
 
                 </div>
               </div>
@@ -249,35 +251,37 @@ export default function Reviews() {
                 </div>
               </div>
 
-              
+
 
               <div className="pb-5 mt-3 border-b border-b-gray-300">
                 <div className="flex flex-wrap">
-                  <select className="border border-gray-200 p-3 mr-2 mb-2 rounded-3xl text-sm md:text-md">
+                  <select className="border border-gray-200 px-3 py-1 mr-2 mb-2 block rounded-3xl ">
                     <option value="">Sortby: Most Helpfull</option>
                   </select>
-                  <select className="border border-gray-200 p-3 mr-2 mb-2 rounded-3xl text-sm md:text-md">
+                  <select className="border border-gray-200 px-3 py-1  mr-2 block mb-2 rounded-3xl ">
                     <option value="">Size</option>
                   </select>
-                  <select className="border border-gray-200 p-3 mr-2 mb-2 rounded-3xl text-sm md:text-md">
+                  <select className="border border-gray-200 px-3 py-1 block mr-2 mb-2 rounded-3xl ">
                     <option value="">Color</option>
                   </select>
-                  <div>
+                  
+                </div>
+
+                <div>
                     <div className="flex items-center space-x-2 mb-2">
-                      <input type="checkbox" className="w-6 h-6" /> <span>Photos</span>
+                      <input type="checkbox" className="w-6 h-6 rounded-lg" /> <span>Photos</span>
                     </div>
                     <div className="flex items-center space-x-2">
-                      <input type="checkbox" className="w-6 h-6" /> <span>Verified</span>
+                      <input type="checkbox" className="w-6 h-6 rounded-lg" /> <span>Verified</span>
                     </div>
                   </div>
-                </div>
               </div>
 
               <div className="pb-5 mt-3">
                 <div className="relative">
-                  <input className="pl-12 py-3 border-2 border-gray-200 w-full rounded-3xl" placeholder="Search Reviews"
+                  <input className="pl-12 px-3 py-1 border-2 border-gray-200 rounded-3xl" placeholder="Search Reviews"
                   />
-                  <MagnifyingGlassIcon className="absolute md:left-3 md:top-1/2 w-7 h-7 md:-translate-y-1/2 -translate-y-8 left-2 top-11 stroke-gray-500 peer-focus:text-gray-900" />
+                  <MagnifyingGlassIcon className="absolute md:left-3  w-7 h-7 -translate-y-1/2 top-1/2 left-2 to1 stroke-gray-500 peer-focus:text-gray-900" />
                 </div>
               </div>
             </div>
@@ -285,11 +289,11 @@ export default function Reviews() {
 
 
           <div className="md:col-span-9 col-span-12">
-            <div className="main-container">
+            <div className="main-container mt-3">
               <div className="my-3 border-b-2 border-b-gray-300 pb-3">
                 <div className="grid grid-cols-12">
                   <div className="md:col-span-4 col-span-12">
-                    <div className="flex flex-col space-y-3 justify-center pl-3 pb-3 pt-3">
+                    <div className="flex flex-col space-y-3 justify-center pb-3 pt-3">
                       <p>Anonymous</p>
                       <div className="flex items-center space-x-2">
                         <CheckCircleIcon className="w-7 h-7 stroke-white" />
@@ -322,8 +326,8 @@ export default function Reviews() {
                       <p>Absolutely Gorgeous</p>
                       <p>This dress was a show stopper! I’m 5’10, 179lbs with an athletic build and I bought a XL. The corset bodice makes the “girls” sit high! The dress is short but I had no problem sitting daintily! I have long arms and the flared sleeves were the perfect ...</p>
                       <span>Show More</span>
-                      <div className="grid grid-cols-4 gap-4">
-                        <div className="p-1">
+                      <div className="grid grid-cols-4 ga">
+                        <div className="">
                           <Image
                             src={"/samples/recently-viewed/1.jpg"}
                             alt="something is happening"
@@ -333,7 +337,7 @@ export default function Reviews() {
                             className="w-full h-auto object-contain"
                           />
                         </div>
-                        <div className="p-1">
+                        <div className="">
                           <Image
                             src={"/samples/recently-viewed/2.jpg"}
                             alt="something is happening"
@@ -343,7 +347,7 @@ export default function Reviews() {
                             className="w-full h-auto object-contain"
                           />
                         </div>
-                        <div className="p-1">
+                        <div className="">
                           <Image
                             src={"/samples/recently-viewed/3.jpg"}
                             alt="something is happening"
@@ -366,7 +370,7 @@ export default function Reviews() {
               <div className="my-3 border-b-2 border-b-gray-300 pb-3">
                 <div className="grid grid-cols-12">
                   <div className="md:col-span-4 col-span-12">
-                    <div className="flex flex-col space-y-3 justify-center pl-3 pb-3 pt-3">
+                    <div className="flex flex-col space-y-3 justify-center pb-3 pt-3">
                       <p>Anonymous</p>
                       <div className="flex items-center space-x-2">
                         <CheckCircleIcon className="w-7 h-7 stroke-white" />
@@ -399,8 +403,8 @@ export default function Reviews() {
                       <p>Absolutely Gorgeous</p>
                       <p>This dress was a show stopper! I’m 5’10, 179lbs with an athletic build and I bought a XL. The corset bodice makes the “girls” sit high! The dress is short but I had no problem sitting daintily! I have long arms and the flared sleeves were the perfect ...</p>
                       <span>Show More</span>
-                      <div className="grid grid-cols-4 gap-4">
-                        <div className="p-1">
+                      <div className="grid grid-cols-4 ga">
+                        <div className="">
                           <Image
                             src={"/samples/recently-viewed/1.jpg"}
                             alt="something is happening"
@@ -410,7 +414,7 @@ export default function Reviews() {
                             className="w-full h-auto object-contain"
                           />
                         </div>
-                        <div className="p-1">
+                        <div className="">
                           <Image
                             src={"/samples/recently-viewed/2.jpg"}
                             alt="something is happening"
@@ -420,7 +424,7 @@ export default function Reviews() {
                             className="w-full h-auto object-contain"
                           />
                         </div>
-                        <div className="p-1">
+                        <div className="">
                           <Image
                             src={"/samples/recently-viewed/3.jpg"}
                             alt="something is happening"
@@ -443,7 +447,7 @@ export default function Reviews() {
               <div className="my-3 border-b-2 border-b-gray-300 pb-3">
                 <div className="grid grid-cols-12">
                   <div className="md:col-span-4 col-span-12">
-                    <div className="flex flex-col space-y-3 justify-center pl-3 pb-3 pt-3">
+                    <div className="flex flex-col space-y-3 justify-center pb-3 pt-3">
                       <p>Anonymous</p>
                       <div className="flex items-center space-x-2">
                         <CheckCircleIcon className="w-7 h-7 stroke-white" />
@@ -476,8 +480,8 @@ export default function Reviews() {
                       <p>Absolutely Gorgeous</p>
                       <p>This dress was a show stopper! I’m 5’10, 179lbs with an athletic build and I bought a XL. The corset bodice makes the “girls” sit high! The dress is short but I had no problem sitting daintily! I have long arms and the flared sleeves were the perfect ...</p>
                       <span>Show More</span>
-                      <div className="grid grid-cols-4 gap-4">
-                        <div className="p-1">
+                      <div className="grid grid-cols-4 ga">
+                        <div className="">
                           <Image
                             src={"/samples/recently-viewed/1.jpg"}
                             alt="something is happening"
@@ -487,7 +491,7 @@ export default function Reviews() {
                             className="w-full h-auto object-contain"
                           />
                         </div>
-                        <div className="p-1">
+                        <div className="">
                           <Image
                             src={"/samples/recently-viewed/2.jpg"}
                             alt="something is happening"
@@ -497,7 +501,7 @@ export default function Reviews() {
                             className="w-full h-auto object-contain"
                           />
                         </div>
-                        <div className="p-1">
+                        <div className="">
                           <Image
                             src={"/samples/recently-viewed/3.jpg"}
                             alt="something is happening"
@@ -530,13 +534,17 @@ export default function Reviews() {
 
           </div>
           <SliderMobile>
-            <span className="font-bold text-lg cursor-pointer md:ml-0 ml-20">Frequently Bought Together</span>
-            <span className="md:ml-0 ml-20 font-bold text-lg cursor-pointer">More from HOUSE OF CB</span>
+            <span className="font-bold text-lg cursor-pointer ">Frequently Bought Together</span>
+            <span className=" font-bold text-lg cursor-pointer">More from HOUSE OF CB</span>
 
           </SliderMobile>
-          <div className="mt-3">
-            <SliderLarge photoName="great-deals" />
-          </div>
+
+          <section className=" bg-gray-50">
+            <div className="max-w-screen-xl mx-auto">
+              <SliderSeederLarge photoName="great-deals" />
+            </div>
+          </section>
+
         </div>
         <RecentlyViewed />
       </div>

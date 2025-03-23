@@ -6,16 +6,81 @@ import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import { GiftIcon, HomeIcon, PrinterIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import { PiSignature } from "react-icons/pi";
+import Slider from "react-slick";
 import StarRatings from "react-star-ratings";
 
 export default function Product() {
+  const settings2 = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 6,
+    slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 2,
+          dots: false,
+          centerMode: true
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: false,
+          centerMode: true
+        }
+      }
+    ]
+  };
   return (
-    <section>
-      <div className="max-w-screen-xl mx-auto py-1 px-3">
-        <div className="grid grid-cols-12 gap-4 pb-4">
+    <section className="p-4">
+      <div className="max-w-screen-xl mx-auto">
+        <div className="md:hidden block">
+          <Slider {...settings2}>
+            {Array.from(Array(10).keys()).map((_, i) => {
+              return (
+                <div className="p-4 bg-white" key={i}>
+                  <div className="group relative">
+
+                    <div className="hidden absolute top-0 bottom-0 left-0 right-0 bg-black/15 group-hover:block"></div>
+
+                    <Image
+                      src={`/samples/sale-pics-for-you/${i + 1}.jpg`}
+                      alt="something is happening"
+                      width={0}
+                      height={0}
+                      sizes="100vh"
+                      className="w-full"
+                    />
+
+
+                  </div>
+
+                </div>
+              )
+            })
+            }
+          </Slider>
+        </div>
+        <div className="md:grid hidden grid-cols-12 gap-4">
           <div className="md:col-span-6 col-span-12">
-            <div className="grid md:grid-cols-2 grid-cols-2">
-              <div className="p-1">
+            <div className="grid md:grid-cols-3">
+              <div className="">
                 <Image
                   src={"/samples/sale-pics-for-you/1.jpg"}
                   alt="something is happening"
@@ -25,7 +90,7 @@ export default function Product() {
                   className="w-full h-auto object-contain"
                 />
               </div>
-              <div className="p-1">
+              <div className="">
                 <Image
                   src={"/samples/sale-pics-for-you/2.jpg"}
                   alt="something is happening"
@@ -35,7 +100,7 @@ export default function Product() {
                   className="w-full h-auto object-contain"
                 />
               </div>
-              <div className="p-1">
+              <div className="">
                 <Image
                   src={"/samples/sale-pics-for-you/3.jpg"}
                   alt="something is happening"
@@ -45,7 +110,7 @@ export default function Product() {
                   className="w-full h-auto object-contain"
                 />
               </div>
-              <div className="p-1">
+              <div className="">
                 <Image
                   src={"/samples/sale-pics-for-you/4.jpg"}
                   alt="something is happening"
@@ -55,7 +120,7 @@ export default function Product() {
                   className="w-full h-auto object-contain"
                 />
               </div>
-              <div className="p-1">
+              <div className="">
                 <Image
                   src={"/samples/sale-pics-for-you/5.jpg"}
                   alt="something is happening"
@@ -65,7 +130,7 @@ export default function Product() {
                   className="w-full h-auto object-contain"
                 />
               </div>
-              <div className="p-1">
+              <div className="">
                 <Image
                   src={"/samples/sale-pics-for-you/6.jpg"}
                   alt="something is happening"
@@ -75,7 +140,7 @@ export default function Product() {
                   className="w-full h-auto object-contain"
                 />
               </div>
-              <div className="p-1">
+              <div className="">
                 <Image
                   src={"/samples/sale-pics-for-you/7.jpg"}
                   alt="something is happening"
@@ -85,7 +150,7 @@ export default function Product() {
                   className="w-full h-auto object-contain"
                 />
               </div>
-              <div className="p-1">
+              <div className="">
                 <Image
                   src={"/samples/sale-pics-for-you/8.jpg"}
                   alt="something is happening"
@@ -95,7 +160,7 @@ export default function Product() {
                   className="w-full h-auto object-contain"
                 />
               </div>
-              <div className="p-1">
+              <div className="">
                 <Image
                   src={"/samples/sale-pics-for-you/9.jpg"}
                   alt="something is happening"
@@ -105,7 +170,7 @@ export default function Product() {
                   className="w-full h-auto object-contain"
                 />
               </div>
-              <div className="p-1">
+              <div className="">
                 <Image
                   src={"/samples/sale-pics-for-you/10.jpg"}
                   alt="something is happening"
@@ -119,7 +184,7 @@ export default function Product() {
           </div>
           <div className="md:col-span-6 col-span-12">
 
-            <div className="p-1 flex-col space-y-3  sticky top-0">
+            <div className=" flex-col space-y-3  sticky top-0">
               <div className="flex items-center space-x-3">
                 <StarRatings
                   rating={4.4}
@@ -138,46 +203,44 @@ export default function Product() {
                 <p className="line-through">$255.00</p>
               </div>
               <p>Color: Vintage Cream</p>
-              <div className="flex items-center space-x-3">
-                <div className="w-14 h-14 rounded-lg p-1 border-2 border-gray-300">
-                  <Image
-                    src={"/samples/sale-pics-for-you/2.jpg"}
-                    alt="something is happening"
-                    width={0}
-                    height={0}
-                    sizes="100vh"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <div className="w-14 h-14 rounded-lg p-1 border-2 border-gray-300">
-                  <Image
-                    src={"/samples/sale-pics-for-you/4.jpg"}
-                    alt="something is happening"
-                    width={0}
-                    height={0}
-                    sizes="100vh"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <div className="w-14 h-14 rounded-lg p-1 border-2 border-gray-300">
-                  <Image
-                    src={"/samples/sale-pics-for-you/6.jpg"}
-                    alt="something is happening"
-                    width={0}
-                    height={0}
-                    sizes="100vh"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
+              <div className="flex items-center space-x-3 my-2">
+
+                <Image
+                  src={"/samples/sale-pics-for-you/2.jpg"}
+                  alt="something is happening"
+                  width={0}
+                  height={0}
+                  sizes="100vh"
+                  className="w-14 h-14 rounded-lg object-cover  border-2 border-gray-300"
+                />
+
+
+                <Image
+                  src={"/samples/sale-pics-for-you/4.jpg"}
+                  alt="something is happening"
+                  width={0}
+                  height={0}
+                  sizes="100vh"
+                  className="w-14 h-14 rounded-lg object-cover  border-2 border-gray-300"
+                />
+
+
+                <Image
+                  src={"/samples/sale-pics-for-you/6.jpg"}
+                  alt="something is happening"
+                  width={0}
+                  height={0}
+                  sizes="100vh"
+                  className="w-14 h-14 rounded-lg object-cover  border-2 border-gray-300"
+                />
+
               </div>
-              <p className="p-1">Customers say the fit runs slightly small.
-              </p>
-              <div className="p-1">
-                <select className="border border-gray-300 focus:outline-none p-4 w-full rounded-3xl">
+              <div className="my-2">
+                <select className="border block border-gray-300 focus:outline-none px-4 py-2 w-1/2 rounded-md">
                   <option value="">X-Small</option>
                 </select>
               </div>
-              <p className="p-1">61 people are viewing</p>
+              <p className="">61 people are viewing</p>
               <div className="flex space-x-3">
                 <HomeIcon className="w-10 h-10 stroke-black" />
                 <div className="flex flex-col space-y-2">
@@ -186,18 +249,18 @@ export default function Product() {
                 </div>
               </div>
               <div className="flex space-x-4">
-                <button className="w-full py-3 bg-cyan-800 rounded-3xl text-white flex items-center justify-center space-x-3">
+                <button className=" md:px-4 px-3 md:py-2 py-1.5 bg-cyan-800 rounded-3xl text-white flex items-center justify-center space-x-3">
                   <ShoppingBagIcon className="w-6 h-7 stroke-white" />
-                  <span>Add to Bag</span>
+                  <span className="text-nowrap">Add to Bag</span>
                 </button>
-                <button className="w-full py-3 border border-cyan-950 rounded-3xl text-black flex items-center justify-center space-x-3">
+                <button className=" md:px-4 px-3 md:py-2  py-1.5 border border-cyan-950 rounded-3xl text-black flex items-center justify-center space-x-3">
                   <HeartIcon className="w-6 h-6 stroke-white" />
-                  <span>Add To Wish List</span>
+                  <span className="text-nowrap">Add To Wish List</span>
                 </button>
               </div>
               <div className="grid md:grid-cols-2 grid-cols-1">
                 <div className="main-container">
-                  <div className="p-1">
+                  <div className="">
                     <p className="font-bold text-xl">Size Info</p>
                     <ul className="list-disc pl-8 leading-relaxed">
                       <li>Runs small; order one size up</li>
@@ -207,8 +270,8 @@ export default function Product() {
                     </ul>
                   </div>
                   <div>
-                    <p className="p-1">Details & care</p>
-                    <p className="p-1">A bold cutout is softened by an elegant cowl neck on a satin minidress cut on the bias and fitted with the corsetry boning for a cinched waist.</p>
+                    <p className="">Details & care</p>
+                    <p className="">A bold cutout is softened by an elegant cowl neck on a satin minidress cut on the bias and fitted with the corsetry boning for a cinched waist.</p>
                     <ul className="list-disc pl-8 leading-relaxed">
                       <li>Exclusive retailer</li>
                       <li>32" length (size Small)</li>
@@ -224,7 +287,7 @@ export default function Product() {
                   </div>
                   <div className="flex flex-col space-y-3 my-2">
                     <div className="flex space-x-2">
-                     
+
                       <StarRatings
                         rating={4.4}
                         starDimension="18px"
@@ -236,17 +299,17 @@ export default function Product() {
                       <span>3.3 out of 5</span>
 
                     </div>
-                    <button className="w-60 border-2 py-2 border-gray-300 hover:scale-105 transition duration-200 ease-in-out hover:bg-gray-300 rounded-3xl">Write Review</button>
+                    <button className="w-60 border-2 px-3 py-1 border-gray-300 hover:scale-105 transition duration-200 ease-in-out hover:bg-gray-300 rounded-3xl">Write Review</button>
                   </div>
                 </div>
                 <div className="main-container">
-                  <div className="p-1 flex-col space-y-4">
+                  <div className=" flex-col space-y-4">
                     <p className="font-bold text-xl">
                       Gift Options
                     </p>
                     <p className="mt-3">Choose your gift options at Checkout. Some items may not be eligible for all gift options</p>
                     <p>Free Pickup</p>
-                    <div className="p-1">
+                    <div className="">
                       <div className="flex flex-col space-y-4">
                         <div className="flex items-center space-x-3">
                           <PrinterIcon className="w-6 h-6 stroke-black" />
@@ -266,7 +329,7 @@ export default function Product() {
                         </div>
                       </div>
                     </div>
-                    <div className="p-1 flex-col space-y-4">
+                    <div className=" flex-col space-y-4">
                       <p>Delivery</p>
                       <div className="flex items-center space-x-3">
                         <EnvelopeIcon className="w-6 h-6 stroke-black" />
@@ -287,12 +350,12 @@ export default function Product() {
                       <p>Need help finding the perfect gift? We've got you covered.
                       </p>
                       <button
-                        className="block p-2 border-2 border-gray-300 rounded-3xl hover:scale-105 transition duration-200 ease-in-out w-60">Shop
+                        className="block my-2 border-2 px-3 py-1 border-gray-300 rounded-3xl hover:scale-105 transition duration-200 ease-in-out w-60">Shop
                         Gifts</button>
                     </div>
                   </div>
 
-                  <div className="p-1">
+                  <div className="my-2">
                     <p className="font-bold text-xl">
                       Shipping & returns
                     </p>

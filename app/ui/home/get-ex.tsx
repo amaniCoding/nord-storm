@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function GetEx() {
   //react/no-unescaped-entities
   return (
-    <section className="p-3">
+    <section className="p-4">
       <div className="max-w-screen-xl mx-auto">
         <p className="my-3 font-semibold text-center">Get Excited</p>
         <p className="mb-2 text-center">

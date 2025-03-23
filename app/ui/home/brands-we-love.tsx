@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Brands() {
   //react/no-unescaped-entities
   return (
-    <section className="p-3">
+    <section className="p-4">
       <div className="max-w-screen-xl mx-auto">
         <p className="my-3 font-semibold">Brands We Love</p>
         <div className="grid md:grid-cols-3 grid-cols-1 gap-3">
