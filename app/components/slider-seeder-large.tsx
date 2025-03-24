@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import Image from "next/image";
 import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
 import { useRef } from "react";
-import StarRatings from "react-star-ratings";
+import { Rating } from 'react-simple-star-rating'
 import Link from "next/link";
 import ColorSlider from "./color-slider";
 import { colorsSeeder } from "../libs/placeholder";
@@ -101,18 +101,13 @@ export default function SliderSeederLarge(props: { photoName: string, numberOfSl
                     <span className="line-through block">$160.00</span>
                   </div>
                   <ColorSlider colors={colorsSeeder} />
-                  <div className="flex items-center space-x-2">
-                    <div>
-                      <StarRatings
-                        rating={5}
-                        starDimension="18px"
-                        starRatedColor="#FF9529"
-                        starSpacing="0"
-                        numberOfStars={5}
-                        name='rating'
-                      />
-                    </div>
 
+                  
+                  <div className="flex items-center py-1 space-x-2 ">
+                    <div>
+                    <Rating initialValue={3} size={20} allowFraction readonly SVGclassName="inline" />
+
+                    </div>
                     <p className="block">(325)</p>
                   </div>
 

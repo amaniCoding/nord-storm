@@ -97,7 +97,6 @@ body {
 }
 .bg-green {
   background-color: green !important;
-  opacity: 0 !important;
 
 }
 .bg-blue {
@@ -124,17 +123,18 @@ body {
 }
 
 .color-slider .slick-slide {
-  text-align: center !important;
   display: flex !important;
+  align-items: center !important;
   justify-content: center !important;
   padding: 10px;
+
 }
-.color-slider .slick-slide div {
-  width: 18px !important;
-  height: 18px !important;
+
+.color-slider .slick-slide > div > div {
+  width: 13px !important;
+  height: 13px !important;
   border-radius: 9999px !important;
-  opacity: 0.8 !important;
-  outline: 1.2px solid #eae8e8;
+  outline: 1px solid #eae8e8;
   outline-offset: 2px;
 
 }

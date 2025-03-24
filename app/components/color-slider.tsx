@@ -23,8 +23,9 @@ export default function ColorSlider(props: { colors: Color[] }) {
     infinite: false,
     speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToScroll: 2,
     arrows: false,
+    adaptiveHeight: true
 
   };
   return (
@@ -35,7 +36,7 @@ export default function ColorSlider(props: { colors: Color[] }) {
       <Slider {...settings} ref={sliderRef}>
         {
           props.colors.map((color, i) => {
-            return <div key={i} className={`brightness-75 ${color.colorcode}`}></div>
+            return <div key={i} className={`brightness-50 ${color.colorcode}`}></div>
           })
         }
       </Slider>
@@ -74,7 +75,7 @@ export function ColorSliderPics(props: { colors: Color[] }) {
       <Slider {...settings} ref={sliderRef}>
         {
           props.colors.map((color, i) => {
-            return <div key={i} className={`brightness-75 ${color.colorcode}`}></div>
+            return <div key={i} className={`brightness-50 ${color.colorcode}`}></div>
           })
         }
       </Slider>

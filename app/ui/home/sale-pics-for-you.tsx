@@ -3,12 +3,13 @@ import { ColorSliderPics } from "@/app/components/color-slider";
 import Image from "next/image";
 import SliderSeederMobile from "@/app/components/slider-seeder-mobile";
 import { colorsSeeder } from "@/app/libs/placeholder";
-import StarRatings from "react-star-ratings";
+
 import Link from "next/link";
+import { Rating } from "react-simple-star-rating";
 export default function SalePics() {
   return (
     <section className="p-4">
-      <div className="max-w-[1200px] mx-auto">
+      <div className="max-w-screen-xl mx-auto">
         <i className="fa fa-star fa-lg" aria-hidden="true"></i>
         <p className="my-3 font-semibold pl-4">Sale Picks for You</p>
 
@@ -56,14 +57,8 @@ export default function SalePics() {
                   </div>
                   <ColorSliderPics colors={colorsSeeder} />
                   <div className="flex space-x-2">
-                    <StarRatings
-                      rating={5}
-                      starDimension="18px"
-                      starRatedColor="#FF9529"
-                      starSpacing="0"
-                      numberOfStars={5}
-                      name='rating'
-                    />
+                    <Rating initialValue={4.3} size={20} allowFraction readonly SVGclassName="inline" />
+
 
 
                     <span className="">(325)</span>

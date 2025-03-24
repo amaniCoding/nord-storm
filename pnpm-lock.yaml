@@ -53,6 +53,9 @@ importers:
       react-rating-stars-component:
         specifier: ^2.2.0
         version: 2.2.0
+      react-simple-star-rating:
+        specifier: ^5.1.7
+        version: 5.1.7(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react-slick:
         specifier: ^0.30.3
         version: 0.30.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -1513,6 +1516,13 @@ packages:
 
   react-rating-stars-component@2.2.0:
     resolution: {integrity: sha512-A3lgLxumfFQQicKQmxacZ91fq/zRaVWlCPnVodJmJV6obvod4/yCotetN9WuyBiUfnKsEFDBo/8B85ocwmL7ng==}
+
+  react-simple-star-rating@5.1.7:
+    resolution: {integrity: sha512-NTFkW8W3uwvI82Fv7JW5i7gmDjEZKxJmj+Z9vn+BjYIXT6ILdnU9qnSUP2cWrWN/WAUlue81f9SgM4CQcenltQ==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      react: '>=18.0.0'
+      react-dom: '>=18.0.0'
 
   react-slick@0.30.3:
     resolution: {integrity: sha512-B4x0L9GhkEWUMApeHxr/Ezp2NncpGc+5174R02j+zFiWuYboaq98vmxwlpafZfMjZic1bjdIqqmwLDcQY0QaFA==}
@@ -3398,6 +3408,11 @@ snapshots:
   react-is@16.13.1: {}
 
   react-rating-stars-component@2.2.0: {}
+
+  react-simple-star-rating@5.1.7(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
+    dependencies:
+      react: 19.0.0
+      react-dom: 19.0.0(react@19.0.0)
 
   react-slick@0.30.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
     dependencies:
