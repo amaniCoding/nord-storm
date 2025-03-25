@@ -14,7 +14,7 @@ export default function QuickShow() {
         <div className="grid grid-cols-2">
           <div className="p-3">
             <Image
-              src={`/samples/sale-pics-for-you/5.jpg`}
+              src={`/samples/back/5.jpg`}
               alt="something is happening"
               width={0}
               height={0}
@@ -30,7 +30,7 @@ export default function QuickShow() {
             <p>Color: Dark Green</p>
             <div className="w-20 h-20 border-2 border-black/75 rounded-lg">
               <Image
-                src={`/samples/sale-pics-for-you/5.jpg`}
+                src={`/samples/back/5.jpg`}
                 alt="something is happening"
                 width={0}
                 height={0}

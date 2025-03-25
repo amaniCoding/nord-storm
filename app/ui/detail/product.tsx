@@ -60,7 +60,7 @@ export default function Product() {
                     <div className="hidden absolute top-0 bottom-0 left-0 right-0 bg-black/15 group-hover:block"></div>
 
                     <Image
-                      src={`/samples/sale-pics-for-you/${i + 1}.jpg`}
+                      src={`/samples/back/${i + 1}.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -82,7 +82,7 @@ export default function Product() {
             <div className="grid md:grid-cols-2">
               <div className="">
                 <Image
-                  src={"/samples/sale-pics-for-you/1.jpg"}
+                  src={"/samples/back/1.jpg"}
                   alt="something is happening"
                   width={0}
                   height={0}
@@ -92,7 +92,7 @@ export default function Product() {
               </div>
               <div className="">
                 <Image
-                  src={"/samples/sale-pics-for-you/2.jpg"}
+                  src={"/samples/back/2.jpg"}
                   alt="something is happening"
                   width={0}
                   height={0}
@@ -102,7 +102,7 @@ export default function Product() {
               </div>
               <div className="">
                 <Image
-                  src={"/samples/sale-pics-for-you/3.jpg"}
+                  src={"/samples/back/3.jpg"}
                   alt="something is happening"
                   width={0}
                   height={0}
@@ -112,7 +112,7 @@ export default function Product() {
               </div>
               <div className="">
                 <Image
-                  src={"/samples/sale-pics-for-you/4.jpg"}
+                  src={"/samples/back/4.jpg"}
                   alt="something is happening"
                   width={0}
                   height={0}
@@ -122,7 +122,7 @@ export default function Product() {
               </div>
               <div className="">
                 <Image
-                  src={"/samples/sale-pics-for-you/5.jpg"}
+                  src={"/samples/back/5.jpg"}
                   alt="something is happening"
                   width={0}
                   height={0}
@@ -132,7 +132,7 @@ export default function Product() {
               </div>
               <div className="">
                 <Image
-                  src={"/samples/sale-pics-for-you/6.jpg"}
+                  src={"/samples/back/6.jpg"}
                   alt="something is happening"
                   width={0}
                   height={0}
@@ -168,7 +168,7 @@ export default function Product() {
               <div className="flex items-center space-x-3 my-2">
 
                 <Image
-                  src={"/samples/sale-pics-for-you/2.jpg"}
+                  src={"/samples/back/2.jpg"}
                   alt="something is happening"
                   width={0}
                   height={0}
@@ -178,7 +178,7 @@ export default function Product() {
 
 
                 <Image
-                  src={"/samples/sale-pics-for-you/4.jpg"}
+                  src={"/samples/back/4.jpg"}
                   alt="something is happening"
                   width={0}
                   height={0}
@@ -188,7 +188,7 @@ export default function Product() {
 
 
                 <Image
-                  src={"/samples/sale-pics-for-you/6.jpg"}
+                  src={"/samples/back/6.jpg"}
                   alt="something is happening"
                   width={0}
                   height={0}
