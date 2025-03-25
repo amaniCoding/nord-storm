@@ -7,10 +7,11 @@ import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
 import { useRef } from "react";
 import { Rating } from 'react-simple-star-rating'
 import Link from "next/link";
-import ColorSlider from "./color-slider";
-import { colorsSeeder } from "../libs/placeholder";
-export default function SliderSeederLarge(props: { photoName: string, numberOfSlides?: number }) {
+import {  dummyText, shuffleArray } from "../libs/placeholder";
+export default function SliderSeederLarge(props: { numberOfSlides?: number }) {
 
+
+  const shuffle = shuffleArray(dummyText);
   const sliderRef = useRef<Slider>(null);
 
 
@@ -72,7 +73,7 @@ export default function SliderSeederLarge(props: { photoName: string, numberOfSl
 
       <div className="large-color">
         <Slider {...settings} ref={sliderRef}>
-          {Array.from(Array(10).keys()).map((_, i) => {
+          {shuffle.map((el, i) => {
             return (
               <div className="p-4 bg-white" key={i}>
                 <div className="group relative">
@@ -80,7 +81,7 @@ export default function SliderSeederLarge(props: { photoName: string, numberOfSl
                     <div className="hidden absolute top-0 bottom-0 left-0 right-0 bg-black/15 group-hover:block"></div>
 
                     <Image
-                      src={`/samples/${props.photoName}/${i + 1}.jpg`}
+                      src={`/samples/back/${i + 2}.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
@@ -95,20 +96,26 @@ export default function SliderSeederLarge(props: { photoName: string, numberOfSl
                 <div className="mt-1">
 
                   <div className="my-1">
-                    <span className="block">New Markdown</span>
-                    <span className="block">UGG®</span>
-                    <span className="block font-bold">$112.00</span>
-                    <span className="line-through block">$160.00</span>
+                    <span className="block">{el.desc.substring(7,50)}</span>
+                    <span className="block">&copy;{el.brand}</span>
+                    <span className="block font-bold">{el.price.original}</span>
+                    <span className="line-through block">{el.price.off}</span>
                   </div>
-                  <ColorSlider colors={colorsSeeder} />
+                  <div className="flex items-center space-x-4">
+                    {
+                      el.colors.map((color, i) => {
+                        return <div key={i} className={`brightness-50 w-3 h-3 outline outline-1 outline-offset-2 outline-red-500 rounded-full  ${color}`}></div>
+                      })
+                    }
+                  </div>
 
                   
                   <div className="flex items-center py-1 space-x-2 ">
                     <div>
-                    <Rating initialValue={3} size={20} allowFraction readonly SVGclassName="inline" />
+                    <Rating initialValue={el.rating} size={20} allowFraction readonly SVGclassName="inline" />
 
                     </div>
-                    <p className="block">(325)</p>
+                    <p className="block">({el.ratingCount})</p>
                   </div>
 
 

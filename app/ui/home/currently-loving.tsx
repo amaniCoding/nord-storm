@@ -9,7 +9,7 @@ export default function Lovings() {
           Explore favorite looks from Instagram. Tag @Nordstrom to show us your finds.
         </p>
 
-        <SliderSeederLarge photoName="currently-loving"/>
+        <SliderSeederLarge/>
       </div>
     </section>
   )

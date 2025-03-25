@@ -5,7 +5,7 @@ export default function LastMinGifts() {
     <section className="p-4 bg-gray-50">
       <div className="max-w-screen-xl mx-auto">
       <p className="my-3 font-semibold"> Last-Minute Gifts</p>
-        <SliderSeederLarge photoName="last-min-gifts" />
+        <SliderSeederLarge />
       </div>
     </section>
   )

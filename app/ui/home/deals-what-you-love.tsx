@@ -8,7 +8,7 @@ export default function DealsForYou() {
         <p className="mb-2 pl-4">
           Items similar to what you've browsed are on sale
         </p>
-        <SliderSeederLarge photoName="great-deals" />
+        <SliderSeederLarge />
       </div>
     </section>
   )

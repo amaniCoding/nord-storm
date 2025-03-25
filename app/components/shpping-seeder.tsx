@@ -2,12 +2,12 @@
 import Link from "next/link"
 import StarRatings from "react-star-ratings"
 import Image from "next/image"
-import ColorSlider from "./color-slider"
-import { colorsSeeder } from "../libs/placeholder"
+import {  dummyText, shuffleArray } from "../libs/placeholder"
 export default function ShoppingSeeder() {
+    const shuffle = shuffleArray(dummyText);
   return (
     <>
-      {Array.from(Array(10).keys()).map((_, i) => {
+      {shuffle.map((el, i) => {
         return (
           <div className="bg-white" key={i}>
             <div className="group relative">
@@ -30,16 +30,22 @@ export default function ShoppingSeeder() {
             <div className="mt-1 mx-4">
 
               <div className="my-1">
-                <span className="block">New Markdown</span>
-                <span className="block">UGG®</span>
-                <span className="block font-bold">$112.00</span>
-                <span className="line-through block">$160.00</span>
+                <span className="block">{el.desc.substring(5, 67)}</span>
+                <span className="block">{el.brand}®</span>
+                <span className="block font-bold">{el.price.original}</span>
+                <span className="line-through block">{el.price.off}</span>
               </div>
-              <ColorSlider colors={colorsSeeder} />
+              <div className="flex items-center space-x-4">
+                    {
+                      el.colors.map((color, i) => {
+                        return <div key={i} className={`brightness-50 w-3 h-3 outline outline-1 outline-offset-2 outline-red-500 rounded-full  ${color}`}></div>
+                      })
+                    }
+                  </div>
               <div className="flex items-center space-x-2">
                 <div>
                   <StarRatings
-                    rating={5}
+                    rating={el.rating}
                     starDimension="18px"
                     starRatedColor="#FF9529"
                     starSpacing="0"
@@ -48,7 +54,7 @@ export default function ShoppingSeeder() {
                   />
                 </div>
 
-                <p className="block">(325)</p>
+                <p className="block">({el.ratingCount})</p>
               </div>
 
 
