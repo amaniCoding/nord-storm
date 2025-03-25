@@ -42,7 +42,7 @@ export default function SalePics() {
                       width={0}
                       height={0}
                       sizes="100vh"
-                      className="w-full object-contain"
+                      className="w-full"
                     />
                   </Link>
                   <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 text-center absolute bottom-3 right-1/2 z-[100] hover:bg-white border-2 border-slate-400 hover:border-black w-3/4 translate-x-1/2 md:group-hover:block">

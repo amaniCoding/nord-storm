@@ -461,7 +461,7 @@ export default function Reviews() {
 
           <section className=" bg-gray-50">
             <div className="max-w-screen-xl mx-auto">
-              <SliderSeederLarge photoName="great-deals" />
+              <SliderSeederLarge />
             </div>
           </section>
 
