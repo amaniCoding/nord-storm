@@ -33,7 +33,7 @@ export default function BannerSlide() {
               width={0}
               height={0}
               sizes="100vh"
-              className="w-full object-center"
+              className="w-full h-full object-center"
             />
           </div>
 
@@ -44,7 +44,7 @@ export default function BannerSlide() {
               width={0}
               height={0}
               sizes="100vh"
-              className="w-full object-center"
+              className="w-full h-full object-center"
             />
           </div>
        

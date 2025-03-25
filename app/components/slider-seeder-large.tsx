@@ -81,7 +81,7 @@ export default function SliderSeederLarge(props: { numberOfSlides?: number }) {
                     <div className="hidden absolute top-0 bottom-0 left-0 right-0 bg-black/15 group-hover:block"></div>
 
                     <Image
-                      src={`/samples/back/${i + 2}.jpg`}
+                      src={`/samples/back/${i + 1}.jpg`}
                       alt="something is happening"
                       width={0}
                       height={0}
