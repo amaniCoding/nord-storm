@@ -7,7 +7,7 @@ export default function RecentlyViewed() {
       <p className="my-3 font-semibold pl-4">Here's What Caught Your Eye</p>
         
       <p className="my-3 font-semibold pl-4">Recently viewed</p>
-        <SliderSeederLarge photoName="great-deals" />
+        <SliderSeederLarge />
       </div>
     </section>
   )
