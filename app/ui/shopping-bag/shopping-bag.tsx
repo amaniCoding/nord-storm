@@ -115,7 +115,7 @@ export default function ShoppingBag() {
                 <p className="text-xl font-bold">
                   More from Dress the Population
                 </p>
-                <SliderSeederLarge photoName="sale-pics-for-you" numberOfSlides={4} />
+                <SliderSeederLarge numberOfSlides={4} />
               </div>
             </div>
             <div className="md:col-span-4 col-span-12">
@@ -141,7 +141,7 @@ export default function ShoppingBag() {
                   <p className="text-xl font-bold mb-3">
                     People Also Viewed
                   </p>
-                  <SliderSeederLarge photoName="recently-viewed" numberOfSlides={2} />
+                  <SliderSeederLarge numberOfSlides={2} />
                 </div>
                 <div className="bg-white mt-5 p-5">
                   <p>Nordy Club members earn 3X the points on beauty! See restrictions.</p>
