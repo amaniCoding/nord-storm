@@ -22,7 +22,7 @@ export default function Gifts() {
             <span className="font-bold text-lg cursor-pointer text-center">UGG Gifts</span>
             <span className="font-bold text-lg cursor-pointer text-center">Our Favourite Gifts</span>
         </SliderSeederMobile>
-        <SliderSeederLarge photoName="last-min-gifts"/>
+        <SliderSeederLarge/>
       </div>
     </section>
   )
