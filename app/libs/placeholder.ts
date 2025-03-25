@@ -75,3 +75,22 @@ export const colorsSeeder: Color[] = [
   }
 
 ]
+
+
+export const colorsSeeder3: Color[] = [
+  {
+    name: 'blue',
+    colorcode: 'bg-blue'
+  },
+  {
+    name: 'yellow',
+    colorcode: 'bg-yellow'
+  },
+  {
+    name: 'magenta',
+    colorcode: 'bg-magenta'
+  },
+  
+  
+
+]

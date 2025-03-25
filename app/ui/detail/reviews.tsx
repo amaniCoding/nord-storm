@@ -9,6 +9,7 @@ import { HandThumbUpIcon } from "@heroicons/react/24/outline";
 import RecentlyViewed from "../home/recently-viewed";
 import SliderMobile from "@/app/components/slider-seeder-mobile";
 import SliderSeederLarge from "@/app/components/slider-seeder-large";
+import CustomerPhotos from "@/app/components/customer-photos";
 
 export default function Reviews() {
   const settings2 = {
@@ -91,91 +92,10 @@ export default function Reviews() {
                 found this helpful</span>
             </div>
           </div>
-          
+
         </div>
         <p className="my-2">Customer photos</p>
-        <Slider {...settings2}>
-          <div className="">
-            <Image
-              src={"/samples/sale-pics-for-you/1.jpg"}
-              alt="something is happening"
-              width={0}
-              height={0}
-              sizes="100vh"
-              className="w-full h-auto object-contain"
-            />
-          </div>
-          <div className="">
-            <Image
-              src={"/samples/sale-pics-for-you/2.jpg"}
-              alt="something is happening"
-              width={0}
-              height={0}
-              sizes="100vh"
-              className="w-full h-auto object-contain"
-            />
-          </div>
-          <div className="">
-            <Image
-              src={"/samples/sale-pics-for-you/3.jpg"}
-              alt="something is happening"
-              width={0}
-              height={0}
-              sizes="100vh"
-              className="w-full h-auto object-contain"
-            />
-          </div>
-          <div className="">
-            <Image
-              src={"/samples/sale-pics-for-you/4.jpg"}
-              alt="something is happening"
-              width={0}
-              height={0}
-              sizes="100vh"
-              className="w-full h-auto object-contain"
-            />
-          </div>
-          <div className="">
-            <Image
-              src={"/samples/sale-pics-for-you/5.jpg"}
-              alt="something is happening"
-              width={0}
-              height={0}
-              sizes="100vh"
-              className="w-full h-auto object-contain"
-            />
-          </div>
-          <div className="">
-            <Image
-              src={"/samples/sale-pics-for-you/6.jpg"}
-              alt="something is happening"
-              width={0}
-              height={0}
-              sizes="100vh"
-              className="w-full h-auto object-contain"
-            />
-          </div>
-          <div className="">
-            <Image
-              src={"/samples/sale-pics-for-you/7.jpg"}
-              alt="something is happening"
-              width={0}
-              height={0}
-              sizes="100vh"
-              className="w-full h-auto object-contain"
-            />
-          </div>
-          <div className="">
-            <Image
-              src={"/samples/sale-pics-for-you/8.jpg"}
-              alt="something is happening"
-              width={0}
-              height={0}
-              sizes="100vh"
-              className="w-full h-auto object-contain"
-            />
-          </div>
-        </Slider>
+        <CustomerPhotos photoName="sale-pics-for-you" />
       </div>
       <div className="md:max-w-screen-xl max-w-full mx-auto">
 
@@ -264,17 +184,17 @@ export default function Reviews() {
                   <select className="border border-gray-200 px-3 py-1 block mr-2 mb-2 rounded-3xl ">
                     <option value="">Color</option>
                   </select>
-                  
+
                 </div>
 
                 <div>
-                    <div className="flex items-center space-x-2 mb-2">
-                      <input type="checkbox" className="w-6 h-6 rounded-lg" /> <span>Photos</span>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <input type="checkbox" className="w-6 h-6 rounded-lg" /> <span>Verified</span>
-                    </div>
+                  <div className="flex items-center space-x-2 mb-2">
+                    <input type="checkbox" className="w-6 h-6 rounded-lg" /> <span>Photos</span>
                   </div>
+                  <div className="flex items-center space-x-2">
+                    <input type="checkbox" className="w-6 h-6 rounded-lg" /> <span>Verified</span>
+                  </div>
+                </div>
               </div>
 
               <div className="pb-5 mt-3">

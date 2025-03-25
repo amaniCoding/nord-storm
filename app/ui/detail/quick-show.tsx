@@ -19,7 +19,7 @@ export default function QuickShow() {
               width={0}
               height={0}
               sizes="100vh"
-              className="w-full h-full object-contain"
+              className="w-full"
             />
           </div>
           <div className="p-3 flex flex-col space-y-2">

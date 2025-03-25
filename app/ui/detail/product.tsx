@@ -77,9 +77,9 @@ export default function Product() {
             }
           </Slider>
         </div>
-        <div className="md:grid hidden grid-cols-12 gap-4">
-          <div className="md:col-span-6 col-span-12">
-            <div className="grid md:grid-cols-3">
+        <div className="grid grid-cols-12 gap-4">
+          <div className="md:col-span-6 md:block hidden col-span-12">
+            <div className="grid md:grid-cols-2">
               <div className="">
                 <Image
                   src={"/samples/sale-pics-for-you/1.jpg"}
@@ -140,46 +140,8 @@ export default function Product() {
                   className="w-full h-auto object-contain"
                 />
               </div>
-              <div className="">
-                <Image
-                  src={"/samples/sale-pics-for-you/7.jpg"}
-                  alt="something is happening"
-                  width={0}
-                  height={0}
-                  sizes="100vh"
-                  className="w-full h-auto object-contain"
-                />
-              </div>
-              <div className="">
-                <Image
-                  src={"/samples/sale-pics-for-you/8.jpg"}
-                  alt="something is happening"
-                  width={0}
-                  height={0}
-                  sizes="100vh"
-                  className="w-full h-auto object-contain"
-                />
-              </div>
-              <div className="">
-                <Image
-                  src={"/samples/sale-pics-for-you/9.jpg"}
-                  alt="something is happening"
-                  width={0}
-                  height={0}
-                  sizes="100vh"
-                  className="w-full h-auto object-contain"
-                />
-              </div>
-              <div className="">
-                <Image
-                  src={"/samples/sale-pics-for-you/10.jpg"}
-                  alt="something is happening"
-                  width={0}
-                  height={0}
-                  sizes="100vh"
-                  className="w-full h-auto object-contain"
-                />
-              </div>
+              
+              
             </div>
           </div>
           <div className="md:col-span-6 col-span-12">
@@ -211,7 +173,7 @@ export default function Product() {
                   width={0}
                   height={0}
                   sizes="100vh"
-                  className="w-14 h-14 rounded-lg object-cover  border-2 border-gray-300"
+                  className="w-14 h-14 rounded-lg object-contain  border-2 border-gray-300"
                 />
 
 

@@ -9,25 +9,25 @@ export default function ShoppingSeeder() {
     <>
       {Array.from(Array(10).keys()).map((_, i) => {
         return (
-          <div className="py-1 px-6 bg-white" key={i}>
+          <div className="bg-white" key={i}>
             <div className="group relative">
               <Link href={`/product/name/143`}>
                 <div className="hidden absolute top-0 bottom-0 left-0 right-0 bg-black/15 group-hover:block"></div>
 
                 <Image
-                  src={`/samples/great-deals/${i + 1}.jpg`}
+                  src={`/samples/back/${i + 1}.jpg`}
                   alt="something is happening"
                   width={0}
                   height={0}
                   sizes="100vh"
-                  className="w-full h-full object-contain"
+                  className="w-full"
                 />
               </Link>
               <Link href={`/product/name/40/quick-show`} className="hidden bg-gray-50/95 p-2 w-3/4 right-1/2 translate-x-1/2 text-center absolute bottom-3  z-[100] hover:bg-white border-2 border-slate-400 hover:border-black md:group-hover:block">
                 Quick Show
               </Link>
             </div>
-            <div className="mt-1">
+            <div className="mt-1 mx-4">
 
               <div className="my-1">
                 <span className="block">New Markdown</span>

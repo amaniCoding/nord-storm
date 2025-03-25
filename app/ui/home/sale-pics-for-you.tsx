@@ -1,8 +1,8 @@
 'use client'
-import { ColorSliderPics } from "@/app/components/color-slider";
+// import { ColorSliderPics } from "@/app/components/color-slider";
 import Image from "next/image";
 import SliderSeederMobile from "@/app/components/slider-seeder-mobile";
-import { colorsSeeder } from "@/app/libs/placeholder";
+import { colorsSeeder3 } from "@/app/libs/placeholder";
 
 import Link from "next/link";
 import { Rating } from "react-simple-star-rating";
@@ -27,8 +27,8 @@ export default function SalePics() {
           <span className="font-bold text-lg text-center cursor-pointer">Limited-Time Sale</span>
           <span className="font-bold text-lg text-center cursor-pointer">Beauty & Fragrance Sale</span>
         </SliderSeederMobile>
-        <div className="grid md:grid-cols-5 grid-cols-2 gap-4 py-6">
-          {Array.from(Array(10).keys()).map((_, i) => {
+        <div className="grid md:grid-cols-4 grid-cols-2 gap-4 py-6">
+          {Array.from(Array(12).keys()).map((_, i) => {
             return (
               <div className="shadow-sm p-3" key={i}>
                 <div className="group relative ">
@@ -55,7 +55,14 @@ export default function SalePics() {
                     <span className="block font-bold">$112.00</span>
                     <span className="line-through block">$160.00</span>
                   </div>
-                  <ColorSliderPics colors={colorsSeeder} />
+                  <div className="flex items-center space-x-4">
+                    {
+                      colorsSeeder3.map((color, i) => {
+                        return <div key={i} className={`brightness-50 w-3 h-3 outline outline-1 outline-offset-2 outline-red-500 rounded-full  ${color.colorcode}`}></div>
+                      })
+                    }
+                  </div>
+                  {/* <ColorSliderPics colors={colorsSeeder3} /> */}
                   <div className="flex space-x-2">
                     <Rating initialValue={4.3} size={20} allowFraction readonly SVGclassName="inline" />
 
