@@ -1,10 +1,10 @@
 'use client'
 export default function ExploreMore() {
   return (
-    <section className="p-4">
+    <section className="">
       <div className="max-w-screen-xl mx-auto">
-        <p className="text-2xl my-4 font-bold text-center">Explore More</p>
-        <div className="grid md:grid-cols-6 grid-cols-2 md:gap-7 gap-3">
+        <p className="text-2xl p-3 font-bold text-center">Explore More</p>
+        <div className="grid lg:px-0 px-2 lg:grid-cols-6 grid-cols-2 lg:gap-7 gap-3">
           <div>
             <div className="w-full h-56 rounded-2xl bg-gradient-to-tl from-blue-500 to-green-500 flex items-center justify-center">
               <span className="text-xl font-serif text-white">

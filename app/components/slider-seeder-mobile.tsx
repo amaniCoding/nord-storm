@@ -26,13 +26,12 @@ export default function SliderSeederMobile({
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-
+    centerMode: true
   };
   return (
     <div className="relative slider-container md:hidden block">
-      <ArrowLeftIcon onClick={handelPrev} className="md:w-10 md:h-10 w-8 h-8 flex items-center justify-center absolute -top-1 bg-white shadow-md rounded-full left-1 z-20  cursor-pointer p-2 stroke-black font-bold transition duration-300 ease-out 
-           dark:bg-slate-800 dark:stroke-white " />
-      <ArrowRightIcon onClick={handelNext} className="md:w-10 md:h-10 w-8 h-8 flex items-center justify-center absolute -top-1 bg-white shadow-md rounded-full right-1 z-20  cursor-pointer p-2 stroke-black font-bold transition duration-300 ease-out 
+      
+      <ArrowRightIcon className="md:w-10 shadow-sm md:h-10 w-8 h-8 flex items-center justify-center absolute top-1/2 -translate-y-1/2 rounded-lg -right-2 z-20  cursor-pointer p-2 stroke-black font-bold transition duration-300 ease-out 
            dark:bg-slate-800 dark:stroke-white " />
 
       <Slider {...settings} ref={sliderRef}>

@@ -35,7 +35,7 @@ export default function NavBar() {
 
   return (
     <nav>
-      <div className="max-w-screen-xl p-4 relative">
+      <div className="max-w-screen-xl px-4 lg:py-4 py-2 relative">
         <Bars3BottomLeftIcon onClick={() => setIsNavItemShown(true)} className="w-9 h-9 md:hidden cursor-pointer" />
         <div className="md:flex items-center justify-center space-x-16 hidden">
           <span className="cursor-pointer border-b-2 border-b-transparent hover:border-black">Holiday Gifts</span>

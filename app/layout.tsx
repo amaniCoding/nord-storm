@@ -6,8 +6,8 @@ import NavBar from "./ui/home/nav-bar";
 import Footer from "./ui/home/footer";
 import EmailUpdates from "./ui/home/email-updates";
 
-import { Outfit } from 'next/font/google'
-const inter = Outfit({ subsets: ['latin']  })
+import { Plus_Jakarta_Sans } from 'next/font/google'
+const inter = Plus_Jakarta_Sans({ subsets: ['latin'], weight: "400"  })
 
 export const metadata: Metadata = {
   title: "Nordstorm clone",

@@ -14,7 +14,7 @@ export default async function Page(props: { params: Promise<{ cat: string }> }) 
     <section>
       <div className="max-w-screen-xl mx-auto">
 
-        <div className="lg:pl-0 pl-4 my-2">
+        <div className="ml-4">
           <Link href={`/`}>Home /</Link>
           <Link href={`../`}>Women /</Link>
           <Link href={`./`}>Clothing /</Link>
@@ -24,17 +24,17 @@ export default async function Page(props: { params: Promise<{ cat: string }> }) 
 
         <div className="grid grid-cols-12 mt-6 gap-2">
 
-          <div className="lg:col-span-2 col-span-12">
-            <div className="sticky top-0 z-[100] h-screen socrollabar overflow-y-scroll ">
+          <div className="lg:col-span-2 col-span-12 lg:h-screen socrollabar-small lg:overflow-y-auto">
+            <div className="sticky top-0 z-[100]  ">
               <CategorySideBar />
             </div>
           </div>
           <div className="lg:col-span-10 col-span-12">
-            <div className="h-[34425px]">
-              <div className="px-4">
+     
+              <div className="px-4 my-2">
 
                 <SubCategory />
-                <div className="flex items-center justify-between p-2">
+                <div className="flex items-center justify-between">
                   <span>1250 items</span>
                   <select className="border border-gray-300 p-3 w-44">
                     <option value="">Sort Featured</option>
@@ -46,15 +46,9 @@ export default async function Page(props: { params: Promise<{ cat: string }> }) 
                 <div className="grid lg:grid-cols-4 grid-cols-2 gap-5">
                   <ShoppingSeeder />
                   <ShoppingSeeder />
-                  <ShoppingSeeder />
-                  <ShoppingSeeder />
-                  <ShoppingSeeder />
-                  <ShoppingSeeder />
-                  <ShoppingSeeder />
-                  <ShoppingSeeder />
                 </div>
               </div>
-            </div>
+   
           </div>
         </div>
       </div>

@@ -22,11 +22,10 @@ export default function BannerSlide() {
     sliderRefx?.current?.slickPlay();
   }, [])
   return (
-    <section className="h-screen overflow-hidden">
+    <section className="lg:h-screen overflow-hidden">
 
-      <div className="slider-container w-full mx-auto relative">
         <Slider {...settings} ref={sliderRefx}>
-          <div className="w-full">
+          <div className="w-full h-full">
             <Image
               src={`/samples/back/wall.jpg`}
               alt="something is happening"
@@ -37,7 +36,7 @@ export default function BannerSlide() {
             />
           </div>
 
-          <div className="w-full">
+          <div className="w-full h-full">
             <Image
               src={`/samples/back/wall2.jpg`}
               alt="something is happening"
@@ -49,10 +48,6 @@ export default function BannerSlide() {
           </div>
        
         </Slider>
-
-      </div>
-
-      
     </section>
   )
 }

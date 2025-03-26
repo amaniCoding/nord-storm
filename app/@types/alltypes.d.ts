@@ -5,6 +5,7 @@ declare module 'react-star-ratings';
 export type Product = {
     desc: string
     brand: string,
+    image: string,
     rating: number
     ratingCount: number,
     colors: string[],

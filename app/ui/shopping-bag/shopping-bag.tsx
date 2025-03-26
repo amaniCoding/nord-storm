@@ -14,7 +14,7 @@ export default function ShoppingBag() {
         <div className="max-w-screen-xl mx-auto py-1 px-3">
           <div className="grid grid-cols-12 gap-3">
             <div className="md:col-span-8 col-span-12">
-              <div className="mt-4 p-6 bg-white">
+              <div className="mt-4 p-4 bg-white">
                 <div className="flex flex-col space-y-2 ">
                   <p className="text-xl font-bold">Guest Shopping Bag (1)</p>
                   <div className="flex space-x-2 items-center">
@@ -26,12 +26,12 @@ export default function ShoppingBag() {
                   </div>
                 </div>
               </div>
-              <div className="flex items-center mt-4 bg-white p-6">
+              <div className="flex items-center mt-4 bg-white p-4">
                 <p>Sign in to check out faster and track your order easily.</p>
               </div>
-              <div className="mt-4 p-6 bg-white">
-                <div className="flex items-center space-x-3 border-b-2 border-b-gray-300 pb-3">
-                  <TruckIcon className="w-8 h-8 stroke-black" />
+              <div className="mt-4 p-4 bg-white">
+                <div className="flex space-x-3 border-b-2 border-b-gray-300 pb-3">
+                  <TruckIcon className="w-8 h-8" />
                   <div className="flex flex-col space-y-2">
                     <span className="text-xl font-bold">Shipping (1 item) to Ethiopia</span>
                     <span>International shipping</span>
@@ -42,7 +42,7 @@ export default function ShoppingBag() {
                   <div className="md:col-span-3 col-span-12">
                     <div className="p-1">
                       <Image
-                        src={`/samples/sale-pics-for-you/4.jpg`}
+                        src={`/samples/back/7.jpg`}
                         alt="something is happening"
                         width={0}
                         height={0}
@@ -68,8 +68,8 @@ export default function ShoppingBag() {
                           <option value="">Qty 1</option>
                         </select>
                       </div>
-                      <div className="flex items-center space-x-3 ">
-                        <ArchiveBoxIcon className="w-7 h-7 stroke-black" />
+                      <div className="flex space-x-3 ">
+                        <ArchiveBoxIcon className="w-8 h-8" />
                         <div>
                           <p className="text-sm md:text-nowrap font-bold">Free returns anytime</p>
                           <p className="text-sm md:text-nowrap">Sold by Nordstrom</p>
@@ -104,28 +104,28 @@ export default function ShoppingBag() {
                   </div>
                 </div>
               </div>
-              <div className="mt-4 bg-white p-6">
+              <div className="mt-4 bg-white p-4">
                 <p className="py-3 text-xl font-bold border-b-2 border-b-gray-500">
                   Saved for later (0 items)
                 </p>
                 <p className="py-3">Have an account? Sign in to view any items you’ve saved.</p>
-                <button className="py-2 px-3 inline-block border-2 border-gray-600 w-80 cursor-pointer hover:bg-gray-300 transition duration-300 ease-in-out ">Sign In</button>
+                <button className="py-2 px-3 inline-block border-2 border-gray-600 w-80 cursor-pointer hover:bg-gray-300 transition duration-300 ease-in-out rounded-3xl">Sign In</button>
               </div>
-              <div className="mt-4 p-6 bg-white">
-                <p className="text-xl font-bold">
+              <div className="bg-white">
+                <p className="text-xl pl-3 mb-2 font-bold">
                   More from Dress the Population
                 </p>
-                <SliderSeederLarge numberOfSlides={4} />
+                <SliderSeederLarge numberOfSlides={3} />
               </div>
             </div>
             <div className="md:col-span-4 col-span-12">
               <div className="sticky top-3">
-                <div className="bg-white p-6 mt-4">
+                <div className="bg-white p-4 mt-4">
                   <p className="text-xl font-bold">Order summary</p>
-                  <div className="flex space-x-3 bg-blue-200 p-2 rounded-md">
-                    <KeyIcon className="w-8 h-8 stroke-black" />
+                  <div className="flex space-x-3 bg-gray-300 p-2 rounded-md">
+                    <KeyIcon className="w-8 h-8" />
                     <div className="w-full">
-                      <span className="font-bold text-sm mb-2">You'll check out through ESW</span>
+                      <span className="font-bold text-sm mb-2">You'll check out through ESW </span>
                       <span className="text-sm">Selecting <span className="font-bold">Check Out</span> will take you to ESW checkout, where our international shipping partner will process your payment and fulfill your order.</span>
                     </div>
                   </div>
@@ -134,14 +134,14 @@ export default function ShoppingBag() {
                     <span>
                       $198.00</span>
                   </div>
-                  <button className="p-3 text-center block w-full bg-black text-white mb-3">Check Out</button>
+                  <button className="p-3 text-center block w-full bg-cyan-700 text-white mb-3 rounded-3xl">Check Out</button>
                   <p className="text-center">Shipping to Ethiopia Change</p>
                 </div>
-                <div className="bg-white mt-4 p-6">
+                <div className="bg-white mt-4 p-4">
                   <p className="text-xl font-bold mb-3">
                     People Also Viewed
                   </p>
-                  <SliderSeederLarge numberOfSlides={2} />
+                  <SliderSeederLarge numberOfSlides={1} />
                 </div>
                 <div className="bg-white mt-5 p-5">
                   <p>Nordy Club members earn 3X the points on beauty! See restrictions.</p>

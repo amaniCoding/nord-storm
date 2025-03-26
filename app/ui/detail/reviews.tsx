@@ -2,14 +2,13 @@
 import { CheckCircleIcon } from "@heroicons/react/20/solid";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 import Image from "next/image";
 import { MagnifyingGlassIcon } from "@heroicons/react/16/solid";
 import { HandThumbUpIcon } from "@heroicons/react/24/outline";
-import RecentlyViewed from "../home/recently-viewed";
 import SliderMobile from "@/app/components/slider-seeder-mobile";
 import SliderSeederLarge from "@/app/components/slider-seeder-large";
 import CustomerPhotos from "@/app/components/customer-photos";
+import RecentlyViewed from "../home/recently-viewed";
 
 export default function Reviews() {
   const settings2 = {
@@ -49,11 +48,11 @@ export default function Reviews() {
   };
 
   return (
-    <section className="md:p-4 p-2">
+    <section className="">
       <div className="md:max-w-screen-xl mx-auto w-full">
         <h2 className="text-2xl font-bold text-center my-2">Reviews</h2>
-        <div className="grid md:grid-cols-2 grid-cols-1 md:gap-6 gap-0">
-          <div className="border border-gray-300 p-3">
+        <div className="grid md:grid-cols-2 grid-cols-1 md:gap-6 gap-0 lg:px-0 px-4">
+          <div className="border border-gray-300 p-3 md:mb-0 mb-4">
             <p className="font-bold md:text-xl mb-2">Most helpful positive review</p>
             <div className="  flex flex-col space-y-3">
               <div className="flex space-x-2">
@@ -95,11 +94,11 @@ export default function Reviews() {
 
         </div>
         <p className="my-2">Customer photos</p>
-        <CustomerPhotos photoName="sale-pics-for-you" />
+        <CustomerPhotos photoName="back" />
       </div>
       <div className="md:max-w-screen-xl max-w-full mx-auto">
 
-        <div className="grid grid-cols-12 md:gap-10 gap-0">
+        <div className="grid grid-cols-12 md:gap-10 gap-0 lg:px-0 px-4">
           <div className="md:col-span-3 col-span-12">
 
             <div className="main-container sticky top-0 pt-3">
@@ -198,8 +197,8 @@ export default function Reviews() {
               </div>
 
               <div className="pb-5 mt-3">
-                <div className="relative">
-                  <input className="pl-12 px-3 py-1 border-2 border-gray-200 rounded-3xl" placeholder="Search Reviews"
+                <div className="relative w-full">
+                  <input className="pl-12 w-full px-3 py-1 border-2 border-gray-200 rounded-3xl" placeholder="Search Reviews"
                   />
                   <MagnifyingGlassIcon className="absolute md:left-3  w-7 h-7 -translate-y-1/2 top-1/2 left-2 to1 stroke-gray-500 peer-focus:text-gray-900" />
                 </div>
@@ -209,8 +208,8 @@ export default function Reviews() {
 
 
           <div className="md:col-span-9 col-span-12">
-            <div className="main-container mt-3">
-              <div className="my-3 border-b-2 border-b-gray-300 pb-3">
+            <div className="main-container">
+              <div className=" border-b-2 border-b-gray-300 pb-3">
                 <div className="grid grid-cols-12">
                   <div className="md:col-span-4 col-span-12">
                     <div className="flex flex-col space-y-3 justify-center pb-3 pt-3">
@@ -249,7 +248,7 @@ export default function Reviews() {
                       <div className="grid grid-cols-4 ga">
                         <div className="">
                           <Image
-                            src={"/samples/recently-viewed/1.jpg"}
+                            src={"/samples/back/1.jpg"}
                             alt="something is happening"
                             width={0}
                             height={0}
@@ -259,7 +258,7 @@ export default function Reviews() {
                         </div>
                         <div className="">
                           <Image
-                            src={"/samples/recently-viewed/2.jpg"}
+                            src={"/samples/back/2.jpg"}
                             alt="something is happening"
                             width={0}
                             height={0}
@@ -269,7 +268,7 @@ export default function Reviews() {
                         </div>
                         <div className="">
                           <Image
-                            src={"/samples/recently-viewed/3.jpg"}
+                            src={"/samples/back/3.jpg"}
                             alt="something is happening"
                             width={0}
                             height={0}
@@ -287,7 +286,7 @@ export default function Reviews() {
                   </div>
                 </div>
               </div>
-              <div className="my-3 border-b-2 border-b-gray-300 pb-3">
+              <div className="border-b-2 border-b-gray-300 pb-3">
                 <div className="grid grid-cols-12">
                   <div className="md:col-span-4 col-span-12">
                     <div className="flex flex-col space-y-3 justify-center pb-3 pt-3">
@@ -326,7 +325,7 @@ export default function Reviews() {
                       <div className="grid grid-cols-4 ga">
                         <div className="">
                           <Image
-                            src={"/samples/recently-viewed/1.jpg"}
+                            src={"/samples/back/1.jpg"}
                             alt="something is happening"
                             width={0}
                             height={0}
@@ -336,7 +335,7 @@ export default function Reviews() {
                         </div>
                         <div className="">
                           <Image
-                            src={"/samples/recently-viewed/2.jpg"}
+                            src={"/samples/back/2.jpg"}
                             alt="something is happening"
                             width={0}
                             height={0}
@@ -346,7 +345,7 @@ export default function Reviews() {
                         </div>
                         <div className="">
                           <Image
-                            src={"/samples/recently-viewed/3.jpg"}
+                            src={"/samples/back/3.jpg"}
                             alt="something is happening"
                             width={0}
                             height={0}
@@ -364,7 +363,7 @@ export default function Reviews() {
                   </div>
                 </div>
               </div>
-              <div className="my-3 border-b-2 border-b-gray-300 pb-3">
+              <div className="border-b-2 border-b-gray-300 pb-3">
                 <div className="grid grid-cols-12">
                   <div className="md:col-span-4 col-span-12">
                     <div className="flex flex-col space-y-3 justify-center pb-3 pt-3">
@@ -400,10 +399,10 @@ export default function Reviews() {
                       <p>Absolutely Gorgeous</p>
                       <p>This dress was a show stopper! I’m 5’10, 179lbs with an athletic build and I bought a XL. The corset bodice makes the “girls” sit high! The dress is short but I had no problem sitting daintily! I have long arms and the flared sleeves were the perfect ...</p>
                       <span>Show More</span>
-                      <div className="grid grid-cols-4 ga">
+                      <div className="grid grid-cols-4 gap-3">
                         <div className="">
                           <Image
-                            src={"/samples/recently-viewed/1.jpg"}
+                            src={"/samples/back/1.jpg"}
                             alt="something is happening"
                             width={0}
                             height={0}
@@ -413,7 +412,7 @@ export default function Reviews() {
                         </div>
                         <div className="">
                           <Image
-                            src={"/samples/recently-viewed/2.jpg"}
+                            src={"/samples/back/2.jpg"}
                             alt="something is happening"
                             width={0}
                             height={0}
@@ -423,7 +422,7 @@ export default function Reviews() {
                         </div>
                         <div className="">
                           <Image
-                            src={"/samples/recently-viewed/3.jpg"}
+                            src={"/samples/back/3.jpg"}
                             alt="something is happening"
                             width={0}
                             height={0}
@@ -447,11 +446,10 @@ export default function Reviews() {
       </div>
       <div className="max-w-screen-xl mx-auto">
         <div className="slider-container relative">
-          <p className="md:font-bold md:text-xl my-2 md:text-left text-center">Recommended for You</p>
-          <div className="md:flex hidden md:space-x-10 space-x-10 border-b-2 border-b-gray-300 mb-1 pb-3">
-            <span className="border-b-4 border-b-slate-900">Frequently Bought Together</span>
+          <p className="md:font-bold md:text-xl pl-3 pt-3 md:text-left text-center">Recommended for You</p>
+          <div className="md:flex hidden md:space-x-10 space-x-10 border-b-2 border-b-gray-300 pb-3 my-1">
+            <span className="border-b-4 pl-3 pb-3 border-b-slate-900">Frequently Bought Together</span>
             <span>More from HOUSE OF CB</span>
-
           </div>
           <SliderMobile>
             <span className="font-bold text-lg cursor-pointer ">Frequently Bought Together</span>

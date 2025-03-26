@@ -72,7 +72,7 @@ export default function CustomerPhotos(props: { photoName: string, numberOfSlide
                 <Slider {...settings} ref={sliderRef}>
                     {Array.from(Array(10).keys()).map((_, i) => {
                         return (
-                            <div className="p-2" key={i}>
+                            <div className="" key={i}>
                                     <Image
                                         src={`/samples/${props.photoName}/${i + 1}.jpg`}
                                         alt="something is happening"

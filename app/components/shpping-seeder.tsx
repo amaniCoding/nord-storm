@@ -4,18 +4,18 @@ import StarRatings from "react-star-ratings"
 import Image from "next/image"
 import {  dummyText, shuffleArray } from "../libs/placeholder"
 export default function ShoppingSeeder() {
-    const shuffle = shuffleArray(dummyText);
+  const shuffle = shuffleArray(dummyText);
   return (
     <>
       {shuffle.map((el, i) => {
         return (
-          <div className="bg-white" key={i}>
+          <div className="bg-white shadow-md" key={i}>
             <div className="group relative">
               <Link href={`/product/name/143`}>
                 <div className="hidden absolute top-0 bottom-0 left-0 right-0 bg-black/15 group-hover:block"></div>
 
                 <Image
-                  src={`/samples/back/${i + 1}.jpg`}
+                  src={`${el.image}`}
                   alt="something is happening"
                   width={0}
                   height={0}
@@ -27,22 +27,22 @@ export default function ShoppingSeeder() {
                 Quick Show
               </Link>
             </div>
-            <div className="mt-1 mx-4">
+            <div className="mt-1">
 
-              <div className="my-1">
+              <div className="my-1 lg:px-4 px-3">
                 <span className="block">{el.desc.substring(5, 67)}</span>
                 <span className="block">{el.brand}®</span>
                 <span className="block font-bold">{el.price.original}</span>
                 <span className="line-through block">{el.price.off}</span>
               </div>
-              <div className="flex items-center space-x-4">
+              <div className="flex items-center space-x-4 lg:px-4 px-3">
                     {
                       el.colors.map((color, i) => {
                         return <div key={i} className={`brightness-50 w-3 h-3 outline outline-1 outline-offset-2 outline-red-500 rounded-full  ${color}`}></div>
                       })
                     }
                   </div>
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-2 lg:px-4 pb-3 px-3">
                 <div>
                   <StarRatings
                     rating={el.rating}
@@ -54,7 +54,7 @@ export default function ShoppingSeeder() {
                   />
                 </div>
 
-                <p className="block">({el.ratingCount})</p>
+                <p className="mt-1">({el.ratingCount})</p>
               </div>
 
 

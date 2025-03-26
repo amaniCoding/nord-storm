@@ -39,7 +39,7 @@ export default function Product() {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
           dots: false,
           centerMode: true
@@ -48,13 +48,13 @@ export default function Product() {
     ]
   };
   return (
-    <section className="p-4">
+    <section className="">
       <div className="max-w-screen-xl mx-auto">
         <div className="md:hidden block">
           <Slider {...settings2}>
-            {Array.from(Array(10).keys()).map((_, i) => {
+            {Array.from(Array(6).keys()).map((_, i) => {
               return (
-                <div className="p-4 bg-white" key={i}>
+                <div className=" bg-white" key={i}>
                   <div className="group relative">
 
                     <div className="hidden absolute top-0 bottom-0 left-0 right-0 bg-black/15 group-hover:block"></div>
@@ -77,7 +77,7 @@ export default function Product() {
             }
           </Slider>
         </div>
-        <div className="grid grid-cols-12 gap-4">
+        <div className="grid grid-cols-12 gap-4 px-4">
           <div className="md:col-span-6 md:block hidden col-span-12">
             <div className="grid md:grid-cols-2">
               <div className="">
@@ -156,8 +156,8 @@ export default function Product() {
                   numberOfStars={5}
                   name='rating'
                 />
-                <p>75</p>
-                <ChevronDownIcon className="w-5 h-5" />
+                <p className="mt-1">75</p>
+                <ChevronDownIcon className="w-5 h-5 mt-1" />
               </div>
               <h2 className="text-lg font-bold">Whisper Short Sleeve Minidress</h2>
               <div className="flex flex-col spa-y-1">
@@ -211,11 +211,11 @@ export default function Product() {
                 </div>
               </div>
               <div className="flex space-x-4">
-                <button className=" md:px-4 px-3 md:py-2 py-1.5 bg-cyan-800 rounded-3xl text-white flex items-center justify-center space-x-3">
+                <button className="bg-cyan-800 rounded-3xl text-white px-3 lg:py-2 py-1.5 inline-flex items-center justify-center space-x-1">
                   <ShoppingBagIcon className="w-6 h-7 stroke-white" />
                   <span className="text-nowrap">Add to Bag</span>
                 </button>
-                <button className=" md:px-4 px-3 md:py-2  py-1.5 border border-cyan-950 rounded-3xl text-black flex items-center justify-center space-x-3">
+                <button className="border border-cyan-950 rounded-3xl px-3 lg:py-2 py-1.5 text-black inline-flex items-center justify-center space-x-1">
                   <HeartIcon className="w-6 h-6 stroke-white" />
                   <span className="text-nowrap">Add To Wish List</span>
                 </button>
@@ -224,7 +224,7 @@ export default function Product() {
                 <div className="main-container">
                   <div className="">
                     <p className="font-bold text-xl">Size Info</p>
-                    <ul className="list-disc pl-8 leading-relaxed">
+                    <ul className="list-disc leading-relaxed pl-4">
                       <li>Runs small; order one size up</li>
                       <li>XS=2-4, S=4-6, M=6-8, L=8-10, XL (L+)=10-12.</li>
                       <li>Get the fit you want. Book an appointment with our onsite experts or stop by your nearest store.</li>
@@ -234,7 +234,7 @@ export default function Product() {
                   <div>
                     <p className="">Details & care</p>
                     <p className="">A bold cutout is softened by an elegant cowl neck on a satin minidress cut on the bias and fitted with the corsetry boning for a cinched waist.</p>
-                    <ul className="list-disc pl-8 leading-relaxed">
+                    <ul className="list-disc leading-relaxed pl-4">
                       <li>Exclusive retailer</li>
                       <li>32" length (size Small)</li>
                       <li>Hidden back-zip closure</li>
@@ -261,7 +261,7 @@ export default function Product() {
                       <span>3.3 out of 5</span>
 
                     </div>
-                    <button className="w-60 border-2 px-3 py-1 border-gray-300 hover:scale-105 transition duration-200 ease-in-out hover:bg-gray-300 rounded-3xl">Write Review</button>
+                    <button className="w-60 border-2 px-3 lg:py-2 py-1.5 border-gray-300 hover:scale-105 transition duration-200 ease-in-out hover:bg-gray-300 rounded-3xl">Write Review</button>
                   </div>
                 </div>
                 <div className="main-container">
@@ -312,7 +312,7 @@ export default function Product() {
                       <p>Need help finding the perfect gift? We've got you covered.
                       </p>
                       <button
-                        className="block my-2 border-2 px-3 py-1 border-gray-300 rounded-3xl hover:scale-105 transition duration-200 ease-in-out w-60">Shop
+                        className="block my-2 border-2 px-3 lg:py-2 py-1.5 border-gray-300 rounded-3xl hover:scale-105 transition duration-200 ease-in-out w-60">Shop
                         Gifts</button>
                     </div>
                   </div>
@@ -332,7 +332,7 @@ export default function Product() {
           </div>
         </div>
         <h2 className="text-2xl font-bold text-center my-2">You might also like</h2>
-        <div className="grid md:grid-cols-5 grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-4 grid-cols-2 gap-6">
 
           <YouMayAlsoLike />
         </div>

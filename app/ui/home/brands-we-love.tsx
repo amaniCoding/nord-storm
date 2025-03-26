@@ -3,11 +3,11 @@ import Image from "next/image";
 export default function Brands() {
   //react/no-unescaped-entities
   return (
-    <section className="p-4">
+    <section className="">
       <div className="max-w-screen-xl mx-auto">
-        <p className="my-3 font-semibold">Brands We Love</p>
-        <div className="grid md:grid-cols-3 grid-cols-1 gap-3">
-          <div className="p-1">
+        <p className="p-3 font-semibold">Brands We Love</p>
+        <div className="grid lg:grid-cols-3 grid-cols-1 gap-3">
+          <div className="">
             <Image
               src={"/samples/brands-we-love/1.jpg"}
               alt="something is happening"
@@ -16,7 +16,7 @@ export default function Brands() {
               sizes="100vh"
               className="w-full h-auto object-contain"
             />
-            <div className="flex flex-col space-y-1 mt-2">
+            <div className="flex flex-col space-y-1 mt-2 lg:px-4 px-2">
               <p className="font-bold">MOTHER</p>
               <p>From cult-favorite denim to inspired collections, MOTHER's '70s vibe is always witty and irreverent.</p>
               <div className="flex space-x-3">
@@ -25,7 +25,7 @@ export default function Brands() {
               </div>
             </div>
           </div>
-          <div className="p-1">
+          <div className="">
             <Image
               src={"/samples/brands-we-love/2.jpg"}
               alt="something is happening"
@@ -34,7 +34,7 @@ export default function Brands() {
               sizes="100vh"
               className="w-full h-auto object-contain"
             />
-            <div className="flex flex-col space-y-1 mt-2">
+            <div className="flex flex-col space-y-1 mt-2 lg:px-4 px-2">
               <p className="font-bold">Nuna</p>
               <p>With thoughtful design in every detail, Nuna is designed around your life.</p>
               <div className="flex space-x-3">
@@ -43,7 +43,7 @@ export default function Brands() {
               </div>
             </div>
           </div>
-          <div className="p-1">
+          <div className="">
             <Image
               src={"/samples/brands-we-love/3.jpg"}
               alt="something is happening"
@@ -52,7 +52,7 @@ export default function Brands() {
               sizes="100vh"
               className="w-full h-auto object-contain"
             />
-            <div className="flex flex-col space-y-1 mt-2">
+            <div className="flex flex-col space-y-1 mt-2 lg:px-4 px-2">
               <p className="font-bold">Tory Burch</p>
               <p>A season of glamorous escape and fashion to make you dream.</p>
               <div className="flex space-x-3">
