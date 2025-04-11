@@ -129,7 +129,7 @@ export default function SliderSeederLarge(props: { numberOfSlides?: number }) {
                         <Rating initialValue={el.rating} size={20} allowFraction readonly SVGclassName="inline" />
 
                       </div>
-                      <p className="mt-0.5">({el.ratingCount})</p>
+                      <p className="mt-1">({el.ratingCount})</p>
                     </div>
 
 

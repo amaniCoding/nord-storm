@@ -67,7 +67,7 @@ export default function YouMayAlsoLike() {
 
 
 
-                <span className="mt-0.5">({el.ratingCount})</span>
+                <span className="mt-1">({el.ratingCount})</span>
               </div>
             </div>
           </div>
